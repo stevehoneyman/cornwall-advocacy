@@ -1,4 +1,4 @@
-/*reset
+/* reset
 ----------------------------------------------------------------------------- */
 * {
   padding: 0;
@@ -14,7 +14,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 main,
 nav,
 section,
@@ -35,4 +34,17 @@ img {
 
 ul, li {
   list-style: none;
+}
+
+button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 100%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }

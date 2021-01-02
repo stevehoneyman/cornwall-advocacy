@@ -1,10 +1,27 @@
 /* variables
 ----------------------------------------------------------------------------- */
-
 // colours
 $white: #fff;
 $black: #000;
+
+$base: #444;
 $background-grey: #fafafa;
+
+$brand: #ffdb5a;
 
 // measures
 $site-width: 960px;
+$full-width: 100%;
+$wrap: 1%;
+$insulate: 1rem;
+
+$drop-small: .5rem;
+$drop-medium: 3rem;
+$drop-large: 6rem;
+
+// media queries
+$small: 320px;
+$phone: 600px;
+$tablet: 768px;
+$laptop: 1074px;
+$desktop: 1200px;
