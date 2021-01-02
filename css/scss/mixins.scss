@@ -1,0 +1,12 @@
+/* mixins
+----------------------------------------------------------------------------- */
+
+// type
+
+
+// media queries
+@mixin mq( $query ) {
+	@media ( min-width: $query ) {
+		@content
+	}
+}

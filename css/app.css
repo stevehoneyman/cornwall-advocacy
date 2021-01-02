@@ -1,0 +1,49 @@
+/* variables
+----------------------------------------------------------------------------- */
+/*reset
+----------------------------------------------------------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+code,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+body {
+  background: #fafafa;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* layout:
+----------------------------------------------------------------------------- */
+#site-wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  background: #fff;
+}
