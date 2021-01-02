@@ -4,15 +4,22 @@
 $white: #fff;
 $black: #000;
 
-$base: #444;
-$background-grey: #fafafa;
-
 $brand: #ffdb5a;
+$base: #27282C;
+$grey: #fafafa;
+
+// fonts
+$primary: helvetica;
+$root: 1rem;
 
 // measures
-$site-width: 960px;
+$site-width: 1440px;
+$inner: 1200px;
 $full-width: 100%;
-$wrap: 1%;
+
+$wrap-small: 5%;
+$wrap-desktop: 11.1%;
+
 $insulate: 1rem;
 
 $drop-small: .5rem;

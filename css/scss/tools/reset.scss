@@ -22,7 +22,8 @@ summary {
 }
 
 body {
-	background: $background-grey;
+	background: $grey;
+  font-family: $primary, 'sans-serif';
  	-webkit-font-smoothing: antialiased;
 }
 
@@ -37,14 +38,14 @@ ul, li {
 }
 
 button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: none;
-    outline: none;
-    font-family: inherit;
-    font-size: 100%;
-    cursor: pointer;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 100%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
