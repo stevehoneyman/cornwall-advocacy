@@ -5,7 +5,7 @@ var sass = require('gulp-sass');
 var checkDate = new Date();
 
 gulp.task('default', function(done) {
-	console.log('Gulp\'s running in _app on: ' + checkDate);
+	console.log('Gulp\'s running in the cornwall advocacy theme on: ' + checkDate);
   done()
 });
 
