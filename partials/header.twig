@@ -1,5 +1,22 @@
-<header>
-	<nav class="main-nav">
-    <!-- {% include 'partials/menu.twig' with {'items': menu.get_items} %} -->
-	</nav>
+<header role="banner">
+  <a href="/" class="logo">
+    <span class="line-one">Cornwall</span>
+    <span class="line-two">Advocacy</span>
+  </a>
+  <nav class="primary-nav" role="nav">
+    <ul class="nav-pages">
+      {% for item in primary_nav_pages.items %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ item.link }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <ul class="nav-cta">
+      {% for item in primary_nav_cta.items %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ item.link }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
 </header>

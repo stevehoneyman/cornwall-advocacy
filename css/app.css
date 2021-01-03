@@ -26,8 +26,8 @@ summary {
 }
 
 body {
+  font-family: helvetica, arial, sans-serif;
   background: #fafafa;
-  font-family: helvetica, "sans-serif";
   -webkit-font-smoothing: antialiased;
 }
 
@@ -70,4 +70,83 @@ button {
   max-width: 1440px;
   margin: 0 auto;
   background: #fff;
+}
+
+/* typography
+----------------------------------------------------------------------------- */
+/* header
+----------------------------------------------------------------------------- */
+header {
+  width: 100%;
+  height: 8.5rem;
+  padding: 0 120px;
+  border-bottom: 0.5rem solid #ffdb5a;
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  width: 170px;
+  margin-right: 65px;
+  text-decoration: none;
+}
+
+header .line-one,
+header .line-two {
+  display: block;
+  font-family: helvetica;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+header .line-one {
+  color: #27282C;
+  background: #ffdb5a;
+}
+
+header .line-two {
+  color: #fff;
+  background: #27282C;
+}
+
+header nav,
+header .nav-pages,
+header .nav-cta {
+  display: flex;
+  align-items: center;
+}
+
+header .nav-link {
+  font-size: 1rem;
+  color: #27282C;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+header .nav-pages {
+  width: 615px;
+  margin-right: 32px;
+  justify-content: space-between;
+}
+
+header .nav-cta .nav-item {
+  height: 3rem;
+  padding: 0 .75rem;
+  display: flex;
+  align-items: center;
+}
+
+header .nav-cta .nav-item:first-of-type {
+  background: #ffdb5a;
+  margin-right: 1rem;
+}
+
+header .nav-cta .nav-item:last-of-type {
+  background: #27282C;
+}
+
+header .nav-cta .nav-item:last-of-type .nav-link {
+  color: #fff;
 }

@@ -22,9 +22,9 @@ summary {
 }
 
 body {
-	background: $grey;
-  font-family: $primary, 'sans-serif';
- 	-webkit-font-smoothing: antialiased;
+  @include stack;
+  background: $light-grey;
+  -webkit-font-smoothing: antialiased;
 }
 
 img {

@@ -1,0 +1,78 @@
+/* header
+----------------------------------------------------------------------------- */
+header {
+  width: $full-width;
+  height: 8.5rem;
+  padding: 0 120px;
+  border-bottom: .5rem solid $brand;
+  display: flex;
+  align-items: center;
+
+  .logo {
+    width: 170px;
+    margin-right: 65px;
+    text-decoration: none;
+  }
+
+  .line-one,
+  .line-two {
+    display: block;
+    font-family: $primary;
+    font-size: 2rem;
+    font-weight: $font-bold; // 700
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .line-one {
+    color: $base;
+    background: $brand;
+  }
+
+  .line-two {
+    color: $white;
+    background: $base;
+  }
+
+  nav,
+  .nav-pages,
+  .nav-cta {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-link {
+    font-size: $font-root;
+    color: $base;
+    font-weight: $font-bold;
+    text-decoration: none;
+  }
+
+  .nav-pages {
+    width: 615px;
+    margin-right: 32px;
+    justify-content: space-between;
+  }
+
+  .nav-cta {
+    .nav-item {
+      height: 3rem;
+      padding: 0 .75rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-item:first-of-type {
+      background: $brand;
+      margin-right: 1rem;
+    }
+
+    .nav-item:last-of-type{
+      background: $base;
+
+      .nav-link {
+        color: $white;
+      }
+    }
+  }
+}

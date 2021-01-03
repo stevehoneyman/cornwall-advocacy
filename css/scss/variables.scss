@@ -1,34 +1,73 @@
 /* variables
 ----------------------------------------------------------------------------- */
-// colours
+// Note:
+// You don't have to use all of these
+// In some instances they're use is obvious eg colours, in others they're use is preferred
+// Line-heights, drops, width and wraps are especially important for consistency in layout
+
+// Colours generic
 $white: #fff;
 $black: #000;
+$light-grey: #fafafa;
+$success: #28a745;
+$warning: #dc3545;
 
+// Colours brand specific
 $brand: #ffdb5a;
-$base: #27282C;
-$grey: #fafafa;
+$brand-fade: #ffe68c;
+$base: #27282C; // rgba(39, 40, 44, 1)
+$medium-grey: #c4c4c4;
 
-// fonts
+// Fonts
+// Note: the basic font stack is defined using the mixin '@include stack'
+
+// Font faces
 $primary: helvetica;
-$root: 1rem;
+$secondary: arial;
 
-// measures
+// Font sizes generic
+$font-small: .75rem; // 12px
+$font-root: 1rem; // 16px
+$font-medium: 2rem; // 32px
+$font-large: 3rem; // 48px
+
+// Font sizes design specific
+$font-lead: 1.875rem; // 30px
+$font-body: 1.5rem; // 24px
+$font-quote: 3rem; // 48px
+
+// Font weights
+$font-light: 300;
+$font-normal: 400;
+$font-bold: 700;
+
+// Font line-heights
+$lh-heading: 1.4;
+$lh-lead: 1.8;
+$lh-body: 2;
+
+// Layout
+// Container widths
 $site-width: 1440px;
 $inner: 1200px;
 $full-width: 100%;
 
+// Container padding
 $wrap-small: 5%;
-$wrap-desktop: 11.1%;
+$wrap-big: 11.1%;
 
+// Vertical space within elements
 $insulate: 1rem;
 
-$drop-small: .5rem;
-$drop-medium: 3rem;
-$drop-large: 6rem;
+// Vertical space between elements or components
+$drop-small: .5rem; // 8px
+$drop-medium: 2.5rem; // 40px
+$drop-large: 6rem; // 96px
 
-// media queries
-$small: 320px;
-$phone: 600px;
-$tablet: 768px;
-$laptop: 1074px;
-$desktop: 1200px;
+// Media queries
+$break-vs: 320px; // old phone
+$break-small: 600px; // modern phone
+$break-medium: 768px; // tablet
+$break-large: 1074px; // laptop
+$break-big: 1200px; // desktop
+$break-vbig: 1600px // biiiig screens!

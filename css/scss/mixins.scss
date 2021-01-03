@@ -1,6 +1,11 @@
 /* mixins
 ----------------------------------------------------------------------------- */
-// media queries
+// Fonts - stack
+@mixin stack {
+  font-family: helvetica, arial, sans-serif;
+}
+
+// Media @ueries
 @mixin mq( $query ) {
 	@media ( min-width: $query ) {
 		@content
