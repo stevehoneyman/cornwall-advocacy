@@ -14,6 +14,11 @@ header {
     align-items: center;
   }
 
+  @include mq(1326px) {
+    padding: 0 120px;
+  }
+
+  /* logo styles */
   .logo {
     width: 130px;
     margin: 2rem 0 0 2rem;
@@ -44,6 +49,8 @@ header {
     background: $base;
   }
 
+  /* navigation styles */
+  // mobile layout
   nav {
     padding-top: 2.5rem;
     margin-top: 2rem;
@@ -61,54 +68,45 @@ header {
   .nav-cta {
     display: flex;
     flex-direction: column;
-
-    // @include mq($break-medium) {
-    //  flex-direction: row;
-    //  align-items: center;
-    // }
   }
 
+  // narrow page layout - change to stack nav-pages beneath nav-cta and align both right at edge of wrapper
+  // type agnostic
   @include mq($break-medium) {
     nav {
-      display: flex;
-      flex-direction: column;
       align-items: flex-end;
     }
 
     .nav-pages {
-      display: flex;
       flex-direction: row;
       order: 2;
     }
 
     .nav-cta {
-      display: flex;
       flex-direction: row;
       order: 1;
     }
   }
 
-  @include mq($break-large) {
+  // change layout so that nav-pages and nav-cta are on same line on wide screens (currently 1280px and above)
+  // type agnostic
+  @include mq($break-big) {
     nav {
-      display: flex;
       flex-direction: row;
       align-items: center;
     }
 
     .nav-pages {
       margin-right: 2rem;
-      display: flex;
-      flex-direction: row;
       order: 1;
     }
 
     .nav-cta {
-      display: flex;
-      flex-direction: row;
       order: 2;
     }
   }
 
+  // typography for ALL breakpoints starting for mobile
   .nav-link {
     color: $base;
     font-weight: $font-bold;
@@ -130,7 +128,6 @@ header {
     @include mq($break-medium) {
       min-width: 600px;
       padding: 0;
-    //  margin-right: 2rem; 1281
       justify-content: space-between;
       background: $white;
 
@@ -144,7 +141,7 @@ header {
     margin: 2.5rem 2rem;
 
     @include mq($break-medium) {
-      margin: 0;
+      margin: 0; // add .5 margin-bottom on full width
     }
 
     .nav-item {
@@ -169,7 +166,7 @@ header {
     .nav-item:last-of-type{
       background: $base;
 
-      // pull this one space back and style as .nav-link last of type?
+      // pull this one back - style as .nav-link:last-of-type or similar?
       .nav-link {
         color: $white;
       }
