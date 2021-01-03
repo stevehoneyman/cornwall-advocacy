@@ -78,35 +78,40 @@ button {
 ----------------------------------------------------------------------------- */
 header {
   width: 100%;
-  height: 8.5rem;
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
+  border-bottom: 0.5rem solid #ffdb5a;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1281px) {
   header {
-    padding: 0 120px;
+    height: 8.5rem;
+    padding: 0 5%;
     flex-direction: row;
     align-items: center;
-    border-bottom: 0.5rem solid #ffdb5a;
   }
 }
 
 header .logo {
-  width: 170px;
-  margin-right: 65px;
+  width: 130px;
+  margin: 2rem 0 0 2rem;
   text-decoration: none;
+}
+
+@media (min-width: 1281px) {
+  header .logo {
+    margin: 0 4rem 0 0;
+  }
 }
 
 header .line-one,
 header .line-two {
   display: block;
   font-family: helvetica;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 0.05rem;
 }
 
 header .line-one {
@@ -119,6 +124,20 @@ header .line-two {
   background: #27282C;
 }
 
+header nav {
+  padding-top: 2.5rem;
+  margin-top: 2rem;
+  background: #ffe68c;
+}
+
+@media (min-width: 1281px) {
+  header nav {
+    padding-top: 0;
+    margin-top: 0;
+    background: #fff;
+  }
+}
+
 header nav,
 header .nav-pages,
 header .nav-cta {
@@ -126,7 +145,7 @@ header .nav-cta {
   flex-direction: column;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1281px) {
   header nav,
   header .nav-pages,
   header .nav-cta {
@@ -136,22 +155,46 @@ header .nav-cta {
 }
 
 header .nav-link {
-  font-size: 1rem;
   color: #27282C;
   font-weight: 700;
   text-decoration: none;
 }
 
 header .nav-pages {
-  justify-content: space-between;
-  background: #ffdb5a;
+  padding: 0 2.5rem;
 }
 
-@media (min-width: 1074px) {
+header .nav-pages .nav-link {
+  font-size: 1.65rem;
+  line-height: 2;
+}
+
+@media (min-width: 414px) {
+  header .nav-pages .nav-link {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1281px) {
   header .nav-pages {
-    width: 615px;
-    margin-right: 32px;
+    min-width: 600px;
+    padding: 0;
+    margin-right: 2rem;
+    justify-content: space-between;
     background: #fff;
+  }
+  header .nav-pages .nav-link {
+    font-size: 1rem;
+  }
+}
+
+header .nav-cta {
+  margin: 2.5rem 2rem;
+}
+
+@media (min-width: 1281px) {
+  header .nav-cta {
+    margin: 0;
   }
 }
 
@@ -159,16 +202,19 @@ header .nav-cta .nav-item {
   height: 3rem;
   padding: 0 .75rem;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 header .nav-cta .nav-item:first-of-type {
+  margin-bottom: 1rem;
   background: #fff;
 }
 
-@media (min-width: 1074px) {
+@media (min-width: 1281px) {
   header .nav-cta .nav-item:first-of-type {
     background: #ffdb5a;
+    margin-bottom: 0;
     margin-right: 1rem;
   }
 }

@@ -2,32 +2,35 @@
 ----------------------------------------------------------------------------- */
 header {
   width: $full-width;
-  height: 8.5rem;
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
+  border-bottom: .5rem solid $brand;
 
-  @include mq($break-medium) {
-    padding: 0 120px;
+  @include mq($break-big) {
+    height: 8.5rem;
+    padding: 0 5%;
     flex-direction: row;
     align-items: center;
-    border-bottom: .5rem solid $brand;
   }
 
   .logo {
-    width: 170px;
-    margin-right: 65px;
+    width: 130px;
+    margin: 2rem 0 0 2rem;
     text-decoration: none;
+
+    @include mq($break-big) {
+      margin: 0 4rem 0 0;
+    }
   }
 
   .line-one,
   .line-two {
     display: block;
     font-family: $primary;
-    font-size: 2rem;
-    font-weight: $font-bold; // 700
+    font-size: 1.5rem;
+    font-weight: $font-bold;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 0.05rem;
   }
 
   .line-one {
@@ -40,49 +43,83 @@ header {
     background: $base;
   }
 
+  nav {
+    padding-top: 2.5rem;
+    margin-top: 2rem;
+    background: $brand-fade;
+
+    @include mq($break-big) {
+      padding-top: 0;
+      margin-top: 0;
+      background: $white;
+    }
+  }
+
   nav,
   .nav-pages,
   .nav-cta {
     display: flex;
     flex-direction: column;
 
-    @include mq($break-medium) {
+    @include mq($break-big) {
       flex-direction: row;
       align-items: center;
     }
   }
 
   .nav-link {
-    font-size: $font-root;
     color: $base;
     font-weight: $font-bold;
     text-decoration: none;
   }
 
   .nav-pages {
-    justify-content: space-between;
-    background: $brand;
+    padding: 0 2.5rem;
 
-    @include mq($break-large) {
-      width: 615px;
-      margin-right: 32px;
+    .nav-link {
+      font-size: 1.65rem;
+      line-height: $lh-body;
+
+      @include mq($break-small) {
+        font-size: $font-medium;
+      }
+    }
+
+    @include mq($break-big) {
+      min-width: 600px;
+      padding: 0;
+      margin-right: 2rem;
+      justify-content: space-between;
       background: $white;
+
+      .nav-link {
+        font-size: $font-root;
+      }
     }
   }
 
   .nav-cta {
+    margin: 2.5rem 2rem;
+
+    @include mq($break-big) {
+      margin: 0;
+    }
+
     .nav-item {
       height: 3rem;
       padding: 0 .75rem;
       display: flex;
+      justify-content: center;
       align-items: center;
     }
 
     .nav-item:first-of-type {
+      margin-bottom: 1rem;
       background: $white;
 
-      @include mq($break-large) {
+      @include mq($break-big) {
         background: $brand;
+        margin-bottom: 0;
         margin-right: 1rem;
       }
     }
@@ -90,6 +127,7 @@ header {
     .nav-item:last-of-type{
       background: $base;
 
+      // pull this one space back and style as .nav-link last of type?
       .nav-link {
         color: $white;
       }
