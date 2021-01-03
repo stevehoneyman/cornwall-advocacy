@@ -3,10 +3,16 @@
 header {
   width: $full-width;
   height: 8.5rem;
-  padding: 0 120px;
-  border-bottom: .5rem solid $brand;
+  padding: 0 1rem;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+
+  @include mq($break-medium) {
+    padding: 0 120px;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: .5rem solid $brand;
+  }
 
   .logo {
     width: 170px;
@@ -38,7 +44,12 @@ header {
   .nav-pages,
   .nav-cta {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+
+    @include mq($break-medium) {
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   .nav-link {
@@ -49,9 +60,14 @@ header {
   }
 
   .nav-pages {
-    width: 615px;
-    margin-right: 32px;
     justify-content: space-between;
+    background: $brand;
+
+    @include mq($break-large) {
+      width: 615px;
+      margin-right: 32px;
+      background: $white;
+    }
   }
 
   .nav-cta {
@@ -63,8 +79,12 @@ header {
     }
 
     .nav-item:first-of-type {
-      background: $brand;
-      margin-right: 1rem;
+      background: $white;
+
+      @include mq($break-large) {
+        background: $brand;
+        margin-right: 1rem;
+      }
     }
 
     .nav-item:last-of-type{

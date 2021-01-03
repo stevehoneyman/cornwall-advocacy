@@ -79,10 +79,18 @@ button {
 header {
   width: 100%;
   height: 8.5rem;
-  padding: 0 120px;
-  border-bottom: 0.5rem solid #ffdb5a;
+  padding: 0 1rem;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 0 120px;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 0.5rem solid #ffdb5a;
+  }
 }
 
 header .logo {
@@ -115,7 +123,16 @@ header nav,
 header .nav-pages,
 header .nav-cta {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  header nav,
+  header .nav-pages,
+  header .nav-cta {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 header .nav-link {
@@ -126,9 +143,16 @@ header .nav-link {
 }
 
 header .nav-pages {
-  width: 615px;
-  margin-right: 32px;
   justify-content: space-between;
+  background: #ffdb5a;
+}
+
+@media (min-width: 1074px) {
+  header .nav-pages {
+    width: 615px;
+    margin-right: 32px;
+    background: #fff;
+  }
 }
 
 header .nav-cta .nav-item {
@@ -139,8 +163,14 @@ header .nav-cta .nav-item {
 }
 
 header .nav-cta .nav-item:first-of-type {
-  background: #ffdb5a;
-  margin-right: 1rem;
+  background: #fff;
+}
+
+@media (min-width: 1074px) {
+  header .nav-cta .nav-item:first-of-type {
+    background: #ffdb5a;
+    margin-right: 1rem;
+  }
 }
 
 header .nav-cta .nav-item:last-of-type {
