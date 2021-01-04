@@ -78,20 +78,21 @@ button {
 ----------------------------------------------------------------------------- */
 header {
   width: 100%;
+  position: fixed;
+  border-bottom: 0.5rem solid #ffdb5a;
   display: flex;
   flex-direction: column;
-  border-bottom: 0.5rem solid #ffdb5a;
+  background: #fff;
   /* logo styles */
   /* navigation styles */
 }
 
 @media (min-width: 880px) {
   header {
-    height: 8.5rem;
+    height: 140px;
     padding: 0 5%;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
   }
 }
 
@@ -109,7 +110,21 @@ header .logo {
 
 @media (min-width: 880px) {
   header .logo {
-    margin: 0 4rem 0 0;
+    width: 150px;
+    margin: 32px 4rem 0 0;
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 1281px) {
+  header .logo {
+    width: 170px;
+  }
+}
+
+@media (min-width: 1440px) {
+  header .logo {
+    width: 150px;
   }
 }
 
@@ -204,6 +219,12 @@ header .nav-pages .nav-link {
 }
 
 @media (min-width: 880px) {
+  header .nav-pages .nav-link {
+    line-height: 0;
+  }
+}
+
+@media (min-width: 880px) {
   header .nav-pages {
     min-width: 600px;
     padding: 0;
@@ -221,7 +242,7 @@ header .nav-cta {
 
 @media (min-width: 880px) {
   header .nav-cta {
-    margin: 0;
+    margin: 1.5rem 0;
   }
 }
 
@@ -253,3 +274,8 @@ header .nav-cta .nav-item:last-of-type {
 header .nav-cta .nav-item:last-of-type .nav-link {
   color: #fff;
 }
+
+/* footer
+----------------------------------------------------------------------------- */
+/* banner
+----------------------------------------------------------------------------- */

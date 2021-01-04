@@ -1,8 +1,11 @@
 // Check js is running
 var dateTime = new Date();
-console.log('loading from scripts.js from Boilerplate theme on: ' + dateTime);
+console.log('loading from scripts.js from Cornwall Advocacy on: ' + dateTime);
 
-jQuery(document).ready(function($){
+jQuery(document).ready(function($){ // start doc ready
+
+  /* start scripts
+  ------------------------------------------------------------------------- */
 
 	/* navigation
 	------------------------------------------------------------------------- */
@@ -41,8 +44,7 @@ jQuery(document).ready(function($){
 
 	/* scroll in
 	------------------------------------------------------------------------- */
-
-	(function($) {
+  (function($) {
 			$.fn.visible = function(partial) {
 
 			var $t            = $(this),
@@ -68,7 +70,7 @@ jQuery(document).ready(function($){
 		});
 	});
 
-	/* end all
+	/* end scripts
 	------------------------------------------------------------------------- */
 
 }); // close doc ready
