@@ -33,6 +33,10 @@ add_theme_support('post-thumbnails');
 // enable excerpts
 add_post_type_support( 'page', 'excerpt' );
 
+if ( function_exists('acf_add_options_page') ) {
+  acf_add_options_page();
+}
+
 // show toolbar when logged out
 // show_admin_bar( true );
 
@@ -40,14 +44,16 @@ add_post_type_support( 'page', 'excerpt' );
 ----------------------------------------------------------------------------- */
 
 function add_to_context( $context ) {
-  // So here you are adding data to Timber's context object, i.e...
-  // $context['foo'] = 'I am some other typical value set in your functions.php file, unrelated to the menu';
+  // Where you add data to Timber's context object, i.e...
+  // $context['foo'] = 'value(s) set in functions.php unrelated to [menus] or [options]';
 
   // set-up menus
   $context['primary_nav_pages']  = new Timber\Menu('Primary');
   $context['primary_nav_cta'] = new Timber\Menu('CTA');
   $context['primary_nav_sub'] = new Timber\Menu('Sub');
 
+   // set-up options
+  $context['options'] = get_fields('option');
   return $context;
 }
 
