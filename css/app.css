@@ -78,7 +78,6 @@ button {
 ----------------------------------------------------------------------------- */
 header {
   width: 100%;
-  position: fixed;
   border-bottom: 0.5rem solid #ffdb5a;
   display: flex;
   flex-direction: column;
