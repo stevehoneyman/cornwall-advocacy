@@ -38,13 +38,12 @@ ul, li {
 }
 
 button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  border: none;
   border-radius: none;
   outline: none;
   font-family: inherit;
   font-size: 100%;
+  align-items: center;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
