@@ -1,1 +1,15 @@
-<footer role="contentinfo"></footer>
+<footer role="contentinfo">
+  <div class="org-info">
+    <div class="org-info">
+      <span>© Cornwall Advocacy {{ now|date('Y') }}</span>
+      <span>Registered Charity No: {{ options.charity }}</span>
+    </div>
+  </div>
+  <ul class="footer-nav">
+    {% for item in details.items %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ item.link }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</footer>

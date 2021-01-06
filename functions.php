@@ -51,6 +51,7 @@ function add_to_context( $context ) {
   $context['primary_nav_pages']  = new Timber\Menu('Primary');
   $context['primary_nav_cta'] = new Timber\Menu('CTA');
   $context['primary_nav_sub'] = new Timber\Menu('Sub');
+  $context['details'] = new Timber\Menu('Details');
 
    // set-up options
   $context['options'] = get_fields('option');

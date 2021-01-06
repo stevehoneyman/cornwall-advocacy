@@ -1,2 +1,65 @@
 /* footer
 ----------------------------------------------------------------------------- */
+footer {
+  padding: 1.625rem 2.5rem;
+  border-bottom: .5rem solid $base;
+  display: flex;
+  flex-direction: column;
+  font-size: $font-root;
+  color: $base;
+  font-weight: $font-bold;
+  letter-spacing: 0.02rem;
+
+  @include mq($break-medium) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include mq($break-large) {
+    padding: 1.625rem 7.5rem;
+  }
+
+  .org-info {
+    max-width: 250px;
+    margin-bottom: 2rem;
+
+    @include mq($break-medium) {
+      max-width: 700px;
+      margin-bottom: 0;
+    }
+  }
+
+  span,
+  .nav-item {
+    margin-right: 1.75rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  span {
+    line-height: $lh-body;
+    color: $base;
+  }
+
+  .footer-nav {
+    .nav-link {
+      line-height: $lh-body;
+      color: $base;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .org-info,
+  .footer-nav {
+    @include mq($break-medium) {
+      display: flex;
+    }
+  }
+}
