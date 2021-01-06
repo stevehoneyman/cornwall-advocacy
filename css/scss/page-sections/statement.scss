@@ -1,0 +1,107 @@
+/* statement
+----------------------------------------------------------------------------- */
+.statement {
+  padding: 5rem 2.5rem 3rem;
+  border-top: 40px solid $brand-fade;
+  background: $brand;
+
+  @include mq($break-large) {
+    padding: 5rem 120px 3rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    @include mq($break-medium) {
+      flex-direction: row;
+    }
+  }
+
+  .left-col,
+  .right-col {
+    width: 100%;
+    margin-bottom: 40px;
+
+    @include mq($break-medium) {
+      width: calc(50% - 40px);
+      margin-left: 80px;
+
+      &:nth-of-type(2n-1) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .logo {
+    width: 215px;
+    margin-bottom: 40px;
+    display: inline-block;
+    text-decoration: none;
+
+    .line-one,
+    .line-two {
+      display: block;
+      @include stack;
+      font-size: 1.5rem;
+      font-weight: $font-bold;
+      text-align: center;
+      letter-spacing: 0.05rem;
+    }
+
+    .line-one {
+      color: $base;
+      background: $white;
+    }
+
+    .line-two {
+      color: $white;
+      background: $base;
+    }
+  }
+
+  .text {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    line-height: 1.6;
+    letter-spacing: 0.06rem;
+  }
+
+  button {
+    padding: .5rem 1rem;
+    font-size: $font-root;
+    color: $white;
+    font-weight: $font-bold;
+    background: $base;
+  }
+
+  .view {
+    margin-bottom: 40px;
+  }
+
+  .view,
+  .follow {
+
+    a {
+      font-size: $font-root;
+      color: $base;
+      font-weight: $font-bold;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:before {
+      content: '';
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      margin-right: 24px;
+      display: inline-block;
+      vertical-align: middle;
+      background: $white;
+    }
+  }
+}

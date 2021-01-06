@@ -1,0 +1,24 @@
+{% for item in post.meta('content_blocks') %}
+	{% if item.acf_fc_layout == 'statement_block' %}
+    <aside class="statement">
+      <a href="/" class="logo">
+        <span class="line-one">Cornwall</span>
+        <span class="line-two">Advocacy</span>
+      </a>
+      <div class="content">
+        <div class="left-col">
+          <p class="text">{{ item.text }}</p>
+          <button>Find out more about us</button>
+        </div>
+        <div class="right-col">
+          <p class="view">
+            <a href="contact-us">View our contact details</a>
+          </p>
+          <p class="follow">
+            <a href="{{ options.facebook }}">Follow us on Facebook</a>
+          </p>
+        </div>
+      </div>
+    </aside>
+  {% endif %}
+{% endfor %}

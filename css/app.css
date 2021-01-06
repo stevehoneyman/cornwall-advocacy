@@ -365,3 +365,116 @@ footer .footer-nav .nav-link:hover {
 
 /* banner
 ----------------------------------------------------------------------------- */
+/* statement
+----------------------------------------------------------------------------- */
+.statement {
+  padding: 5rem 2.5rem 3rem;
+  border-top: 40px solid #ffe68c;
+  background: #ffdb5a;
+}
+
+@media (min-width: 1074px) {
+  .statement {
+    padding: 5rem 120px 3rem;
+  }
+}
+
+.statement .content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 880px) {
+  .statement .content {
+    flex-direction: row;
+  }
+}
+
+.statement .left-col,
+.statement .right-col {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 880px) {
+  .statement .left-col,
+  .statement .right-col {
+    width: calc(50% - 40px);
+    margin-left: 80px;
+  }
+  .statement .left-col:nth-of-type(2n-1),
+  .statement .right-col:nth-of-type(2n-1) {
+    margin-left: 0;
+  }
+}
+
+.statement .logo {
+  width: 215px;
+  margin-bottom: 40px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.statement .logo .line-one,
+.statement .logo .line-two {
+  display: block;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.05rem;
+}
+
+.statement .logo .line-one {
+  color: #27282C;
+  background: #fff;
+}
+
+.statement .logo .line-two {
+  color: #fff;
+  background: #27282C;
+}
+
+.statement .text {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  line-height: 1.6;
+  letter-spacing: 0.06rem;
+}
+
+.statement button {
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
+  background: #27282C;
+}
+
+.statement .view {
+  margin-bottom: 40px;
+}
+
+.statement .view a,
+.statement .follow a {
+  font-size: 1rem;
+  color: #27282C;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.statement .view a:hover,
+.statement .follow a:hover {
+  text-decoration: underline;
+}
+
+.statement .view:before,
+.statement .follow:before {
+  content: '';
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  background: #fff;
+}
