@@ -1,2 +1,50 @@
 /* banner
 ----------------------------------------------------------------------------- */
+.banner {
+  padding: 8rem 0.5rem 4rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mq($break-small) {
+    padding-top: 18rem;
+    padding-bottom: 4rem;
+    background-position: 50% 50%;
+  }
+
+  @include mq($break-medium) {
+    padding-top: 30rem;
+    padding-bottom: 7rem;
+  }
+
+  .headline {
+    padding: 0.5rem 0.25rem;
+    font-family: $primary;
+    font-size: $font-root;
+    font-weight: $font-bold;
+    line-height: 1.5rem;
+    color: $base;
+    text-align: center;
+    background-color: $brand;
+
+    @include mq($break-vs) {
+      padding: 0.5rem 0.75rem;
+    }
+
+    @include mq($break-small) {
+      padding: 0.75rem 0.75rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      letter-spacing: 0.03rem;
+    }
+
+    @include mq($break-medium) {
+      padding: 1.25rem 1.75rem;
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+      letter-spacing: 0.06rem;
+    }
+  }
+}
