@@ -1,2 +1,19 @@
 /* grids
 ----------------------------------------------------------------------------- */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  .grid-item {
+    width: 100%;
+
+    @include mq($break-medium) {
+      width: calc(50% - 48px);
+      margin-left: 96px;
+
+      &:nth-of-type(2n-1) {
+        margin-left: 0;
+      }
+    }
+  }
+}

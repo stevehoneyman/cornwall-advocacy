@@ -9,30 +9,6 @@
     padding: 5rem 120px 3rem;
   }
 
-  .content {
-    display: flex;
-    flex-direction: column;
-
-    @include mq($break-medium) {
-      flex-direction: row;
-    }
-  }
-
-  .left-col,
-  .right-col {
-    width: 100%;
-    margin-bottom: 40px;
-
-    @include mq($break-medium) {
-      width: calc(50% - 40px);
-      margin-left: 80px;
-
-      &:nth-of-type(2n-1) {
-        margin-left: 0;
-      }
-    }
-  }
-
   .logo {
     width: 215px;
     margin-bottom: 40px;
@@ -42,6 +18,7 @@
     .line-one,
     .line-two {
       display: block;
+      padding: .375rem 0;
       @include stack;
       font-size: 1.5rem;
       font-weight: $font-bold;
@@ -60,48 +37,80 @@
     }
   }
 
-  .text {
-    margin-bottom: 40px;
-    font-size: 2rem;
-    line-height: 1.6;
-    letter-spacing: 0.06rem;
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    @include mq($break-medium) {
+      flex-direction: row;
+    }
   }
 
-  button {
-    padding: .5rem 1rem;
-    font-size: $font-root;
-    color: $white;
-    font-weight: $font-bold;
-    background: $base;
-  }
-
-  .view {
+  .left-col,
+  .right-col {
+    width: 100%;
     margin-bottom: 40px;
   }
 
-  .view,
-  .follow {
+  .left-col {
+    .text {
+      margin: 1rem 0 4rem 0;
+      font-size: 1.5rem;
+      line-height: 1.6;
+      letter-spacing: 0.06rem;
 
-    a {
+      @include mq($break-medium) {
+        font-size: 2rem;
+      }
+    }
+
+    button {
+      height: 64px;
+      padding: .5rem 2rem;
+      margin-bottom: 4rem;
       font-size: $font-root;
+      color: $white;
+      font-weight: $font-bold;
+      background: $base;
+
+      @include mq($break-medium) {
+        font-size: 21px;
+      }
+    }
+  }
+
+  .right-col {
+    .link {
+      display: block;
+      margin-bottom: 2.5rem;
+      font-size: 18px;
       color: $base;
       font-weight: $font-bold;
       text-decoration: none;
 
+      @include mq($break-medium) {
+        font-size: 1.5;
+      }
+
       &:hover {
         text-decoration: underline;
       }
-    }
 
-    &:before {
-      content: '';
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      margin-right: 24px;
-      display: inline-block;
-      vertical-align: middle;
-      background: $white;
+      &:before {
+        content: '';
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        margin-right: 1.5rem;
+        display: inline-block;
+        vertical-align: middle;
+        background: $white;
+
+        @include mq($break-medium) {
+          width: 5rem;
+          height: 5rem;
+        }
+      }
     }
   }
-}
+} // close statement

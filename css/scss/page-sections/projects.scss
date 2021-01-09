@@ -1,0 +1,40 @@
+/* projects
+----------------------------------------------------------------------------- */
+.projects {
+  padding: 120px 160px 80px;
+  display: flex;
+  flex-direction: column;
+  background: $brand-light-grey;
+
+  h2 {
+    margin-bottom: 104px;
+    font-size: 3rem;
+    font-weight: $font-bold;
+  }
+
+ .content {
+    display: flex;
+  }
+
+  .title {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin-right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: white;
+    background: $black;
+  }
+
+  .text {
+    width: 730px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: $base;
+  }
+}

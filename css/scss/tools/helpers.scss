@@ -1,5 +1,11 @@
 /* helpers
 ----------------------------------------------------------------------------- */
+.wrap {
+  width: 100%;
+  padding: 0 160px;
+  margin: 0 auto;
+}
+
 .btn {
   border: 1px solid $base;
   padding: .25rem 1rem;

@@ -1,0 +1,38 @@
+/* image-links
+----------------------------------------------------------------------------- */
+.image-links {
+  padding: 0 2.5rem;
+
+  @include mq($break-medium) {
+    padding: 0 160px;
+  }
+
+  .title {
+    margin: 6rem 0;
+    font-size: 3rem;
+    font-weight: $font-bold;
+  }
+
+  .text {
+    margin: 3rem 0;
+    font-size: 28px;
+    font-weight: $font-bold;
+  }
+
+  .link {
+    height: 4rem;
+    padding: 0 2rem;
+    margin-bottom: 126px;
+    display: inline-flex;
+    align-items: center;
+    font-size: $font-root;
+    font-weight: $font-bold;
+    color: $white;
+    text-decoration: none;
+    background: $base;
+
+    @include mq($break-medium) {
+      font-size: 21px;
+    }
+  }
+}

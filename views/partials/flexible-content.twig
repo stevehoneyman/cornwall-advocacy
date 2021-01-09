@@ -1,5 +1,50 @@
 {% for item in post.meta('content_blocks') %}
-	{% if item.acf_fc_layout == 'statement_block' %}
+
+  {% if item.acf_fc_layout == 'single_text_block' %}
+    {{ item.text }}
+  {% endif %}
+
+  {% if item.acf_fc_layout == 'text_image_block' %}
+    <img src="{{ Image(item.image).src }}" alt="{{ Image(item.image).alt }}" />
+    {{ item.text }}
+  {% endif %}
+
+  {% if item.acf_fc_layout == 'image_links_block' %}
+    <section class="image-links">
+      <h2 class="title">{{ item.title }}</h2>
+        <div class="grid">
+        {% for item in item.grid_element %}
+          <div class="grid-item">
+            <img src="{{ Image(item.image).src }}" alt="{{ Image(item.image).alt }}">
+            <p class="text">{{ item.text }}</p>
+          </div>
+        {% endfor %}
+      </div>
+      <a href="{{ item.link }}" class="link">Find out more about how we can help</a>
+    </section>
+  {% endif %}
+
+  {% if item.acf_fc_layout == 'testimonials_block' %}
+    <div class="testimonials">
+      <div class="content">
+        <blockquote>{{ item.text }}</blockquote>
+        <p class="source">{{ item.source}}</p>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if item.acf_fc_layout == 'projects_block' %}
+    <div class="projects">
+      <h2>{{ item.title }}</h2>
+      <div class="content">
+        <h3 class="title">{{ item.name }}</h3>
+        <p class="text">{{ item.text}}</p>
+      </div>
+    </div>
+  {% endif %}
+
+
+  {% if item.acf_fc_layout == 'statement_block' %}
     <aside class="statement">
       <a href="/" class="logo">
         <span class="line-one">Cornwall</span>
@@ -11,12 +56,8 @@
           <button>Find out more about us</button>
         </div>
         <div class="right-col">
-          <p class="view">
-            <a href="contact-us">View our contact details</a>
-          </p>
-          <p class="follow">
-            <a href="{{ options.facebook }}">Follow us on Facebook</a>
-          </p>
+          <a href="contact-us" class="link">View our contact details</a>
+          <a href="{{ options.facebook }}" class="link">Follow us on Facebook</a>
         </div>
       </div>
     </aside>
