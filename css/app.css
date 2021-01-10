@@ -194,12 +194,20 @@ header .menu {
 }
 
 header nav {
-  padding-top: 2.5rem;
+  height: 0px;
+  overflow: hidden;
   background: #ffe68c;
+  transition: 300ms;
+}
+
+header nav.nav-open {
+  padding-top: 2.5rem;
+  height: 600px;
 }
 
 @media (min-width: 880px) {
   header nav {
+    height: auto;
     padding-top: 0;
     margin-top: 0;
     display: flex;

@@ -7,8 +7,7 @@ jQuery(document).ready(function($){
   /* navigation
 	------------------------------------------------------------------------- */
   $('.menu').on('click', function() {
-		// console.log('click fired...');
-   $('body').toggleClass('nav-open');
+		$('.primary-nav').toggleClass('nav-open');
 	});
 
 }); // close doc ready

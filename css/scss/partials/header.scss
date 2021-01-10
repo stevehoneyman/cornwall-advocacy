@@ -80,10 +80,18 @@ header {
 
   // navigation
   nav {
-    padding-top: 2.5rem;
+    height: 0px;
+	  overflow: hidden;
     background: $brand-fade;
+    transition: 300ms;
+
+    &.nav-open {
+      padding-top: 2.5rem;
+      height: 600px;
+    }
 
     @include mq($break-medium) {
+      height: auto;
       padding-top: 0;
       margin-top: 0;
       display: flex;
