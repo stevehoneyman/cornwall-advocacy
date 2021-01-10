@@ -40,7 +40,7 @@
   {% endif %}
 
   {% if item.acf_fc_layout == 'projects_block' %}
-    <div class="projects">
+    <section class="projects">
       <h2>{{ item.title }}</h2>
       {% for item in item.project %}
         <div class="project">
@@ -49,7 +49,7 @@
         </div>
       {% endfor %}
       <a href="{{ item.link }}" class="link">{{ item.link_text }}</a>
-    </div>
+    </section>
   {% endif %}
 
 
