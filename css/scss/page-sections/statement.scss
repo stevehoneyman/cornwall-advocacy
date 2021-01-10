@@ -2,16 +2,16 @@
 ----------------------------------------------------------------------------- */
 .statement {
   padding: 5rem 2.5rem 3rem;
-  border-top: 40px solid $brand-fade;
+  border-top: 2.5rem solid $brand-fade;
   background: $brand;
 
   @include mq($break-large) {
-    padding: 5rem 120px 3rem;
+    padding: 5rem 7.5rem 3rem;
   }
 
   .logo {
     width: 215px;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     display: inline-block;
     text-decoration: none;
 
@@ -19,8 +19,7 @@
     .line-two {
       display: block;
       padding: .375rem 0;
-      @include stack;
-      font-size: 1.5rem;
+      font-size: $font-body;
       font-weight: $font-bold;
       text-align: center;
       letter-spacing: 0.05rem;
@@ -49,23 +48,23 @@
   .left-col,
   .right-col {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 
   .left-col {
     .text {
       margin: 1rem 0 4rem 0;
-      font-size: 1.5rem;
-      line-height: 1.6;
+      font-size: $font-body;
+      line-height: 1.5;
       letter-spacing: 0.06rem;
 
       @include mq($break-medium) {
-        font-size: 2rem;
+        font-size: $font-medium;
       }
     }
 
     button {
-      height: 64px;
+      height: 4rem;
       padding: .5rem 2rem;
       margin-bottom: 4rem;
       font-size: $font-root;
@@ -80,6 +79,10 @@
   }
 
   .right-col {
+    @include mq($break-medium) {
+      padding-left: 140px;  
+    }
+
     .link {
       display: block;
       margin-bottom: 2.5rem;
@@ -89,7 +92,7 @@
       text-decoration: none;
 
       @include mq($break-medium) {
-        font-size: 1.5;
+        font-size: $font-body;
       }
 
       &:hover {

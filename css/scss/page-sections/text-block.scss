@@ -1,0 +1,53 @@
+/* text-block
+----------------------------------------------------------------------------- */
+.text-block {
+  padding: 0 2.5rem;
+  margin: 6rem 0;
+
+  @include mq($break-medium) {
+    width: 900px;
+    padding: 0;
+    margin: 6rem 10rem;
+  }
+
+  p {
+    margin: 1rem 0;
+    font-size: $font-body;
+  }
+
+  p:first-of-type {
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+
+  ul {
+    padding: 5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+
+  li {
+    position: relative;
+    width: 75%;
+    margin: 2.5rem 2rem 2.5rem 6rem;
+    font-size: $font-body;
+    font-weight: $font-bold;
+
+    @include mq($break-medium) {
+       width: 35%;
+    }
+  }
+
+  li:before {
+    position: absolute;
+    top: -30px;
+    left: -100px;
+    content: '';
+    width: 80px;
+    height: 80px;
+    background-color: $brand;
+    border-radius: 50%;
+  }
+}

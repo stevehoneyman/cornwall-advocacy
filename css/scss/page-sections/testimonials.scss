@@ -3,10 +3,10 @@
 .testimonials {
   width: $full-width;
   padding: 0 2.5rem;
-  background: $brand-fade;
+  background: $base;
 
   .content {
-    padding: 168px 0 124px 0;
+    padding: calc(5rem + 80px) 0 5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +24,7 @@
     font-size: 2.5rem;
     font-weight: $font-bold;
     line-height: 1.5;
+    color: $white;
 
     &:before {
       position: absolute;
@@ -31,8 +32,8 @@
       top: -100px;
       content: '';
       display: block;
-      width: 79px;
-      height: 71px;
+      width: 80px;
+      height: 80px;
       border-radius: 50px;
       background: $white;
       transform: translateX(-35px);
@@ -40,6 +41,21 @@
   }
 
   .source {
-    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: $font-body;
+    color: $white;
+  }
+
+  .link {
+    height: 4rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-body;
+    font-weight: $font-bold;
+    color: $base;
+    background: $brand;
+    text-decoration: none;
   }
 }

@@ -1,40 +1,84 @@
 /* projects
 ----------------------------------------------------------------------------- */
 .projects {
-  padding: 120px 160px 80px;
-  display: flex;
-  flex-direction: column;
+  padding: 6rem 2.5rem;
   background: $brand-light-grey;
 
+  @include mq($break-medium) {
+    padding: 6rem 10rem;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+
+    @include mq($break-medium) {
+      flex-direction: row;
+    }
+
+    &:last-of-type {
+      margin-bottom: 6rem;
+    }
+  }
+
   h2 {
-    margin-bottom: 104px;
+    margin-bottom: 6rem;
     font-size: 3rem;
     font-weight: $font-bold;
+
+    &:after {
+      content: '';
+      width: 3rem;
+      height: 10px;
+      margin-top: 1rem;
+      display: block;
+      background: $brand;
+    }
   }
 
  .content {
     display: flex;
   }
 
-  .title {
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    margin-right: 70px;
+  .name,
+  .text,
+  .link {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.5rem;
+  }
+
+  .name {
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    margin: 0 6rem 1rem 0;
+    font-size: $font-body;
     color: white;
     background: $black;
   }
 
   .text {
-    width: 730px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5rem;
+    width: 100%;
+    font-size: $font-body;
+    line-height: $lh-body;
+    letter-spacing: 0.02rem;
     color: $base;
+
+    @include mq($break-medium) {
+      width: 75%;
+    }
+  }
+
+  .link {
+    height: 4rem;
+    padding: 0 2rem;
+    display: inline-flex;
+    font-size: 21px;
+    font-weight: $font-bold;
+    color: $white;
+    text-decoration: none;
+    background: $base;
   }
 }
