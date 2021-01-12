@@ -6,6 +6,10 @@
   display: flex;
   flex-direction: column;
 
+  @include mq($break-medium) {
+    padding: 6rem 10rem 0 10rem;
+  }
+
   .section-title {
     margin-bottom: 104px;
     font-size: 40px;
@@ -14,6 +18,15 @@
 
     &:after {
       @include underline-brand;
+    }
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: column;
+
+    @include mq($break-medium) {
+      flex-direction: row;
     }
   }
 
@@ -29,6 +42,10 @@
   .lh-col,
   .rh-col {
     width: 100%;
+
+    @include mq($break-medium) {
+      width: 50%;
+    }
   }
 
   img {
@@ -44,5 +61,22 @@
 
   p:last-of-type {
     margin-bottom: $drop-large;
+  }
+
+  .link {
+    height: 4rem;
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: $font-bold;
+    text-decoration: none;
+    color: $white;
+    background: $base;
+  }
+
+  &.grey {
+    background: $brand-light-grey;
   }
 } // close text-image

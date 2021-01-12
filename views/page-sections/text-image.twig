@@ -1,13 +1,18 @@
 {% if item.acf_fc_layout == 'text_image_block' %}
-  <section class="text-image">
+  <section class="text-image {{ item.background }}">
     <h2 class="section-title">{{ item.title }}</h2>
-    {% if Image(item.image).src %}
-      <div class="lh-col">
-        <img src="{{ Image(item.image).src }}" alt="{{ Image(item.image).alt }}" />
+      <div class="columns">
+        {% if Image(item.image).src %}
+          <div class="lh-col grid-item">
+            <img src="{{ Image(item.image).src }}" alt="{{ Image(item.image).alt }}" />
+          </div>
+        {% endif %}
+        <div class="rh-col grid-item">
+          {{ item.text }}
+          {% if item.link %}
+            <a href="#" class="link">{{ item.link_text }}</a>
+          {% endif %}
       </div>
-    {% endif %}
-    <div class="rh-col">
-      {{ item.text }}
     </div>
   </section>
 {% endif %}
