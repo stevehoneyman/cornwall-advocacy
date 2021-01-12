@@ -1,11 +1,21 @@
 /* mixins
 ----------------------------------------------------------------------------- */
-// Fonts - stack
+// Font stack
 @mixin stack {
   font-family: helvetica, arial, sans-serif;
 }
 
-// Media @ueries
+// Underline graphic device beneath titles
+@mixin underline-brand {
+  content: '';
+  width: 3rem;
+  height: 10px;
+  margin-top: 1rem;
+  display: block;
+  background: $brand;
+}
+
+// Media queries
 @mixin mq( $query ) {
 	@media ( min-width: $query ) {
 		@content

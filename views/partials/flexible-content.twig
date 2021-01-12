@@ -1,74 +1,9 @@
 {% for item in post.meta('content_blocks') %}
 
-  {% if item.acf_fc_layout == 'single_text_block' %}
-    <div class="text-block">
-      {{ item.text }}
-    </div>
-  {% endif %}
+  {% include 'page-sections/single-text.twig' %}
+  {% include 'page-sections/text-image.twig' %}
+  {% include 'page-sections/image-links.twig' %}
+  {% include 'page-sections/testimonials.twig' %}
+  {% include 'page-sections/projects.twig' %}
 
-  {% if item.acf_fc_layout == 'text_image_block' %}
-    <section>
-      <h2 class="title">{{ item.title }}</h2>
-      <img src="{{ Image(item.image).src }}" alt="{{ Image(item.image).alt }}" />
-      {{ item.text }}
-    </section>
-  {% endif %}
-
-  {% if item.acf_fc_layout == 'image_links_block' %}
-    <section class="image-links">
-      <h2 class="title">{{ item.title }}</h2>
-        <div class="grid">
-        {% for item in item.grid_element %}
-          <div class="grid-item">
-            <img src="{{ Image(item.image).src }}" alt="{{ Image(item.image).alt }}">
-            <p class="text">{{ item.text }}</p>
-          </div>
-        {% endfor %}
-      </div>
-      <a href="{{ item.link }}" class="link">{{ item.link_text }}</a>
-    </section>
-  {% endif %}
-
-  {% if item.acf_fc_layout == 'testimonials_block' %}
-    <div class="testimonials">
-      <div class="content">
-        <blockquote>{{ item.quote }}</blockquote>
-        <p class="source">{{ item.author }}</p>
-        <a href="{{ item.link }}" class="link">{{ item.link_text }}</a>
-      </div>
-    </div>
-  {% endif %}
-
-  {% if item.acf_fc_layout == 'projects_block' %}
-    <section class="projects">
-      <h2>{{ item.title }}</h2>
-      {% for item in item.project %}
-        <div class="project">
-          <h3 class="name">{{ item.name }}</h3>
-          <p class="text">{{ item.text }}</p>
-        </div>
-      {% endfor %}
-      <a href="{{ item.link }}" class="link">{{ item.link_text }}</a>
-    </section>
-  {% endif %}
-
-
-  {% if item.acf_fc_layout == 'statement_block' %}
-    <aside class="statement">
-      <a href="/" class="logo">
-        <span class="line-one">Cornwall</span>
-        <span class="line-two">Advocacy</span>
-      </a>
-      <div class="content">
-        <div class="left-col">
-          <p class="text">{{ item.text }}</p>
-          <button>Find out more about us</button>
-        </div>
-        <div class="right-col">
-          <a href="/contact-us" class="link">View our contact details</a>
-          <a href="{{ options.facebook }}" class="link">{{ item.link_text }}</a>
-        </div>
-      </div>
-    </aside>
-  {% endif %}
 {% endfor %}

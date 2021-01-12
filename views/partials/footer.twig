@@ -1,13 +1,33 @@
 <footer role="contentinfo">
-  <div class="organisation-info">
-    <p>© Cornwall Advocacy {{ now|date('Y') }}</p>
-    <p>Registered Charity No: {{ options.charity }}</p>
+
+  <div class="footer-statement">
+    <a href="/" class="logo">
+      <span class="line-one">Cornwall</span>
+      <span class="line-two">Advocacy</span>
+    </a>
+    <div class="content">
+      <div class="left-col">
+        <p class="text">{{ options.footer_statement }}</p>
+        <button>Find out more about us</button>
+      </div>
+      <div class="right-col">
+        <a href="/contact-us" class="link">View our contact details</a>
+        <a href="{{ options.facebook }}" class="link">{{ options.statement_social_link }}</a>
+      </div>
+    </div>
   </div>
-  <ul class="footer-nav">
-    {% for item in details.items %}
-      <li class="nav-item">
-        <a class="nav-link" href="{{ item.link }}">{{ item.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+
+  <div class="footer-details">
+    <div class="organisation-info">
+      <p>© Cornwall Advocacy {{ now|date('Y') }}</p>
+      <p>Registered Charity No: {{ options.charity }}</p>
+    </div>
+    <ul class="footer-nav">
+      {% for nav_item in details.items %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ nav_item.link }}">{{ nav_item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </footer>

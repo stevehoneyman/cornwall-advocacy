@@ -1,0 +1,12 @@
+{% if item.acf_fc_layout == 'projects_block' %}
+  <section class="projects">
+    <h2 class="title">{{ item.title }}</h2>
+    {% for item in item.project %}
+      <div class="project">
+        <h3 class="name">{{ item.name }}</h3>
+        <p class="text">{{ item.text }}</p>
+      </div>
+    {% endfor %}
+    <a href="{{ item.link }}" class="link">{{ item.link_text }}</a>
+  </section>
+{% endif %}

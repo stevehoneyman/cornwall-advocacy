@@ -6,16 +6,16 @@
   <button class="menu">Menu</button>
   <nav class="primary-nav" role="nav">
     <ul class="nav-pages">
-      {% for item in primary_nav_pages.items %}
+      {% for nav_item in primary_nav_pages.items %}
         <li class="nav-item">
-          <a class="nav-link" href="{{ item.link }}">{{ item.title }}</a>
+          <a class="nav-link" href="{{ nav_item.link }}">{{ nav_item.title }}</a>
         </li>
       {% endfor %}
     </ul>
     <ul class="nav-cta">
-      {% for item in primary_nav_cta.items %}
+      {% for nav_item in primary_nav_cta.items %}
         <li class="nav-item">
-          <a class="nav-link" href="{{ item.link }}">{{ item.title }}</a>
+          <a class="nav-link" href="{{ nav_item.link }}">{{ nav_item.title }}</a>
         </li>
       {% endfor %}
     </ul>

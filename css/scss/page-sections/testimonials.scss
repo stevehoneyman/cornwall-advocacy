@@ -36,11 +36,11 @@
       height: 80px;
       border-radius: 50px;
       background: $white;
-      transform: translateX(-35px);
+      transform: translateX(-40px);
     }
   }
 
-  .source {
+  .author {
     margin-bottom: 3rem;
     font-size: $font-body;
     color: $white;
@@ -54,8 +54,8 @@
     align-items: center;
     font-size: $font-body;
     font-weight: $font-bold;
+    text-decoration: none;
     color: $base;
     background: $brand;
-    text-decoration: none;
   }
 }

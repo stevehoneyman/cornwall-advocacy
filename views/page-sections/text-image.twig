@@ -1,0 +1,7 @@
+{% if item.acf_fc_layout == 'text_image_block' %}
+  <section>
+    <h2 class="title">{{ item.title }}</h2>
+    <img src="{{ Image(item.image).src }}" alt="{{ Image(item.image).alt }}" />
+    {{ item.text }}
+  </section>
+{% endif %}

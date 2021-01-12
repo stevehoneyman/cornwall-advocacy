@@ -77,122 +77,120 @@ header {
       display: none;
     }
   }
+} // close header
 
-  // navigation
-  nav {
-    height: 0px;
-	  overflow: hidden;
-    background: $brand-fade;
-    transition: 300ms;
+nav {
+  height: 0;
+  overflow: hidden;
+  background: $brand-fade;
+  transition: 300ms;
 
-    &.nav-open {
-      padding-top: 2.5rem;
-      height: 600px;
-    }
+  &.nav-open {
+    height: calc(650px + 2.5rem);
+  }
+
+  @include mq($break-medium) {
+    height: auto;
+    padding-top: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: $white;
+  }
+
+  @include mq($break-big) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-pages {
+    padding: 2.5rem;
 
     @include mq($break-medium) {
-      height: auto;
-      padding-top: 0;
-      margin-top: 0;
+      min-width: 615px;
+      padding: 0;
+      margin-bottom: 1.5rem;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      flex-direction: row;
+      justify-content: space-between;
+      order: 2;
       background: $white;
     }
 
-    @include mq($break-big) {
-      flex-direction: row;
-      align-items: center;
+   @include mq($break-big) {
+      margin: 0 2rem 0 0;
+      order: 1;
     }
 
-    .nav-pages {
-      padding: 0 2.5rem;
+    .nav-link {
+      font-size: 1.65rem;
+      font-weight: $font-bold;
+      line-height: 2;
+      letter-spacing: 0.02rem;
+      text-decoration: none;
+      color: $base;
+
+      @include mq($break-small) {
+        font-size: $font-medium;
+      }
 
       @include mq($break-medium) {
-        min-width: 615px;
-        padding: 0;
-        margin-bottom: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        flex-direction: row;
-        justify-content: space-between;
-        order: 2;
-        background: $white;
-      }
-
-     @include mq($break-big) {
-        margin: 0 2rem 0 0;
-        order: 1;
-      }
-
-      .nav-link {
-        font-size: 1.65rem;
-        color: $base;
-        line-height: 2;
-        font-weight: $font-bold;
-        letter-spacing: 0.02rem;
-        text-decoration: none;
-
-        @include mq($break-small) {
-          font-size: $font-medium;
-        }
-
-        @include mq($break-medium) {
-          font-size: $font-root;
-          line-height: 0;
-        }
-      }
-    }
-
-    .nav-cta {
-      margin: 2.5rem 2rem;
-
-      @include mq($break-medium) {
-        margin: 1.5rem 0;
-        display: flex;
-        flex-direction: column;
-        flex-direction: row;
-        order: 1;
-      }
-
-      @include mq($break-big) {
-        order: 2;
-      }
-
-      .nav-link {
         font-size: $font-root;
-        color: $base;
-        font-weight: $font-bold;
-        letter-spacing: 0.02rem;
-        text-decoration: none;
-      }
-
-      .nav-item {
-        height: 3rem;
-        padding: 0 .75rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .nav-item:first-of-type {
-        margin-bottom: 1rem;
-        background: $white;
-
-        @include mq($break-medium) {
-          background: $brand;
-          margin-bottom: 0;
-          margin-right: 1rem;
-        }
-      }
-
-      .nav-item:last-of-type{
-        background: $base;
-
-        .nav-link {
-          color: $white;
-        }
+        line-height: 0;
       }
     }
   }
-} // close header
+
+  .nav-cta {
+    margin: 2.5rem 2rem;
+
+    @include mq($break-medium) {
+      margin: 1.5rem 0;
+      display: flex;
+      flex-direction: column;
+      flex-direction: row;
+      order: 1;
+    }
+
+    @include mq($break-big) {
+      order: 2;
+    }
+
+    .nav-link {
+      font-size: $font-root;
+      font-weight: $font-bold;
+      letter-spacing: 0.02rem;
+      color: $base;
+      text-decoration: none;
+    }
+
+    .nav-item {
+      height: 3rem;
+      padding: 0 .75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-item:first-of-type {
+      margin-bottom: 1rem;
+      background: $white;
+
+      @include mq($break-medium) {
+        background: $brand;
+        margin-bottom: 0;
+        margin-right: 1rem;
+      }
+    }
+
+    .nav-item:last-of-type{
+      background: $base;
+
+      .nav-link {
+        color: $white;
+      }
+    }
+  }
+}

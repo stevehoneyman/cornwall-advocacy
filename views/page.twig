@@ -1,7 +1,7 @@
 {% extends 'base.twig' %}
 {% block content %}
 
-  <code>this is page.twig</code>
   <h1>{{ post.title }}</h1>
+  {% include 'partials/flexible-content.twig' %}
 
 {% endblock %}

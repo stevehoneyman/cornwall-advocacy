@@ -24,9 +24,9 @@
     font-family: $primary;
     font-size: $font-root;
     font-weight: $font-bold;
-    line-height: 1.5rem;
-    color: $base;
+    line-height: 1.5;
     text-align: center;
+    color: $base;
     background-color: $brand;
 
     @include mq($break-vs) {
@@ -43,7 +43,7 @@
     @include mq($break-medium) {
       padding: 1.25rem 1.75rem;
       font-size: 2.5rem;
-      line-height: 3.5rem;
+      line-height: 3.5;
       letter-spacing: 0.06rem;
     }
   }
