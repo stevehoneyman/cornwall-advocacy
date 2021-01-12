@@ -1,7 +1,13 @@
 {% if item.acf_fc_layout == 'text_image_block' %}
-  <section>
-    <h2 class="title">{{ item.title }}</h2>
-    <img src="{{ Image(item.image).src }}" alt="{{ Image(item.image).alt }}" />
-    {{ item.text }}
+  <section class="text-image">
+    <h2 class="section-title">{{ item.title }}</h2>
+    {% if Image(item.image).src %}
+      <div class="lh-col">
+        <img src="{{ Image(item.image).src }}" alt="{{ Image(item.image).alt }}" />
+      </div>
+    {% endif %}
+    <div class="rh-col">
+      {{ item.text }}
+    </div>
   </section>
 {% endif %}

@@ -1,5 +1,7 @@
 {% if post.image %}
   <div class="banner" style="background-image: url('{{ Image(post.meta('image')).src }}');">
-    <span class="headline">{{ post.banner_text }}</span>
+    {% if post.banner_text %}
+      <span class="headline">{{ post.banner_text }}</span>
+    {% endif %}
   </div>
 {% endif %}
