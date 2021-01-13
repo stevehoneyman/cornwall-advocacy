@@ -1,0 +1,113 @@
+/* standard content
+----------------------------------------------------------------------------- */
+.standard-content {
+  .page-title {
+    padding: 6rem 2.5rem 0 2.5rem;
+    font-size: 64px;
+    color: $base;
+
+    &:after {
+      @include underline-brand;
+    }
+
+    @include mq($break-medium) {
+      padding: 6rem 10rem 0 10rem;
+    }
+  }
+
+  .text-image {
+    padding: 6rem 2.5rem 0 2.5rem;
+    border-bottom: 2px solid $medium-grey;
+    display: flex;
+    flex-direction: column;
+
+    @include mq($break-medium) {
+      padding: 6rem 10rem 0 10rem;
+    }
+
+    .section-title {
+      margin-bottom: 104px;
+      font-size: 40px;
+      font-weight: $font-bold;
+      letter-spacing: 0.06rem;
+
+      &:after {
+        @include underline-brand;
+      }
+    }
+
+    .columns {
+      display: flex;
+      flex-direction: column;
+
+      @include mq($break-medium) {
+        flex-direction: row;
+      }
+    }
+
+/*
+    &:first-of-type {
+      p:first-of-type {
+        margin-bottom: $drop-medium;
+        font-size: 40px;
+        font-weight: $font-light-bold;
+        line-height: 1.6;
+      }
+    }
+*/
+
+    .lh-col,
+    .rh-col {
+      width: 100%;
+
+      @include mq($break-medium) {
+        width: 50%;
+      }
+    }
+
+    @include mq($break-medium) {
+      .rh-col {
+        padding-top: 4rem
+      }
+    }
+
+    img {
+      width: 100%;
+      margin-bottom: $drop-medium;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: $lh-body;
+      margin-bottom: 3rem;
+    }
+
+    p:first-of-type {
+      margin-bottom: $drop-medium;
+      font-size: 2.5rem;
+      font-weight: $font-light-bold;
+      line-height: 1.6;
+    }
+
+    p:last-of-type {
+      margin-bottom: $drop-large;
+    }
+
+    .link {
+      height: 4rem;
+      padding: 0 2rem;
+      margin-bottom: 4rem;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: $font-bold;
+      text-decoration: none;
+      color: $white;
+      background: $base;
+    }
+
+    &.grey {
+      background: $brand-light-grey;
+    }
+  } // close text-image
+} // close standard content
