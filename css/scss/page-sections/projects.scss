@@ -44,14 +44,9 @@
     align-items: center;
   }
 
-  .name {
-    width: 144px;
-    height: 144px;
-    border-radius: 50%;
+  .image {
+    max-width: 144px;
     margin: 0 6rem 1rem 0;
-    font-size: $font-body;
-    color: white;
-    background: $base;
   }
 
   .text {

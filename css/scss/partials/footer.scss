@@ -100,22 +100,24 @@
       text-decoration: underline;
     }
 
-    .link:before {
+    .link-contact:before,
+    .link-facebook:before {
       content: '';
-      width: 3rem;
-      height: 3rem;
-      border-radius: 50%;
+      width: 5rem;
+      height: 5rem;
       margin-right: 1.5rem;
       display: inline-block;
       vertical-align: middle;
-      background: $white;
-
-      @include mq($break-medium) {
-        width: 5rem;
-        height: 5rem;
-      }
     }
-  }
+
+    .link-contact:before {
+      background-image: url('/wp-content/themes/cornwall-advocacy/icons/Icon_Contact.svg');
+    }
+
+    .link-facebook:before {
+      background-image: url('/wp-content/themes/cornwall-advocacy/icons/Icon_Facebook.svg');
+    }
+  } // close right col
 } // close footer-statement
 
 

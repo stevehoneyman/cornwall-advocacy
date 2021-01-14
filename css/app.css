@@ -440,22 +440,22 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   text-decoration: underline;
 }
 
-.footer-statement .right-col .link:before {
+.footer-statement .right-col .link-contact:before,
+.footer-statement .right-col .link-facebook:before {
   content: '';
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
   margin-right: 1.5rem;
   display: inline-block;
   vertical-align: middle;
-  background: #fff;
 }
 
-@media (min-width: 880px) {
-  .footer-statement .right-col .link:before {
-    width: 5rem;
-    height: 5rem;
-  }
+.footer-statement .right-col .link-contact:before {
+  background-image: url("/wp-content/themes/cornwall-advocacy/icons/Icon_Contact.svg");
+}
+
+.footer-statement .right-col .link-facebook:before {
+  background-image: url("/wp-content/themes/cornwall-advocacy/icons/Icon_Facebook.svg");
 }
 
 .footer-details {
@@ -659,8 +659,53 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 @media (min-width: 880px) {
   .contact {
-    padding: 6rem 10rem 0 10rem;
+    padding: 6rem 10rem 120px 10rem;
   }
+}
+
+.contact .contact-details,
+.contact .contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 880px) {
+  .contact .contact-details,
+  .contact .contact-form {
+    flex-direction: row;
+  }
+}
+
+.contact .lh-col,
+.contact .rh-col {
+  width: 100%;
+}
+
+@media (min-width: 880px) {
+  .contact .lh-col {
+    width: 60%;
+  }
+}
+
+@media (min-width: 880px) {
+  .contact .rh-col {
+    padding-top: 4rem;
+  }
+}
+
+.contact .holder {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact .holder img {
+  margin-right: 2rem;
+}
+
+.contact .holder p {
+  margin-bottom: 0;
+  line-height: 1.5;
 }
 
 .contact .page-title {
@@ -678,50 +723,6 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   background: #ffdb5a;
 }
 
-.contact .columns {
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 880px) {
-  .contact .columns {
-    flex-direction: row;
-  }
-}
-
-.contact .lh-col,
-.contact .rh-col {
-  width: 100%;
-}
-
-@media (min-width: 880px) {
-  .contact .lh-col,
-  .contact .rh-col {
-    width: 50%;
-  }
-}
-
-@media (min-width: 880px) {
-  .contact .rh-col {
-    padding-top: 4rem;
-    margin-bottom: 4rem;
-  }
-}
-
-.contact p {
-  font-size: 1.5rem;
-  line-height: 2;
-}
-
-.contact .rh-col p {
-  margin-bottom: 2.5rem;
-}
-
-.contact .detail {
-  position: relative;
-  font-weight: 700;
-}
-
 .contact .section-title {
   margin-bottom: 104px;
   font-size: 40px;
@@ -736,6 +737,46 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   margin-top: 1rem;
   display: block;
   background: #ffdb5a;
+}
+
+.contact p {
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.contact .detail {
+  font-weight: 700;
+}
+
+.contact a {
+  color: #27282C;
+}
+
+.contact .contact-form label {
+  margin: 1rem 0;
+  font-size: 1.5rem !important;
+  color: #27282C;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+  display: flex;
+  padding: 1.25rem 2rem !important;
+  border: 1px solid rgba(39, 40, 44, 0.2);
+}
+
+.contact .contact-form input[type="submit"] {
+  padding: 1.25rem 2rem;
+  font-size: 21px;
+  font-weight: bold;
+  color: #fff;
+  background: #27282C;
+}
+
+.contact .contact-form ::placeholder {
+  font-size: 1.5rem;
+  color: rgba(39, 40, 44, 0.6);
 }
 
 /* banner
@@ -853,8 +894,8 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   content: '';
   width: 80px;
   height: 80px;
-  background-color: #ffdb5a;
-  border-radius: 50%;
+  background-image: url("/wp-content/themes/cornwall-advocacy/icons/Icon_Check.svg");
+  background-repeat: no-repeat;
 }
 
 /* image-links
@@ -952,8 +993,8 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   display: block;
   width: 80px;
   height: 80px;
-  border-radius: 50px;
-  background: #fff;
+  background-image: url("/wp-content/themes/cornwall-advocacy/icons/Icon_Contact.svg");
+  background-repeat: no-repeat;
   transform: translateX(-40px);
 }
 
@@ -1032,14 +1073,9 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   align-items: center;
 }
 
-.projects .name {
-  width: 144px;
-  height: 144px;
-  border-radius: 50%;
+.projects .image {
+  max-width: 144px;
   margin: 0 6rem 1rem 0;
-  font-size: 1.5rem;
-  color: white;
-  background: #27282C;
 }
 
 .projects .text {

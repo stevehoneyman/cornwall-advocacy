@@ -4,20 +4,13 @@
   padding: 6rem 2.5rem 0 2.5rem;
 
   @include mq($break-medium) {
-    padding: 6rem 10rem 0 10rem;
+    padding: 6rem 10rem 120px 10rem;
   }
 
-  .page-title {
-    margin-bottom: 3rem;
-    font-size: 64px;
-    color: $base;
+  // layout
 
-    &:after {
-      @include underline-brand;
-    }
-  }
-
-  .columns {
+  .contact-details,
+  .contact-form {
     display: flex;
     flex-direction: column;
 
@@ -29,33 +22,45 @@
   .lh-col,
   .rh-col {
     width: 100%;
+  }
 
-    @include mq($break-medium) {
-      width: 50%;
+  @include mq($break-medium) {
+    .lh-col {
+      width: 60%;
     }
   }
+
 
   @include mq($break-medium) {
     .rh-col {
       padding-top: 4rem;
-      margin-bottom: 4rem;
     }
   }
 
-  p {
-    font-size: 1.5rem;
-    line-height: $lh-body;
-  }
+  .holder {
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
 
-  .rh-col {
+    img {
+      margin-right: 2rem;
+    }
+
     p {
-      margin-bottom: 2.5rem;
+      margin-bottom: 0;
+      line-height: 1.5;
     }
   }
 
-  .detail {
-    position: relative;
-    font-weight: $font-bold;
+  // typography
+  .page-title {
+    margin-bottom: 3rem;
+    font-size: 64px;
+    color: $base;
+
+    &:after {
+      @include underline-brand;
+    }
   }
 
   .section-title {
@@ -69,4 +74,46 @@
     }
   }
 
+  p {
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+    line-height: $lh-body;
+  }
+
+  .detail {
+    font-weight: $font-bold;
+  }
+
+  a {
+    color: $base;
+  }
+
+  // form specifics
+  .contact-form {
+    label {
+      margin: 1rem 0;
+      font-size: 1.5rem !important;
+      color: $base;
+    }
+
+    input,
+    textarea {
+      display: flex;
+      padding: 1.25rem 2rem !important;
+      border: 1px solid rgba(39, 40, 44, .2)
+    }
+
+    input[type="submit"] {
+      padding: 1.25rem 2rem;
+      font-size: 21px;
+      font-weight: bold;
+      color: $white;
+      background: $base;
+    }
+
+    ::placeholder {
+      font-size: 1.5rem;
+      color: rgba(39, 40, 44, .6);
+    }
+  }
 } // close contact
