@@ -25,5 +25,16 @@
     </section>
   {% endfor %}
 
+  <div class="faqs">
+    {% for item in post.meta('accordian') %}
+      <div class="faq">
+        <p class="question">{{ item.question }}
+          <img src="/wp-content/themes/cornwall-advocacy/icons/Icon_Plus.svg" class="faq-cross">
+        </p>
+        <p class="answer">{{ item.answer }}</p>
+      </div>
+    {% endfor %}
+  </div>
+
 </div>
 {% endblock %}

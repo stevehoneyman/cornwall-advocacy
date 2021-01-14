@@ -10,4 +10,8 @@ jQuery(document).ready(function($){
 		$('.primary-nav').toggleClass('nav-open');
 	});
 
+  $('.question').on('click', function() {
+    //  console.log('yep..');
+    $(this).next('.answer').toggleClass('faq-open');
+  });
 }); // close doc ready

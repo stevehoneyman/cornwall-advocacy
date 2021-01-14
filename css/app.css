@@ -651,6 +651,46 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   background: #f1f1f1;
 }
 
+.standard-content .faqs {
+  width: 100%;
+  padding: 6rem 2.5rem 0 2.5rem;
+}
+
+@media (min-width: 880px) {
+  .standard-content .faqs {
+    width: 80%;
+    padding: 6rem 10rem 0 10rem;
+  }
+}
+
+.standard-content .faqs .faq {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.standard-content .faqs .question {
+  padding: 1.5rem 3rem;
+  border: 1px solid rgba(39, 40, 44, 0.2);
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.standard-content .faqs .answer {
+  height: 0;
+  padding: 0 3rem;
+  border: 1px solid rgba(39, 40, 44, 0.2);
+  overflow: hidden;
+  transition: 300ms;
+}
+
+.standard-content .faqs .answer.faq-open {
+  height: 100%;
+  padding: 3rem;
+}
+
 /* contact
 ----------------------------------------------------------------------------- */
 .contact {
