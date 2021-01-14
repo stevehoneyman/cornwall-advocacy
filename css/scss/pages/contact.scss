@@ -1,0 +1,72 @@
+/* contact
+----------------------------------------------------------------------------- */
+.contact {
+  padding: 6rem 2.5rem 0 2.5rem;
+
+  @include mq($break-medium) {
+    padding: 6rem 10rem 0 10rem;
+  }
+
+  .page-title {
+    margin-bottom: 3rem;
+    font-size: 64px;
+    color: $base;
+
+    &:after {
+      @include underline-brand;
+    }
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: column;
+
+    @include mq($break-medium) {
+      flex-direction: row;
+    }
+  }
+
+  .lh-col,
+  .rh-col {
+    width: 100%;
+
+    @include mq($break-medium) {
+      width: 50%;
+    }
+  }
+
+  @include mq($break-medium) {
+    .rh-col {
+      padding-top: 4rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: $lh-body;
+  }
+
+  .rh-col {
+    p {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .detail {
+    position: relative;
+    font-weight: $font-bold;
+  }
+
+  .section-title {
+    margin-bottom: 104px;
+    font-size: 40px;
+    font-weight: $font-bold;
+    letter-spacing: 0.06rem;
+
+    &:after {
+      @include underline-brand;
+    }
+  }
+
+} // close contact

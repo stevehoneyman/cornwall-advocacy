@@ -651,6 +651,93 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   background: #f1f1f1;
 }
 
+/* contact
+----------------------------------------------------------------------------- */
+.contact {
+  padding: 6rem 2.5rem 0 2.5rem;
+}
+
+@media (min-width: 880px) {
+  .contact {
+    padding: 6rem 10rem 0 10rem;
+  }
+}
+
+.contact .page-title {
+  margin-bottom: 3rem;
+  font-size: 64px;
+  color: #27282C;
+}
+
+.contact .page-title:after {
+  content: '';
+  width: 3rem;
+  height: 10px;
+  margin-top: 1rem;
+  display: block;
+  background: #ffdb5a;
+}
+
+.contact .columns {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 880px) {
+  .contact .columns {
+    flex-direction: row;
+  }
+}
+
+.contact .lh-col,
+.contact .rh-col {
+  width: 100%;
+}
+
+@media (min-width: 880px) {
+  .contact .lh-col,
+  .contact .rh-col {
+    width: 50%;
+  }
+}
+
+@media (min-width: 880px) {
+  .contact .rh-col {
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.contact p {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.contact .rh-col p {
+  margin-bottom: 2.5rem;
+}
+
+.contact .detail {
+  position: relative;
+  font-weight: 700;
+}
+
+.contact .section-title {
+  margin-bottom: 104px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
+}
+
+.contact .section-title:after {
+  content: '';
+  width: 3rem;
+  height: 10px;
+  margin-top: 1rem;
+  display: block;
+  background: #ffdb5a;
+}
+
 /* banner
 ----------------------------------------------------------------------------- */
 .banner {

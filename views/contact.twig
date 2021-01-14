@@ -1,0 +1,35 @@
+{% extends 'base.twig' %}
+{% block content %}
+
+<div class="contact">
+  <h1 class="page-title">{{ post.title }}</h1>
+
+  <div class="contact-details columns">
+    <div class="lh-col grid-item">
+       <img src="{{ post.meta('contact_details').image }}">
+    </div>
+
+    <div class="rh-col grid-item">
+      {{ post.meta('contact_details').text }}
+      <p class="detail">{{ options.phone }}</p>
+      <p class="detail">{{ options.email }}</p>
+      <p>You can also look at our Facebook page for information:</p>
+      <p class="detail">{{ options.facebook }}</p>
+    </div>
+  </div>
+
+  <h2 class="section-title">Contact Form</h2>
+  <div class="contact-details columns">
+    <div class="lh-col grid-item">
+       <img src="{{ post.meta('contact_form').image }}">
+    </div>
+
+    <div class="rh-col grid-item">
+      {{ forms.contact }}
+
+    </div>
+  </div>
+
+</div><!-- close contact -->
+
+{% endblock %}
