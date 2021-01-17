@@ -1191,6 +1191,10 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   }
 }
 
+.contact .page-title {
+  padding-left: 0;
+}
+
 .contact .contact-details,
 .contact .contact-form {
   display: flex;
