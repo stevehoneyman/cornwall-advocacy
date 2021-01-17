@@ -10,11 +10,53 @@
   }
 
   .section-title {
+    margin-bottom: 4rem;
     font-size: 2.5rem;
     color: $base;
 
     &:after {
       @include underline-brand;
+    }
+  }
+
+  .text {
+    width: 80%;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
+
+  .profile {
+    margin-bottom: 4rem;
+    display: flex;
+
+    img {
+      margin-right: 96px;
+      max-width: 390px;
+      max-height: 390px;
+      object-fit: cover;
+    }
+
+    .details {
+      padding: 4rem;
+      border: 1px solid $medium-grey;
+    }
+
+    h3 {
+      margin-bottom: 30px;
+      font-size: $font-medium;
+      font-weight: 800;
+    }
+
+    .job-title {
+      margin-bottom: 3rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .bio {
+      font-size: 1.5rem;
+      line-height: 2;
     }
   }
 }

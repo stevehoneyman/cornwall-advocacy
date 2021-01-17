@@ -3,10 +3,14 @@
     <h2 class="section-title">{{ item.title }}</h2>
     <p class="text">{{ item.text }}</p>
       {% for item in item.team_member %}
-        <img src="{{ Image(item.image).src }}">
-        <h3>{{ item.name }}</h3>
-        <p>{{ item.job_title }}</p>
-        <p>{{ item.bio }}</p>
+        <div class="profile">
+          <img src="{{ Image(item.image).src }}">
+          <div class="details">
+            <h3>{{ item.name }}</h3>
+            <p class="job-title">{{ item.job_title }}</p>
+            <p class="bio">{{ item.bio }}</p>
+          </div>
+        </div>
       {% endfor %}
   </section>
 {% endif %}

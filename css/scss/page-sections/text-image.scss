@@ -7,26 +7,39 @@
 
   @include mq($break-medium) {
     padding: 3rem 10rem;
+    margin-bottom: 10rem;
     flex-direction: row;
+    align-items: center;
   }
 
   p,
   image {
     width: 100%;
+  }
 
+  p {
     @include mq($break-medium) {
-      width: 50%;
+      width: 65%;
+      padding-right: 96px;
+    }
+  }
+
+  img {
+    @include mq($break-medium) {
+      width: 35%;
     }
   }
 
   p {
     font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.6;
   }
 
   img {
     max-width: 390px;
     max-height: 390px;
-    margin-left: 96px;
+  //
     object-fit: cover;
   }
 }

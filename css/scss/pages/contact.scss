@@ -17,6 +17,7 @@
     }
   }
 
+  // columns
   .lh-col,
   .rh-col {
     width: 100%;
@@ -24,7 +25,14 @@
 
   @include mq($break-medium) {
     .lh-col {
-      width: 60%;
+      width: auto;
+      margin-right: 96px;
+    }
+
+    img {
+      max-width: 390px;
+      max-height: 390px;
+      object-fit: cover;
     }
   }
 
@@ -34,12 +42,12 @@
     }
   }
 
-  .holder {
+  .icon-holder {
     margin-bottom: 3rem;
     display: flex;
     align-items: center;
 
-    img {
+    .icon {
       margin-right: 2rem;
     }
 

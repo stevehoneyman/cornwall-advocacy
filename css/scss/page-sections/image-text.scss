@@ -33,21 +33,24 @@
   .lh-col,
   .rh-col {
     width: 100%;
-
-    @include mq($break-medium) {
-      width: 50%;
-    }
   }
 
   @include mq($break-medium) {
-    .rh-col {
-      padding-top: 4rem
+    .lh-col {
+      margin-right: 6rem;
     }
-  }
 
-  img {
-    width: 100%;
-    margin-bottom: $drop-medium;
+    .rh-col {
+     width: auto;
+     padding-top: 4rem
+    }
+
+    img {
+      max-width: 390px;
+      max-height: 390px;
+      object-fit: cover;
+      margin-bottom: $drop-medium;
+    }
   }
 
   p {

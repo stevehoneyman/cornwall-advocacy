@@ -27,6 +27,7 @@ summary {
 
 body {
   font-family: helvetica, arial, sans-serif;
+  color: #27282C;
   background: #fafafa;
   -webkit-font-smoothing: antialiased;
 }
@@ -133,11 +134,12 @@ button {
 @media (min-width: 880px) {
   .accordian {
     width: 80%;
-    padding: 6rem 10rem 0 10rem;
+    padding: 6rem 10rem 120px 10rem;
   }
 }
 
 .accordian .section-title {
+  margin-bottom: 80px;
   font-size: 3rem;
 }
 
@@ -727,11 +729,13 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 @media (min-width: 880px) {
   .text-basic {
+    width: 80%;
     padding: 3rem 10rem;
   }
 }
 
 .text-basic .section-title {
+  margin-bottom: 5rem;
   font-size: 2.5rem;
 }
 
@@ -742,6 +746,18 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   margin-top: 1rem;
   display: block;
   background: #ffdb5a;
+}
+
+.text-basic p {
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.text-basic p:first-of-type {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 /* image-text [features on standard pages what is advocacy & projects]
@@ -792,21 +808,19 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 }
 
 @media (min-width: 880px) {
-  .image-text .lh-col,
-  .image-text .rh-col {
-    width: 50%;
+  .image-text .lh-col {
+    margin-right: 6rem;
   }
-}
-
-@media (min-width: 880px) {
   .image-text .rh-col {
+    width: auto;
     padding-top: 4rem;
   }
-}
-
-.image-text img {
-  width: 100%;
-  margin-bottom: 4rem;
+  .image-text img {
+    max-width: 390px;
+    max-height: 390px;
+    object-fit: cover;
+    margin-bottom: 4rem;
+  }
 }
 
 .image-text p {
@@ -854,7 +868,9 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 @media (min-width: 880px) {
   .text-image {
     padding: 3rem 10rem;
+    margin-bottom: 10rem;
     flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -864,20 +880,27 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 }
 
 @media (min-width: 880px) {
-  .text-image p,
-  .text-image image {
-    width: 50%;
+  .text-image p {
+    width: 65%;
+    padding-right: 96px;
+  }
+}
+
+@media (min-width: 880px) {
+  .text-image img {
+    width: 35%;
   }
 }
 
 .text-image p {
   font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 .text-image img {
   max-width: 390px;
   max-height: 390px;
-  margin-left: 96px;
   object-fit: cover;
 }
 
@@ -1101,6 +1124,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 }
 
 .team .section-title {
+  margin-bottom: 4rem;
   font-size: 2.5rem;
   color: #27282C;
 }
@@ -1112,6 +1136,47 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   margin-top: 1rem;
   display: block;
   background: #ffdb5a;
+}
+
+.team .text {
+  width: 80%;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+  line-height: 1.6;
+}
+
+.team .profile {
+  margin-bottom: 4rem;
+  display: flex;
+}
+
+.team .profile img {
+  margin-right: 96px;
+  max-width: 390px;
+  max-height: 390px;
+  object-fit: cover;
+}
+
+.team .profile .details {
+  padding: 4rem;
+  border: 1px solid #c4c4c4;
+}
+
+.team .profile h3 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.team .profile .job-title {
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.team .profile .bio {
+  font-size: 1.5rem;
+  line-height: 2;
 }
 
 /* contact
@@ -1146,7 +1211,13 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 @media (min-width: 880px) {
   .contact .lh-col {
-    width: 60%;
+    width: auto;
+    margin-right: 96px;
+  }
+  .contact img {
+    max-width: 390px;
+    max-height: 390px;
+    object-fit: cover;
   }
 }
 
@@ -1156,17 +1227,17 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   }
 }
 
-.contact .holder {
+.contact .icon-holder {
   margin-bottom: 3rem;
   display: flex;
   align-items: center;
 }
 
-.contact .holder img {
+.contact .icon-holder .icon {
   margin-right: 2rem;
 }
 
-.contact .holder p {
+.contact .icon-holder p {
   margin-bottom: 0;
   line-height: 1.5;
 }

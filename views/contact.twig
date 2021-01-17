@@ -4,47 +4,50 @@
 <div class="contact">
   <h1 class="page-title">{{ post.title }}</h1>
 
-  <div class="contact-details columns">
-    <div class="lh-col grid-item">
+  <!-- contact details-->
+  <div class="contact-details">
+
+    <!-- image holder-->
+    <div class="lh-col">
        <img src="{{ post.meta('contact_details').image }}">
     </div>
 
-    <div class="rh-col grid-item">
+    <!-- social-->
+    <div class="rh-col">
       {{ post.meta('contact_details').text }}
 
-      <div class="holder">
-        <img src="/wp-content/themes/cornwall-advocacy/icons/Icon_Phone.svg">
+      <div class="icon-holder">
+        <img src="/wp-content/themes/cornwall-advocacy/icons/Icon_Phone.svg" class="icon">
         <p class="detail">{{ options.phone }}</p>
       </div>
-
-      <div class="holder">
-        <img src="/wp-content/themes/cornwall-advocacy/icons/Icon_Email.svg">
+      <div class="icon-holder">
+        <img src="/wp-content/themes/cornwall-advocacy/icons/Icon_Email.svg" class="icon">
         <p class="detail">{{ options.email }}</p>
       </div>
-
-      <div class="holder">
+      <div class="icon-holder">
         <p>You can also look at our Facebook page for information:</p>
       </div>
-
-      <div class="holder">
-        <img src="/wp-content/themes/cornwall-advocacy/icons/Icon_Facebook_Alt.svg">
+      <div class="icon-holder">
+        <img src="/wp-content/themes/cornwall-advocacy/icons/Icon_Facebook_Alt.svg" class="icon">
         <p class="detail">{{ options.facebook }}</p>
       </div>
-
     </div>
   </div>
 
+  <!-- contact form -->
   <h2 class="section-title">Contact Form</h2>
+
+  <!-- image -->
   <div class="contact-form">
-    <div class="lh-col grid-item">
+    <div class="lh-col">
        <img src="{{ post.meta('contact_form').image }}">
     </div>
 
-    <div class="rh-col grid-item">
+    <!-- image -->
+    <div class="rh-col">
       {{ forms.contact }}
     </div>
   </div>
 
 </div><!-- close contact -->
-
 {% endblock %}

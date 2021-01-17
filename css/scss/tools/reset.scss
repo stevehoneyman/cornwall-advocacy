@@ -23,6 +23,7 @@ summary {
 
 body {
   @include stack;
+  color: $base;
   background: $light-grey;
   -webkit-font-smoothing: antialiased;
 }
