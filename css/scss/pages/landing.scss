@@ -1,0 +1,56 @@
+/* landing content
+----------------------------------------------------------------------------- */
+.page-template-landing {
+  .page-top,
+  .text-image,
+  .text-basic {
+    padding: 3rem 2.5rem;
+
+    @include mq($break-medium) {
+      padding: 3rem 10rem;
+    }
+  }
+
+  .page-top,
+  h2 {
+    &:after {
+      @include underline-brand;
+    }
+  }
+
+  .text-image {
+   display: flex;
+   flex-direction: column;
+
+    @include mq($break-medium) {
+      flex-direction: row;
+    }
+
+    p,
+    image {
+      width: 100%;
+
+      @include mq($break-medium) {
+        width: 50%;
+      }
+    }
+
+    p {
+      font-size: 2.5rem;
+    }
+
+    img {
+      max-width: 390px;
+      max-height: 390px;
+      margin-left: 96px;
+      object-fit: cover;
+    }
+  }
+
+  .text-basic {
+    p {
+      margin-bottom: 4rem;
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{% for item in post.meta('standard_page_blocks') %}
+
+  {% include 'page-sections/image-text.twig' %}
+  {% include 'page-sections/faq.twig' %}
+  {% include 'page-sections/testimonials.twig' %}
+
+{% endfor %}

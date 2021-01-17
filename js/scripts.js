@@ -10,8 +10,8 @@ jQuery(document).ready(function($){
 		$('.primary-nav').toggleClass('nav-open');
 	});
 
-  $('.question').on('click', function() {
-    //  console.log('yep..');
-    $(this).next('.answer').toggleClass('faq-open');
+  $('.item-title').on('click', function() {
+    console.log('question fired..');
+    $(this).next('.item-content').toggleClass('accordian-open');
   });
 }); // close doc ready

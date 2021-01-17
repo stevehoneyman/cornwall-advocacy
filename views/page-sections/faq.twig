@@ -1,0 +1,14 @@
+{% if item.acf_fc_layout == 'accordian_block' %}
+  <div class="accordian">
+    <h2 class="title">{{ item.title }}</h2>
+    <p class="text">{{ item.text }}</p>
+    {% for item in item.accordian %}
+      <div class="accordian-item">
+        <p class="item-title">{{ item.title }}
+          <img src="/wp-content/themes/cornwall-advocacy/icons/Icon_Plus.svg" class="faq-cross">
+        </p>
+        <p class="item-content">{{ item.content }}</p>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}

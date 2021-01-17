@@ -78,6 +78,32 @@ button {
   background: #fff;
 }
 
+.cond-test {
+  display: flex;
+}
+
+.cond-test p {
+  padding: 1rem;
+}
+
+.cond-test p:first-of-type {
+  color: red;
+  order: 1;
+}
+
+.cond-test p:last-of-type {
+  color: blue;
+  order: 2;
+}
+
+.cond-test.right {
+  border: 3px solid green;
+}
+
+.cond-test.right p:first-of-type {
+  order: 3;
+}
+
 /* typography
 ----------------------------------------------------------------------------- */
 /* grids
@@ -100,6 +126,57 @@ button {
 
 .grid-item:nth-of-type(2n-1) {
   margin-left: 0;
+}
+
+/* accordian
+----------------------------------------------------------------------------- */
+.accordian {
+  width: 100%;
+  padding: 6rem 2.5rem 0 2.5rem;
+}
+
+@media (min-width: 880px) {
+  .accordian {
+    width: 80%;
+    padding: 6rem 10rem 0 10rem;
+  }
+}
+
+.accordian .title {
+  font-size: 3rem;
+}
+
+.accordian .text {
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+}
+
+.accordian .accordian-item {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.accordian .item-title {
+  padding: 1.5rem 3rem;
+  border: 1px solid rgba(39, 40, 44, 0.2);
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordian .item-content {
+  height: 0;
+  padding: 0 3rem;
+  border: 1px solid rgba(39, 40, 44, 0.2);
+  overflow: hidden;
+  transition: 300ms;
+}
+
+.accordian .item-content.accordian-open {
+  height: 100%;
+  padding: 3rem;
 }
 
 /* header
@@ -544,7 +621,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   }
 }
 
-.standard-content .text-image {
+.standard-content .image-text {
   padding: 6rem 2.5rem 0 2.5rem;
   border-bottom: 2px solid #c4c4c4;
   display: flex;
@@ -562,19 +639,19 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 }
 
 @media (min-width: 880px) {
-  .standard-content .text-image {
+  .standard-content .image-text {
     padding: 6rem 10rem 0 10rem;
   }
 }
 
-.standard-content .text-image .section-title {
+.standard-content .image-text .section-title {
   margin-bottom: 104px;
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 0.06rem;
 }
 
-.standard-content .text-image .section-title:after {
+.standard-content .image-text .section-title:after {
   content: '';
   width: 3rem;
   height: 10px;
@@ -583,58 +660,58 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   background: #ffdb5a;
 }
 
-.standard-content .text-image .columns {
+.standard-content .image-text .columns {
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: 880px) {
-  .standard-content .text-image .columns {
+  .standard-content .image-text .columns {
     flex-direction: row;
   }
 }
 
-.standard-content .text-image .lh-col,
-.standard-content .text-image .rh-col {
+.standard-content .image-text .lh-col,
+.standard-content .image-text .rh-col {
   width: 100%;
 }
 
 @media (min-width: 880px) {
-  .standard-content .text-image .lh-col,
-  .standard-content .text-image .rh-col {
+  .standard-content .image-text .lh-col,
+  .standard-content .image-text .rh-col {
     width: 50%;
   }
 }
 
 @media (min-width: 880px) {
-  .standard-content .text-image .rh-col {
+  .standard-content .image-text .rh-col {
     padding-top: 4rem;
   }
 }
 
-.standard-content .text-image img {
+.standard-content .image-text img {
   width: 100%;
   margin-bottom: 4rem;
 }
 
-.standard-content .text-image p {
+.standard-content .image-text p {
   font-size: 1.5rem;
   line-height: 2;
   margin-bottom: 3rem;
 }
 
-.standard-content .text-image p:first-of-type {
+.standard-content .image-text p:first-of-type {
   margin-bottom: 4rem;
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.6;
 }
 
-.standard-content .text-image p:last-of-type {
+.standard-content .image-text p:last-of-type {
   margin-bottom: 6rem;
 }
 
-.standard-content .text-image .link {
+.standard-content .image-text .link {
   height: 4rem;
   padding: 0 2rem;
   margin-bottom: 4rem;
@@ -647,48 +724,73 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   background: #27282C;
 }
 
-.standard-content .text-image.grey {
+.standard-content .image-text.grey {
   background: #f1f1f1;
 }
 
-.standard-content .faqs {
-  width: 100%;
-  padding: 6rem 2.5rem 0 2.5rem;
+/* landing content
+----------------------------------------------------------------------------- */
+.page-template-landing .page-top,
+.page-template-landing .text-image,
+.page-template-landing .text-basic {
+  padding: 3rem 2.5rem;
 }
 
 @media (min-width: 880px) {
-  .standard-content .faqs {
-    width: 80%;
-    padding: 6rem 10rem 0 10rem;
+  .page-template-landing .page-top,
+  .page-template-landing .text-image,
+  .page-template-landing .text-basic {
+    padding: 3rem 10rem;
   }
 }
 
-.standard-content .faqs .faq {
-  margin-bottom: 2.5rem;
-  font-size: 1.5rem;
-  line-height: 2;
+.page-template-landing .page-top:after,
+.page-template-landing h2:after {
+  content: '';
+  width: 3rem;
+  height: 10px;
+  margin-top: 1rem;
+  display: block;
+  background: #ffdb5a;
 }
 
-.standard-content .faqs .question {
-  padding: 1.5rem 3rem;
-  border: 1px solid rgba(39, 40, 44, 0.2);
-  border-bottom: none;
+.page-template-landing .text-image {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
 
-.standard-content .faqs .answer {
-  height: 0;
-  padding: 0 3rem;
-  border: 1px solid rgba(39, 40, 44, 0.2);
-  overflow: hidden;
-  transition: 300ms;
+@media (min-width: 880px) {
+  .page-template-landing .text-image {
+    flex-direction: row;
+  }
 }
 
-.standard-content .faqs .answer.faq-open {
-  height: 100%;
-  padding: 3rem;
+.page-template-landing .text-image p,
+.page-template-landing .text-image image {
+  width: 100%;
+}
+
+@media (min-width: 880px) {
+  .page-template-landing .text-image p,
+  .page-template-landing .text-image image {
+    width: 50%;
+  }
+}
+
+.page-template-landing .text-image p {
+  font-size: 2.5rem;
+}
+
+.page-template-landing .text-image img {
+  max-width: 390px;
+  max-height: 390px;
+  margin-left: 96px;
+  object-fit: cover;
+}
+
+.page-template-landing .text-basic p {
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
 }
 
 /* contact

@@ -1,0 +1,9 @@
+{% for item in post.meta('landing_page_blocks') %}
+
+  {% include 'page-sections/text-image.twig' %}
+  {% include 'page-sections/text.twig' %}
+  {% include 'page-sections/team.twig' %}
+  {% include 'page-sections/faq.twig' %}
+  {% include 'page-sections/testimonials.twig' %}
+
+{% endfor %}

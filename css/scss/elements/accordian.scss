@@ -1,0 +1,49 @@
+/* accordian
+----------------------------------------------------------------------------- */
+.accordian {
+  width: 100%;
+  padding: 6rem 2.5rem 0 2.5rem;
+
+  @include mq($break-medium) {
+    width: 80%;
+    padding: 6rem 10rem 0 10rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .text {
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+  }
+
+  .accordian-item {
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+    line-height: $lh-body;
+  }
+
+  .item-title {
+    padding: 1.5rem 3rem;
+    border: 1px solid rgba(39, 40, 44, .2);
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .item-content {
+    height: 0;
+    padding: 0 3rem;
+    border: 1px solid rgba(39, 40, 44, .2);
+  //  border-top: none;
+    overflow: hidden;
+    transition: 300ms;
+
+    &.accordian-open {
+      height: 100%;
+      padding: 3rem;
+    }
+  }
+}

@@ -15,7 +15,7 @@
     }
   }
 
-  .text-image {
+  .image-text {
     padding: 6rem 2.5rem 0 2.5rem;
     border-bottom: 2px solid $medium-grey;
     display: flex;
@@ -111,46 +111,5 @@
     }
   } // close text-image
 
-  .faqs {
-    width: 100%;
-    padding: 6rem 2.5rem 0 2.5rem;
-
-    @include mq($break-medium) {
-      width: 80%;
-      padding: 6rem 10rem 0 10rem;
-    }
-
-    .text {
-
-    }
-
-    .faq {
-      margin-bottom: 2.5rem;
-      font-size: 1.5rem;
-      line-height: $lh-body;
-    }
-
-    .question {
-      padding: 1.5rem 3rem;
-      border: 1px solid rgba(39, 40, 44, .2);
-      border-bottom: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .answer {
-      height: 0;
-      padding: 0 3rem;
-      border: 1px solid rgba(39, 40, 44, .2);
-    //  border-top: none;
-      overflow: hidden;
-      transition: 300ms;
-
-      &.faq-open {
-        height: 100%;
-        padding: 3rem;
-      }
-    }
-  }
+  
 } // close standard content

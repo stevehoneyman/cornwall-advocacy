@@ -1,0 +1,10 @@
+{% if item.acf_fc_layout == 'team_block' %}
+  <h2>{{ item.title }}</h2>
+  <p>{{ item.text }}</p>
+  {% for item in item.team_member %}
+    <img src="{{ Image(item.image).src }}">
+    {{ item.name }}
+    {{ item.job_title }}
+    {{ item.bio }}
+  {% endfor %}
+{% endif %}
