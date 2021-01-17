@@ -14,10 +14,3 @@
     padding: 6rem 10rem 0 10rem;
   }
 }
-
-// controls h2 on landing pages
-h2 {
-  &:after {
-    @include underline-brand;
-  }
-}

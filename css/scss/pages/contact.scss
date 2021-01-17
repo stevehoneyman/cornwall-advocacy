@@ -7,8 +7,6 @@
     padding: 6rem 10rem 120px 10rem;
   }
 
-  // layout
-
   .contact-details,
   .contact-form {
     display: flex;
@@ -29,7 +27,6 @@
       width: 60%;
     }
   }
-
 
   @include mq($break-medium) {
     .rh-col {

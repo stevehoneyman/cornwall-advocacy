@@ -1,12 +1,12 @@
 {% if item.acf_fc_layout == 'team_block' %}
   <section class="team">
-    <h2>{{ item.title }}</h2>
-    <p>{{ item.text }}</p>
+    <h2 class="section-title">{{ item.title }}</h2>
+    <p class="text">{{ item.text }}</p>
       {% for item in item.team_member %}
         <img src="{{ Image(item.image).src }}">
-        {{ item.name }}
-        {{ item.job_title }}
-        {{ item.bio }}
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.job_title }}</p>
+        <p>{{ item.bio }}</p>
       {% endfor %}
   </section>
 {% endif %}

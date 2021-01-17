@@ -8,4 +8,13 @@
   @include mq($break-medium) {
     padding: 3rem 10rem;
   }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: $base;
+
+    &:after {
+      @include underline-brand;
+    }
+  }
 }

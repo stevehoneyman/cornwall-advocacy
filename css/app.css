@@ -78,32 +78,6 @@ button {
   background: #fff;
 }
 
-.cond-test {
-  display: flex;
-}
-
-.cond-test p {
-  padding: 1rem;
-}
-
-.cond-test p:first-of-type {
-  color: red;
-  order: 1;
-}
-
-.cond-test p:last-of-type {
-  color: blue;
-  order: 2;
-}
-
-.cond-test.right {
-  border: 3px solid green;
-}
-
-.cond-test.right p:first-of-type {
-  order: 3;
-}
-
 /* typography
 ----------------------------------------------------------------------------- */
 .page-title {
@@ -125,15 +99,6 @@ button {
   .page-title {
     padding: 6rem 10rem 0 10rem;
   }
-}
-
-h2:after {
-  content: '';
-  width: 3rem;
-  height: 10px;
-  margin-top: 1rem;
-  display: block;
-  background: #ffdb5a;
 }
 
 /* grids
@@ -172,8 +137,17 @@ h2:after {
   }
 }
 
-.accordian .title {
+.accordian .section-title {
   font-size: 3rem;
+}
+
+.accordian .section-title:after {
+  content: '';
+  width: 3rem;
+  height: 10px;
+  margin-top: 1rem;
+  display: block;
+  background: #ffdb5a;
 }
 
 .accordian .text {
@@ -689,7 +663,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   }
 }
 
-/* text-block
+/* text
 ----------------------------------------------------------------------------- */
 .text-block {
   padding: 0 2.5rem;
@@ -755,6 +729,19 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   .text-basic {
     padding: 3rem 10rem;
   }
+}
+
+.text-basic .section-title {
+  font-size: 2.5rem;
+}
+
+.text-basic .section-title:after {
+  content: '';
+  width: 3rem;
+  height: 10px;
+  margin-top: 1rem;
+  display: block;
+  background: #ffdb5a;
 }
 
 /* image-text [features on standard pages what is advocacy & projects]
@@ -912,12 +899,12 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   font-weight: 700;
 }
 
-.image-links .title {
+.image-links .section-title {
   margin: 6rem 0;
   font-size: 3rem;
 }
 
-.image-links .title:after {
+.image-links .section-title:after {
   content: '';
   width: 3rem;
   height: 10px;
@@ -1042,13 +1029,13 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   margin-bottom: 6rem;
 }
 
-.projects .title {
+.projects .section-title {
   margin-bottom: 6rem;
   font-size: 3rem;
   font-weight: 700;
 }
 
-.projects .title:after {
+.projects .section-title:after {
   content: '';
   width: 3rem;
   height: 10px;
@@ -1111,6 +1098,20 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   .team {
     padding: 3rem 10rem;
   }
+}
+
+.team .section-title {
+  font-size: 2.5rem;
+  color: #27282C;
+}
+
+.team .section-title:after {
+  content: '';
+  width: 3rem;
+  height: 10px;
+  margin-top: 1rem;
+  display: block;
+  background: #ffdb5a;
 }
 
 /* contact

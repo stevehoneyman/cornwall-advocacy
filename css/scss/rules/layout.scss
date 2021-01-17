@@ -6,29 +6,3 @@
   margin: 0 auto;
   background: $white;
 } // close #site-wrapper
-
-.cond-test {
-  display: flex;
-
-  p {
-    padding: 1rem;
-  }
-
-  p:first-of-type {
-    color: red;
-    order: 1;
-  }
-
-  p:last-of-type {
-    color: blue;
-    order: 2;
-  }
-}
-
-.cond-test.right {
-  border: 3px solid green;
-
-  p:first-of-type {
-    order: 3;
-  }
-}

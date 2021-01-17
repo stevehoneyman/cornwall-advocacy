@@ -1,7 +1,6 @@
-/* text-block
+/* text
 ----------------------------------------------------------------------------- */
-
-// home-page text block
+// home-page WYSYWIG text block
 .text-block {
   padding: 0 2.5rem;
   margin: 6rem 0;
@@ -54,11 +53,19 @@
   }
 }
 
-// standard page text block
+// standard page WYSYWIG text block
 .text-basic {
   padding: 3rem 2.5rem;
 
   @include mq($break-medium) {
     padding: 3rem 10rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    
+    &:after {
+      @include underline-brand;
+    }
   }
 }

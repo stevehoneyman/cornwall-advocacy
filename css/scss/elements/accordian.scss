@@ -9,8 +9,12 @@
     padding: 6rem 10rem 0 10rem;
   }
 
-  .title {
+  .section-title {
     font-size: 3rem;
+
+    &:after {
+      @include underline-brand;
+    }
   }
 
   .text {
@@ -37,7 +41,7 @@
     height: 0;
     padding: 0 3rem;
     border: 1px solid rgba(39, 40, 44, .2);
-  //  border-top: none;
+//  border-top: none;
     overflow: hidden;
     transition: 300ms;
 
