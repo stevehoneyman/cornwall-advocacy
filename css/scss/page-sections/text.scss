@@ -1,5 +1,7 @@
 /* text-block
 ----------------------------------------------------------------------------- */
+
+// home-page text block
 .text-block {
   padding: 0 2.5rem;
   margin: 6rem 0;
@@ -49,5 +51,14 @@
     height: 80px;
     background-image: url('/wp-content/themes/cornwall-advocacy/icons/Icon_Check.svg');
     background-repeat: no-repeat;
+  }
+}
+
+// standard page text block
+.text-basic {
+  padding: 3rem 2.5rem;
+
+  @include mq($break-medium) {
+    padding: 3rem 10rem;
   }
 }

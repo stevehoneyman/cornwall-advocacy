@@ -15,12 +15,13 @@
 @import 'partials/header';
 @import 'partials/footer';
 
-@import 'pages/standard';
-@import 'pages/landing';
-@import 'pages/contact';
-
 @import 'page-sections/banner';
-@import 'page-sections/text-block';
+@import 'page-sections/text';
+@import 'page-sections/image-text';
+@import 'page-sections/text-image';
 @import 'page-sections/image-links';
 @import 'page-sections/testimonials';
 @import 'page-sections/projects';
+@import 'page-sections/team';
+
+@import 'pages/contact';

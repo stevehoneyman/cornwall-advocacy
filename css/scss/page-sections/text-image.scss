@@ -1,46 +1,17 @@
-/* text-image
+/* text-mage [features on landing pages, eg: about, how we help, background]
 ----------------------------------------------------------------------------- */
-.flexible-text-image {
-  padding: 6rem 2.5rem 0 2.5rem;
-  border-bottom: 2px solid $medium-grey;
-  display: flex;
-  flex-direction: column;
+.text-image {
+ padding: 3rem 2.5rem;
+ display: flex;
+ flex-direction: column;
 
   @include mq($break-medium) {
-    padding: 6rem 10rem 0 10rem;
+    padding: 3rem 10rem;
+    flex-direction: row;
   }
 
-  .section-title {
-    margin-bottom: 104px;
-    font-size: 40px;
-    font-weight: $font-bold;
-    letter-spacing: 0.06rem;
-
-    &:after {
-      @include underline-brand;
-    }
-  }
-
-  .columns {
-    display: flex;
-    flex-direction: column;
-
-    @include mq($break-medium) {
-      flex-direction: row;
-    }
-  }
-
-  &:first-of-type {
-    p:first-of-type {
-      margin-bottom: $drop-medium;
-      font-size: 28px;
-      font-weight: $font-light-bold;
-      line-height: 1.6;
-    }
-  }
-
-  .lh-col,
-  .rh-col {
+  p,
+  image {
     width: 100%;
 
     @include mq($break-medium) {
@@ -48,35 +19,14 @@
     }
   }
 
-  img {
-    width: 100%;
-    margin-bottom: $drop-medium;
-  }
-
   p {
-    font-size: 1.5rem;
-    line-height: $lh-body;
-    margin-bottom: 3rem;
+    font-size: 2.5rem;
   }
 
-  p:last-of-type {
-    margin-bottom: $drop-large;
+  img {
+    max-width: 390px;
+    max-height: 390px;
+    margin-left: 96px;
+    object-fit: cover;
   }
-
-  .link {
-    height: 4rem;
-    padding: 0 2rem;
-    margin-bottom: 4rem;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: $font-bold;
-    text-decoration: none;
-    color: $white;
-    background: $base;
-  }
-
-  &.grey {
-    background: $brand-light-grey;
-  }
-} // close text-image
+}
