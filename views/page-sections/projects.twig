@@ -1,6 +1,6 @@
 {% if item.acf_fc_layout == 'projects_block' %}
   <section class="projects">
-    <h2 class="section-title">{{ item.title }}</h2>
+    <h3 class="section-title">{{ item.title }}</h3>
     {% for item in item.project %}
       <div class="project">
         <img src="{{ Image(item.image).src }}" alt="{{ Image(item.image).alt }}" class="image">

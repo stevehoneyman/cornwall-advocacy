@@ -1,17 +1,20 @@
 /* team
 ----------------------------------------------------------------------------- */
 .team {
- padding: 3rem 2.5rem;
+ padding: 0 2.5rem;
+ margin: 7.5rem 0;
  display: flex;
  flex-direction: column;
 
   @include mq($break-medium) {
-    padding: 3rem 10rem;
+    padding: 0 10rem;
   }
 
   .section-title {
-    margin-bottom: 4rem;
-    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    font-size: $font-large;
+    font-weight: 800;
+    letter-spacing: 0.03rem;
     color: $base;
 
     &:after {
@@ -24,11 +27,16 @@
     margin-bottom: $drop-medium;
     font-size: 2.5rem;
     line-height: 1.6;
+    letter-spacing: 0.06rem;
   }
 
   .profile {
     margin-bottom: $drop-medium;
     display: flex;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
 
     img {
       margin-right: 6rem;
@@ -46,17 +54,20 @@
       margin-bottom: 30px;
       font-size: $font-medium;
       font-weight: 800;
+      letter-spacing: 0.03rem;
     }
 
     .job-title {
       margin-bottom: 3rem;
       font-size: $font-body;
       font-weight: 500;
+      letter-spacing: 0.03rem;
     }
 
     .bio {
       font-size: 1.5rem;
       line-height: 2;
+      letter-spacing: 0.01rem;
     }
   }
 }

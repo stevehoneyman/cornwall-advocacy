@@ -7,8 +7,11 @@
     padding: 6rem 10rem 120px 10rem;
   }
 
-  .page-title {
+  h1.page-title {
     padding-left: 0;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 0.03rem;
   }
 
   .contact-details,
@@ -42,7 +45,7 @@
 
   @include mq($break-medium) {
     .rh-col {
-      padding-top: 4rem;
+      margin-top: 4rem;
     }
   }
 
@@ -57,7 +60,6 @@
 
     p {
       margin-bottom: 0;
-      line-height: 1.5;
     }
   }
 
@@ -74,8 +76,8 @@
 
   .section-title {
     margin-bottom: 104px;
-    font-size: 2.5rem;
-    font-weight: $font-bold;
+    font-size: $font-large;
+    font-weight: 800;
     letter-spacing: 0.06rem;
 
     &:after {
@@ -91,6 +93,8 @@
 
   .detail {
     font-weight: $font-bold;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
   }
 
   a {
@@ -101,7 +105,9 @@
   .contact-form {
     label {
       margin: 1rem 0;
-      font-size: 1.5rem !important;
+      font-size: 28px !important;
+      font-weight: 800;
+      letter-spacing: 0.03rem;
       color: $base;
     }
 
@@ -122,6 +128,7 @@
 
     ::placeholder {
       font-size: 1.5rem;
+      letter-spacing: 0.2%;
       color: rgba(39, 40, 44, .6);
     }
   }

@@ -2,6 +2,7 @@
 ----------------------------------------------------------------------------- */
 .image-text {
   padding: 6rem 2.5rem 0 2.5rem;
+//  margin-top: 6rem;
   border-bottom: 2px solid $medium-grey;
   display: flex;
   flex-direction: column;
@@ -10,11 +11,16 @@
     padding: 6rem 10rem 0 10rem;
   }
 
+  &:first-of-type {
+    padding-top: 0rem;
+  }
+
   .section-title {
     margin-bottom: 104px;
-    font-size: 2.5rem;
+    font-size: $font-large;
     font-weight: $font-bold;
-    letter-spacing: 0.06rem;
+    font-weight: 800;
+    letter-spacing: 0.03rem;
 
     &:after {
       @include underline-brand;
@@ -42,7 +48,7 @@
 
     .rh-col {
      width: auto;
-     padding-top: 4rem
+     margin-top: 4rem
     }
 
     img {
@@ -54,16 +60,19 @@
   }
 
   p {
-    font-size: $font-body;
-    line-height: $lh-body;
     margin-bottom: 3rem;
+    font-size: $font-body;
+    font-weight: 400;
+    line-height: $lh-body;
+    letter-spacing: 0.01rem;
   }
 
   p:first-of-type {
     margin-bottom: $drop-medium;
     font-size: 2.5rem;
-    font-weight: $font-light-bold;
+    font-weight: 500;
     line-height: 1.6;
+    letter-spacing: 0.03rem;
   }
 
   p:last-of-type {
@@ -73,11 +82,13 @@
   .link {
     height: 4rem;
     padding: 0 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 7.5rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.3125rem;
     font-weight: $font-bold;
+    letter-spacing: 0.02rem;
     text-decoration: none;
     color: $white;
     background: $base;

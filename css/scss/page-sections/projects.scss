@@ -1,17 +1,18 @@
 /* projects
 ----------------------------------------------------------------------------- */
 .projects {
-  padding: 6rem 2.5rem;
+  padding: 0 2.5rem;
+  margin: 6rem 0;
   background: $white;
 
   @include mq($break-medium) {
-    padding: 6rem 10rem;
+    padding: 0 10rem;
   }
 
   .project {
     display: flex;
     flex-direction: column;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 
     @include mq($break-medium) {
       flex-direction: row;
@@ -23,9 +24,10 @@
   }
 
   .section-title {
-    margin-bottom: 6rem;
-    font-size: $font-large;
-    font-weight: $font-bold;
+    margin-bottom: 5rem;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 0.03rem;
 
     &:after {
      @include underline-brand;

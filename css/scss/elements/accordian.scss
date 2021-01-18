@@ -2,11 +2,12 @@
 ----------------------------------------------------------------------------- */
 .accordian {
   width: 100%;
-  padding: 6rem 2.5rem 0 2.5rem;
+  padding: 0 2.5rem;
 
   @include mq($break-medium) {
-    width: 80%;
-    padding: 6rem 10rem 120px 10rem;
+    width: 83.25%;
+    padding: 0 10rem 120px 10rem;
+  //  margin-top: 6rem;
   }
 
   .section-title {
@@ -21,12 +22,17 @@
   .text {
     margin-bottom: 4rem;
     font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.03rem;
   }
 
   .accordian-item {
     margin-bottom: 2.5rem;
     font-size: $font-body;
+    font-weight: 500;
     line-height: $lh-body;
+    letter-spacing: 0.03rem;
   }
 
   .item-title {

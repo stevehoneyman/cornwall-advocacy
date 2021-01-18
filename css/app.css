@@ -83,8 +83,11 @@ button {
 /* typography
 ----------------------------------------------------------------------------- */
 .page-title {
-  padding: 6rem 2.5rem 0 2.5rem;
+  padding: 0 2.5rem;
+  margin-bottom: 5rem;
   font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 0.03rem;
   color: #27282C;
 }
 
@@ -99,7 +102,7 @@ button {
 
 @media (min-width: 880px) {
   .page-title {
-    padding: 6rem 10rem 0 10rem;
+    padding: 0 10rem;
   }
 }
 
@@ -129,13 +132,13 @@ button {
 ----------------------------------------------------------------------------- */
 .accordian {
   width: 100%;
-  padding: 6rem 2.5rem 0 2.5rem;
+  padding: 0 2.5rem;
 }
 
 @media (min-width: 880px) {
   .accordian {
-    width: 80%;
-    padding: 6rem 10rem 120px 10rem;
+    width: 83.25%;
+    padding: 0 10rem 120px 10rem;
   }
 }
 
@@ -156,12 +159,17 @@ button {
 .accordian .text {
   margin-bottom: 4rem;
   font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.03rem;
 }
 
 .accordian .accordian-item {
   margin-bottom: 2.5rem;
   font-size: 1.5rem;
+  font-weight: 500;
   line-height: 2;
+  letter-spacing: 0.03rem;
 }
 
 .accordian .item-title {
@@ -628,6 +636,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   .banner {
     padding-top: 30rem;
     padding-bottom: 7rem;
+    margin-bottom: 7.5rem;
   }
 }
 
@@ -670,30 +679,32 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 ----------------------------------------------------------------------------- */
 .text-block {
   padding: 0 2.5rem;
-  margin: 6rem 0;
 }
 
 @media (min-width: 880px) {
   .text-block {
     width: 900px;
     padding: 0;
-    margin: 6rem 10rem;
+    margin: 0 10rem 7.5rem;
   }
 }
 
 .text-block p {
   margin: 1rem 0;
   font-size: 1.5rem;
+  letter-spacing: 0.01rem;
 }
 
 .text-block p:first-of-type {
-  margin-bottom: 5rem;
-  font-size: 2.5rem;
-  line-height: 1.5;
+  margin-bottom: 6rem;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03rem;
 }
 
 .text-block ul {
-  padding: 5rem 0;
+  margin: 6rem 0;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
@@ -705,6 +716,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   margin: 2.5rem 2rem 2.5rem 6rem;
   font-size: 1.5rem;
   font-weight: 700;
+  letter-spacing: 0.06rem;
 }
 
 @media (min-width: 880px) {
@@ -725,19 +737,22 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 }
 
 .text-basic {
-  padding: 3rem 2.5rem;
+  padding: 0 2.5rem;
+  margin-top: 3rem;
 }
 
 @media (min-width: 880px) {
   .text-basic {
-    width: 80%;
-    padding: 3rem 10rem;
+    width: 83.25%;
+    padding: 0 10rem;
   }
 }
 
 .text-basic .section-title {
-  margin-bottom: 5rem;
-  font-size: 2.5rem;
+  margin-bottom: 4.5rem;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 0.03rem;
 }
 
 .text-basic .section-title:after {
@@ -752,13 +767,16 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 .text-basic p {
   margin-bottom: 4rem;
   font-size: 1.5rem;
+  font-weight: 400;
   line-height: 2;
+  letter-spacing: 0.01%;
 }
 
 .text-basic p:first-of-type {
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.6;
+  letter-spacing: 0.03rem;
 }
 
 /* image-text [features on standard pages what is advocacy & projects]
@@ -776,11 +794,16 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   }
 }
 
+.image-text:first-of-type {
+  padding-top: 0rem;
+}
+
 .image-text .section-title {
   margin-bottom: 104px;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
-  letter-spacing: 0.06rem;
+  font-weight: 800;
+  letter-spacing: 0.03rem;
 }
 
 .image-text .section-title:after {
@@ -814,7 +837,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   }
   .image-text .rh-col {
     width: auto;
-    padding-top: 4rem;
+    margin-top: 4rem;
   }
   .image-text img {
     max-width: 390px;
@@ -825,9 +848,11 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 }
 
 .image-text p {
-  font-size: 1.5rem;
-  line-height: 2;
   margin-bottom: 3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.01rem;
 }
 
 .image-text p:first-of-type {
@@ -835,6 +860,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.6;
+  letter-spacing: 0.03rem;
 }
 
 .image-text p:last-of-type {
@@ -844,11 +870,13 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 .image-text .link {
   height: 4rem;
   padding: 0 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 7.5rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.3125rem;
   font-weight: 700;
+  letter-spacing: 0.02rem;
   text-decoration: none;
   color: #fff;
   background: #27282C;
@@ -861,15 +889,14 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 /* text-mage [features on landing pages, eg: about, how we help, background]
 ----------------------------------------------------------------------------- */
 .text-image {
-  padding: 3rem 2.5rem;
+  padding: 0 2.5rem;
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: 880px) {
   .text-image {
-    padding: 3rem 10rem;
-    margin-bottom: 10rem;
+    padding: 0 10rem 7.5rem;
     flex-direction: row;
     align-items: center;
   }
@@ -883,7 +910,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 @media (min-width: 880px) {
   .text-image p {
     width: 65%;
-    padding-right: 6rem;
+    margin-right: 6rem;
   }
 }
 
@@ -897,6 +924,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.6;
+  letter-spacing: 0.03rem;
 }
 
 .text-image img {
@@ -914,6 +942,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 @media (min-width: 880px) {
   .image-links {
     padding: 0 10rem;
+    margin-top: 7.5rem;
   }
 }
 
@@ -926,6 +955,8 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 .image-links .section-title {
   margin: 6rem 0;
   font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.03rem;
 }
 
 .image-links .section-title:after {
@@ -937,18 +968,26 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   background: #ffdb5a;
 }
 
+.image-links .grid {
+  margin-bottom: 4rem;
+}
+
 .image-links .text {
   margin: 3rem 0;
   font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: 0.03rem;
 }
 
 .image-links .link {
   height: 4rem;
   padding: 0 2rem;
-  margin-bottom: 7.5rem;
+  margin-bottom: 7.75rem;
   display: inline-flex;
   align-items: center;
   font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02rem;
   text-decoration: none;
   color: #fff;
   background: #27282C;
@@ -1027,20 +1066,21 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 /* projects
 ----------------------------------------------------------------------------- */
 .projects {
-  padding: 6rem 2.5rem;
+  padding: 0 2.5rem;
+  margin: 6rem 0;
   background: #fff;
 }
 
 @media (min-width: 880px) {
   .projects {
-    padding: 6rem 10rem;
+    padding: 0 10rem;
   }
 }
 
 .projects .project {
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 880px) {
@@ -1054,9 +1094,10 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 }
 
 .projects .section-title {
-  margin-bottom: 6rem;
-  font-size: 3rem;
-  font-weight: 700;
+  margin-bottom: 5rem;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0.03rem;
 }
 
 .projects .section-title:after {
@@ -1113,20 +1154,23 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 /* team
 ----------------------------------------------------------------------------- */
 .team {
-  padding: 3rem 2.5rem;
+  padding: 0 2.5rem;
+  margin: 7.5rem 0;
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: 880px) {
   .team {
-    padding: 3rem 10rem;
+    padding: 0 10rem;
   }
 }
 
 .team .section-title {
-  margin-bottom: 4rem;
-  font-size: 2.5rem;
+  margin-bottom: 5rem;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.03rem;
   color: #27282C;
 }
 
@@ -1144,11 +1188,16 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   margin-bottom: 4rem;
   font-size: 2.5rem;
   line-height: 1.6;
+  letter-spacing: 0.06rem;
 }
 
 .team .profile {
   margin-bottom: 4rem;
   display: flex;
+}
+
+.team .profile:last-of-type {
+  margin-bottom: 0;
 }
 
 .team .profile img {
@@ -1167,17 +1216,20 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   margin-bottom: 30px;
   font-size: 2rem;
   font-weight: 800;
+  letter-spacing: 0.03rem;
 }
 
 .team .profile .job-title {
   margin-bottom: 3rem;
   font-size: 1.5rem;
   font-weight: 500;
+  letter-spacing: 0.03rem;
 }
 
 .team .profile .bio {
   font-size: 1.5rem;
   line-height: 2;
+  letter-spacing: 0.01rem;
 }
 
 /* contact
@@ -1192,8 +1244,11 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   }
 }
 
-.contact .page-title {
+.contact h1.page-title {
   padding-left: 0;
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 0.03rem;
 }
 
 .contact .contact-details,
@@ -1228,7 +1283,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 @media (min-width: 880px) {
   .contact .rh-col {
-    padding-top: 4rem;
+    margin-top: 4rem;
   }
 }
 
@@ -1244,7 +1299,6 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .contact .icon-holder p {
   margin-bottom: 0;
-  line-height: 1.5;
 }
 
 .contact .page-title {
@@ -1264,8 +1318,8 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .contact .section-title {
   margin-bottom: 104px;
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 800;
   letter-spacing: 0.06rem;
 }
 
@@ -1286,6 +1340,8 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .contact .detail {
   font-weight: 700;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
 }
 
 .contact a {
@@ -1294,7 +1350,9 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .contact .contact-form label {
   margin: 1rem 0;
-  font-size: 1.5rem !important;
+  font-size: 28px !important;
+  font-weight: 800;
+  letter-spacing: 0.03rem;
   color: #27282C;
 }
 
@@ -1315,5 +1373,6 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .contact .contact-form ::placeholder {
   font-size: 1.5rem;
+  letter-spacing: 0.2%;
   color: rgba(39, 40, 44, 0.6);
 }
