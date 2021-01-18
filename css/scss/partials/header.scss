@@ -44,7 +44,7 @@ header {
   .line-two {
     display: block;
     @include stack;
-    font-size: 1.5rem;
+    font-size: $font-body;
     font-weight: $font-bold;
     text-align: center;
     letter-spacing: 0.05rem;
