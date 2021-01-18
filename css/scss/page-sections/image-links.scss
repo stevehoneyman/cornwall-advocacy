@@ -15,7 +15,7 @@
 
   .section-title {
     margin: 6rem 0;
-    font-size: 3rem;
+    font-size: $font-large;
 
     &:after {
       @include underline-brand;
@@ -24,7 +24,7 @@
 
   .text {
     margin: 3rem 0;
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 
   .link {
@@ -40,7 +40,7 @@
     background: $base;
 
     @include mq($break-medium) {
-      font-size: 21px;
+      font-size: 1.3125rem;
     }
   }
 }

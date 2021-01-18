@@ -21,17 +21,17 @@
 
   .text {
     width: 80%;
-    margin-bottom: 4rem;
+    margin-bottom: $drop-medium;
     font-size: 2.5rem;
     line-height: 1.6;
   }
 
   .profile {
-    margin-bottom: 4rem;
+    margin-bottom: $drop-medium;
     display: flex;
 
     img {
-      margin-right: 96px;
+      margin-right: 6rem;
       max-width: 390px;
       max-height: 390px;
       object-fit: cover;

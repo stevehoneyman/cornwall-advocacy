@@ -73,20 +73,20 @@
       background: $base;
 
       @include mq($break-medium) {
-        font-size: 21px;
+        font-size: 1.135rem;
       }
     }
   }
 
   .right-col {
     @include mq($break-medium) {
-      padding-left: 140px;
+      padding-left: 8.75rem;
     }
 
     .link {
       display: block;
       margin-bottom: 2.5rem;
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: $font-bold;
       text-decoration: none;
       color: $base;

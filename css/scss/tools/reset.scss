@@ -26,6 +26,7 @@ body {
   color: $base;
   background: $light-grey;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img {

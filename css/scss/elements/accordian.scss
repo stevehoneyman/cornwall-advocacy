@@ -10,8 +10,8 @@
   }
 
   .section-title {
-    margin-bottom: 80px;
-    font-size: 3rem;
+    margin-bottom: 5rem;
+    font-size: $font-large;
 
     &:after {
       @include underline-brand;

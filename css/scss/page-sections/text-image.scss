@@ -20,7 +20,7 @@
   p {
     @include mq($break-medium) {
       width: 65%;
-      padding-right: 96px;
+      padding-right: 6rem;
     }
   }
 
@@ -39,7 +39,6 @@
   img {
     max-width: 390px;
     max-height: 390px;
-  //
     object-fit: cover;
   }
 }
