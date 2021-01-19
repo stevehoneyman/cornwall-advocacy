@@ -59,7 +59,7 @@
 
 // standard page WYSYWIG text block
 .text-basic {
-  padding: 0 2.5rem;
+  padding: 0 2rem;
   margin-top: 3rem;
 
   @include mq($break-medium) {
@@ -69,9 +69,9 @@
 
   .section-title {
     margin-bottom: 4.5rem;
-    font-size: 48px;
-    font-weight: 800;
-    letter-spacing: 0.03rem;
+    font-size: $font-medium;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
 
     &:after {
       @include underline-brand;
@@ -83,13 +83,17 @@
     font-size: $font-body;
     font-weight: 400;
     line-height: $lh-body;
-    letter-spacing: 0.01%;
+    letter-spacing: 0.02rem;
   }
 
   p:first-of-type {
-    font-size: 2.5rem;
+    font-size: 28px;
     font-weight: 500;
     line-height: 1.6;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.06rem;
+
+    @include mq($break-medium) {
+      font-size: 2.5rem;
+    }
   }
 }

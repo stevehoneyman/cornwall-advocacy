@@ -1,7 +1,7 @@
 /* team
 ----------------------------------------------------------------------------- */
 .team {
- padding: 0 2.5rem;
+ padding: 0 2rem;
  margin: 7.5rem 0;
  display: flex;
  flex-direction: column;
@@ -12,22 +12,31 @@
 
   .section-title {
     margin-bottom: 5rem;
-    font-size: $font-large;
-    font-weight: 800;
-    letter-spacing: 0.03rem;
+    font-size: $font-medium;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
     color: $base;
 
     &:after {
       @include underline-brand;
+    }
+
+    @include mq($break-medium) {
+      font-size: $font-large;
+      letter-spacing: 0.03rem;
     }
   }
 
   .text {
     width: 80%;
     margin-bottom: $drop-medium;
-    font-size: 2.5rem;
+    font-size: 28px;
     line-height: 1.6;
     letter-spacing: 0.06rem;
+
+    @include mq($break-medium) {
+      font-size: 2.5rem;
+    }
   }
 
   .profile {

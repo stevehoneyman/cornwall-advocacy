@@ -2,7 +2,7 @@
 ----------------------------------------------------------------------------- */
 .accordian {
   width: 100%;
-  padding: 0 2.5rem;
+  padding: 0 2rem;
 
   @include mq($break-medium) {
     width: 83.25%;
@@ -12,36 +12,54 @@
 
   .section-title {
     margin-bottom: 5rem;
-    font-size: $font-large;
+    font-size: $font-medium;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
 
     &:after {
       @include underline-brand;
+    }
+
+    @include mq($break-medium) {
+      font-size: $font-large;
     }
   }
 
   .text {
     margin-bottom: 4rem;
-    font-size: 2.5rem;
-    font-weight: 500;
-    line-height: 1.4;
-    letter-spacing: 0.03rem;
+    font-size: 28px;
+  //  font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.06rem;
+
+    @include mq($break-medium) {
+     font-size: 2.5rem;
+    }
   }
 
   .accordian-item {
     margin-bottom: 2.5rem;
-    font-size: $font-body;
+    font-size: $font-root;
     font-weight: 500;
     line-height: $lh-body;
     letter-spacing: 0.03rem;
+
+    @include mq($break-medium) {
+     font-size: 2.5rem;
+    }
   }
 
   .item-title {
-    padding: 1.5rem 3rem;
+    padding: 1rem .5rem;
     border: 1px solid rgba(39, 40, 44, .2);
     border-bottom: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mq($break-medium) {
+      padding: 1.5rem 3rem;
+    }
   }
 
   .item-content {

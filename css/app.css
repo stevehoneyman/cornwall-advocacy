@@ -83,11 +83,11 @@ button {
 /* typography
 ----------------------------------------------------------------------------- */
 .page-title {
-  padding: 0 2.5rem;
+  padding: 0 2rem;
   margin-bottom: 5rem;
-  font-size: 4rem;
-  font-weight: 800;
-  letter-spacing: 0.03rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
   color: #27282C;
 }
 
@@ -132,7 +132,7 @@ button {
 ----------------------------------------------------------------------------- */
 .accordian {
   width: 100%;
-  padding: 0 2.5rem;
+  padding: 0 2rem;
 }
 
 @media (min-width: 880px) {
@@ -144,7 +144,9 @@ button {
 
 .accordian .section-title {
   margin-bottom: 5rem;
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
 }
 
 .accordian .section-title:after {
@@ -156,29 +158,52 @@ button {
   background: #ffdb5a;
 }
 
+@media (min-width: 880px) {
+  .accordian .section-title {
+    font-size: 3rem;
+  }
+}
+
 .accordian .text {
   margin-bottom: 4rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.4;
-  letter-spacing: 0.03rem;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.06rem;
+}
+
+@media (min-width: 880px) {
+  .accordian .text {
+    font-size: 2.5rem;
+  }
 }
 
 .accordian .accordian-item {
   margin-bottom: 2.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 2;
   letter-spacing: 0.03rem;
 }
 
+@media (min-width: 880px) {
+  .accordian .accordian-item {
+    font-size: 2.5rem;
+  }
+}
+
 .accordian .item-title {
-  padding: 1.5rem 3rem;
+  padding: 1rem .5rem;
   border: 1px solid rgba(39, 40, 44, 0.2);
   border-bottom: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: 880px) {
+  .accordian .item-title {
+    padding: 1.5rem 3rem;
+  }
 }
 
 .accordian .item-content {
@@ -737,7 +762,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 }
 
 .text-basic {
-  padding: 0 2.5rem;
+  padding: 0 2rem;
   margin-top: 3rem;
 }
 
@@ -750,9 +775,9 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .text-basic .section-title {
   margin-bottom: 4.5rem;
-  font-size: 48px;
-  font-weight: 800;
-  letter-spacing: 0.03rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
 }
 
 .text-basic .section-title:after {
@@ -769,20 +794,26 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2;
-  letter-spacing: 0.01%;
+  letter-spacing: 0.02rem;
 }
 
 .text-basic p:first-of-type {
-  font-size: 2.5rem;
+  font-size: 28px;
   font-weight: 500;
   line-height: 1.6;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.06rem;
+}
+
+@media (min-width: 880px) {
+  .text-basic p:first-of-type {
+    font-size: 2.5rem;
+  }
 }
 
 /* image-text [features on standard pages what is advocacy & projects]
 ----------------------------------------------------------------------------- */
 .image-text {
-  padding: 6rem 2.5rem 0 2.5rem;
+  padding: 6rem 2rem 0 2rem;
   border-bottom: 2px solid #c4c4c4;
   display: flex;
   flex-direction: column;
@@ -800,10 +831,9 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .image-text .section-title {
   margin-bottom: 104px;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
-  font-weight: 800;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.06rem;
 }
 
 .image-text .section-title:after {
@@ -813,6 +843,13 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   margin-top: 1rem;
   display: block;
   background: #ffdb5a;
+}
+
+@media (min-width: 880px) {
+  .image-text .section-title {
+    font-size: 3rem;
+    letter-spacing: 0.03rem;
+  }
 }
 
 .image-text .columns {
@@ -852,15 +889,21 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2;
-  letter-spacing: 0.01rem;
+  letter-spacing: 0.02rem;
 }
 
 .image-text p:first-of-type {
   margin-bottom: 4rem;
-  font-size: 2.5rem;
+  font-size: 28px;
   font-weight: 500;
   line-height: 1.6;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.06rem;
+}
+
+@media (min-width: 880px) {
+  .image-text p:first-of-type {
+    font-size: 2.5rem;
+  }
 }
 
 .image-text p:last-of-type {
@@ -889,7 +932,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 /* text-mage [features on landing pages, eg: about, how we help, background]
 ----------------------------------------------------------------------------- */
 .text-image {
-  padding: 0 2.5rem;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -921,10 +964,16 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 }
 
 .text-image p {
-  font-size: 2.5rem;
+  font-size: 28px;
   font-weight: 500;
   line-height: 1.6;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.02rem;
+}
+
+@media (min-width: 880px) {
+  .text-image p {
+    font-size: 2.5rem;
+  }
 }
 
 .text-image img {
@@ -1154,7 +1203,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 /* team
 ----------------------------------------------------------------------------- */
 .team {
-  padding: 0 2.5rem;
+  padding: 0 2rem;
   margin: 7.5rem 0;
   display: flex;
   flex-direction: column;
@@ -1168,9 +1217,9 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .team .section-title {
   margin-bottom: 5rem;
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: 0.03rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
   color: #27282C;
 }
 
@@ -1183,12 +1232,25 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   background: #ffdb5a;
 }
 
+@media (min-width: 880px) {
+  .team .section-title {
+    font-size: 3rem;
+    letter-spacing: 0.03rem;
+  }
+}
+
 .team .text {
   width: 80%;
   margin-bottom: 4rem;
-  font-size: 2.5rem;
+  font-size: 28px;
   line-height: 1.6;
   letter-spacing: 0.06rem;
+}
+
+@media (min-width: 880px) {
+  .team .text {
+    font-size: 2.5rem;
+  }
 }
 
 .team .profile {
@@ -1235,20 +1297,13 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 /* contact
 ----------------------------------------------------------------------------- */
 .contact {
-  padding: 6rem 2.5rem 0 2.5rem;
+  padding: 6rem 2rem 0 2rem;
 }
 
 @media (min-width: 880px) {
   .contact {
     padding: 6rem 10rem 120px 10rem;
   }
-}
-
-.contact h1.page-title {
-  padding-left: 0;
-  font-size: 4rem;
-  font-weight: 800;
-  letter-spacing: 0.03rem;
 }
 
 .contact .contact-details,
@@ -1301,13 +1356,16 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   margin-bottom: 0;
 }
 
-.contact .page-title {
+.contact h1.page-title {
   margin-bottom: 3rem;
-  font-size: 6rem;
+  padding-left: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
   color: #27282C;
 }
 
-.contact .page-title:after {
+.contact h1.page-title:after {
   content: '';
   width: 3rem;
   height: 10px;
@@ -1316,10 +1374,17 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   background: #ffdb5a;
 }
 
+@media (min-width: 880px) {
+  .contact h1.page-title {
+    font-size: 4rem;
+    letter-spacing: 0.03rem;
+  }
+}
+
 .contact .section-title {
   margin-bottom: 104px;
-  font-size: 3rem;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: 700;
   letter-spacing: 0.06rem;
 }
 
@@ -1332,6 +1397,13 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   background: #ffdb5a;
 }
 
+@media (min-width: 880px) {
+  .contact .section-title {
+    font-size: 3rem;
+    letter-spacing: 0.06rem;
+  }
+}
+
 .contact p {
   margin-bottom: 4rem;
   font-size: 1.5rem;
@@ -1339,9 +1411,15 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 }
 
 .contact .detail {
-  font-weight: 700;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.06rem;
+}
+
+@media (min-width: 880px) {
+  .contact .detail {
+    font-size: 1.5rem;
+  }
 }
 
 .contact a {
@@ -1350,17 +1428,31 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .contact .contact-form label {
   margin: 1rem 0;
-  font-size: 28px !important;
-  font-weight: 800;
-  letter-spacing: 0.03rem;
+  font-size: 18px !important;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
   color: #27282C;
+}
+
+@media (min-width: 880px) {
+  .contact .contact-form label {
+    font-size: 28px !important;
+    letter-spacing: 0.03rem;
+  }
 }
 
 .contact .contact-form input,
 .contact .contact-form textarea {
   display: flex;
-  padding: 1.25rem 2rem !important;
+  padding: 1.25rem 1rem !important;
   border: 1px solid rgba(39, 40, 44, 0.2);
+}
+
+@media (min-width: 880px) {
+  .contact .contact-form input,
+  .contact .contact-form textarea {
+    padding: 1.25rem 2rem !important;
+  }
 }
 
 .contact .contact-form input[type="submit"] {
@@ -1372,7 +1464,13 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 }
 
 .contact .contact-form ::placeholder {
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 0.2%;
   color: rgba(39, 40, 44, 0.6);
+}
+
+@media (min-width: 880px) {
+  .contact .contact-form ::placeholder {
+    font-size: 1.5rem;
+  }
 }

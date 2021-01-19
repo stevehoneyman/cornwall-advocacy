@@ -1,17 +1,10 @@
 /* contact
 ----------------------------------------------------------------------------- */
 .contact {
-  padding: 6rem 2.5rem 0 2.5rem;
+  padding: 6rem 2rem 0 2rem;
 
   @include mq($break-medium) {
     padding: 6rem 10rem 120px 10rem;
-  }
-
-  h1.page-title {
-    padding-left: 0;
-    font-size: 4rem;
-    font-weight: 800;
-    letter-spacing: 0.03rem;
   }
 
   .contact-details,
@@ -64,24 +57,37 @@
   }
 
   // typography
-  .page-title {
+  h1.page-title {
     margin-bottom: 3rem;
-    font-size: 6rem;
+    padding-left: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
     color: $base;
 
     &:after {
       @include underline-brand;
     }
+
+    @include mq($break-medium) {
+      font-size: 4rem;
+      letter-spacing: 0.03rem;
+    }
   }
 
   .section-title {
     margin-bottom: 104px;
-    font-size: $font-large;
-    font-weight: 800;
+    font-size: $font-medium;
+    font-weight: 700;
     letter-spacing: 0.06rem;
 
     &:after {
       @include underline-brand;
+    }
+
+    @include mq($break-medium) {
+      font-size: $font-large;
+      letter-spacing: 0.06rem;
     }
   }
 
@@ -92,9 +98,13 @@
   }
 
   .detail {
+    font-size: 14px;
     font-weight: $font-bold;
-    font-weight: 700;
     letter-spacing: 0.06rem;
+
+    @include mq($break-medium) {
+      font-size: $font-body;
+    }
   }
 
   a {
@@ -105,17 +115,26 @@
   .contact-form {
     label {
       margin: 1rem 0;
-      font-size: 28px !important;
-      font-weight: 800;
-      letter-spacing: 0.03rem;
+      font-size: 18px !important;
+      font-weight: 700;
+      letter-spacing: 0.06rem;
       color: $base;
+
+      @include mq($break-medium) {
+        font-size: 28px !important;
+        letter-spacing: 0.03rem;
+      }
     }
 
     input,
     textarea {
       display: flex;
-      padding: 1.25rem 2rem !important;
-      border: 1px solid rgba(39, 40, 44, .2)
+      padding: 1.25rem 1rem !important;
+      border: 1px solid rgba(39, 40, 44, .2);
+
+      @include mq($break-medium) {
+        padding: 1.25rem 2rem !important;
+      }
     }
 
     input[type="submit"] {
@@ -127,9 +146,13 @@
     }
 
     ::placeholder {
-      font-size: 1.5rem;
+      font-size: $font-root;
       letter-spacing: 0.2%;
       color: rgba(39, 40, 44, .6);
+
+      @include mq($break-medium) {
+        font-size: $font-body;
+      }
     }
   }
 } // close contact
