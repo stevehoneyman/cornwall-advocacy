@@ -557,6 +557,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 @media (min-width: 880px) {
   .footer-statement .right-col .link {
+    margin-bottom: 3.5rem;
     font-size: 1.5rem;
   }
 }
@@ -580,6 +581,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   .footer-statement .right-col .link-contact:before,
   .footer-statement .right-col .link-facebook:before {
     display: inline-block;
+    margin-bottom: 0;
   }
 }
 

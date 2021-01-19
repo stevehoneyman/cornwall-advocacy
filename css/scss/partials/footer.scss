@@ -96,6 +96,7 @@
       color: $base;
 
       @include mq($break-medium) {
+        margin-bottom: 3.5rem;
         font-size: $font-body;
       }
     }
@@ -116,6 +117,7 @@
 
       @include mq($break-medium) {
         display: inline-block;
+        margin-bottom: 0;
       }
     }
 
