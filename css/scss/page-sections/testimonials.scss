@@ -21,10 +21,14 @@
   blockquote {
     position: relative;
     margin-bottom: 1.5rem;
-    font-size: 2.5rem;
+    font-size: $font-medium;
     font-weight: $font-bold;
     line-height: 1.5;
     color: $white;
+
+    @include mq($break-medium) {
+      font-size: 2.5rem;
+    }
 
     &:before {
       position: absolute;
@@ -42,8 +46,12 @@
 
   .author {
     margin-bottom: 3rem;
-    font-size: $font-body;
+    font-size: 21px;
     color: $white;
+
+    @include mq($break-medium) {
+      font-size: $font-body;
+    }
   }
 
   .link {
@@ -52,10 +60,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: $font-body;
+    font-size: 1.315rem;
     font-weight: $font-bold;
     text-decoration: none;
     color: $base;
     background: $brand;
+
+    @include mq($break-medium) {
+      font-size: $font-body;
+    }
   }
 }

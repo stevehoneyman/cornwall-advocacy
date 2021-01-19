@@ -1,10 +1,10 @@
 /* contact
 ----------------------------------------------------------------------------- */
 .contact {
-  padding: 6rem 2rem 0 2rem;
+  padding: 0 2rem;
 
   @include mq($break-medium) {
-    padding: 6rem 10rem 120px 10rem;
+    padding: 0 10rem 120px 10rem;
   }
 
   .contact-details,
@@ -21,6 +21,10 @@
   .lh-col,
   .rh-col {
     width: 100%;
+  }
+
+  img {
+    margin-bottom: 4rem;
   }
 
   @include mq($break-medium) {
@@ -47,8 +51,9 @@
     display: flex;
     align-items: center;
 
-    .icon {
+    img.icon {
       margin-right: 2rem;
+      margin-bottom: 0;
     }
 
     p {

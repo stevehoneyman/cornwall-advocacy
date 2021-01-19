@@ -2,7 +2,7 @@
 ----------------------------------------------------------------------------- */
 .team {
  padding: 0 2rem;
- margin: 7.5rem 0;
+ margin: 4rem 0 7.5rem 0;
  display: flex;
  flex-direction: column;
 
@@ -42,21 +42,34 @@
   .profile {
     margin-bottom: $drop-medium;
     display: flex;
+    flex-direction: column;
+
+    @include mq($break-medium) {
+       flex-direction: row;
+    }
 
     &:last-of-type {
       margin-bottom: 0;
     }
 
     img {
-      margin-right: 6rem;
+      margin-bottom: 4rem;
       max-width: 390px;
       max-height: 390px;
       object-fit: cover;
+
+      @include mq($break-medium) {
+        margin-right: 6rem;
+      }
     }
 
     .details {
-      padding: 4rem;
+      padding: 1.5rem;
       border: 1px solid $medium-grey;
+
+      @include mq($break-medium) {
+        padding: 4rem;
+      }
     }
 
     h3 {

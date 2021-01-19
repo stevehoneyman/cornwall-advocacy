@@ -1,7 +1,7 @@
 /* footer
 ----------------------------------------------------------------------------- */
 .footer-statement {
-  padding: 5rem 2.5rem 3rem;
+  padding: 3rem 2.5rem 3rem;
   border-top: 2.5rem solid $brand-fade;
   background: $brand;
 
@@ -48,7 +48,11 @@
   .left-col,
   .right-col {
     width: 100%;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    @include mq($break-medium) {
+      margin-bottom: 2.5rem;
+    }
   }
 
   .left-col {
@@ -106,8 +110,13 @@
       width: 5rem;
       height: 5rem;
       margin-right: 1.5rem;
-      display: inline-block;
+      margin-bottom: 2.5rem;
+      display: block;
       vertical-align: middle;
+
+      @include mq($break-medium) {
+        display: inline-block;
+      }
     }
 
     .link-contact:before {

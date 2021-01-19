@@ -45,6 +45,10 @@
     width: 100%;
   }
 
+  img {
+    margin-bottom: 4rem;
+  }
+
   @include mq($break-medium) {
     .lh-col {
       margin-right: 6rem;

@@ -1,7 +1,7 @@
 /* image-links
 ----------------------------------------------------------------------------- */
 .image-links {
-  padding: 0 2.5rem;
+  padding: 0 2rem;
 
   @include mq($break-medium) {
     padding: 0 10rem;
@@ -16,9 +16,14 @@
 
   .section-title {
     margin: 6rem 0;
-    font-size: $font-large;
+    font-size: $font-medium;
     font-weight: $font-bold;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.06rem;
+
+    @include mq($break-medium) {
+      font-size: $font-large;
+      letter-spacing: 0.06rem;
+    }
 
     &:after {
       @include underline-brand;
@@ -26,14 +31,21 @@
   }
 
   .grid {
-    margin-bottom: $drop-medium;
+
+    @include mq($break-medium) {
+      margin-bottom: $drop-medium;
+    }
   }
 
   .text {
     margin: 3rem 0;
-    font-size: 1.75rem;
+    font-size: $font-body;
     font-weight: 800;
     letter-spacing: 0.03rem;
+
+     @include mq($break-medium) {
+      font-size: 1.75rem;
+     }
   }
 
   .link {

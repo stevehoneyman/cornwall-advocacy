@@ -2,8 +2,8 @@
 ----------------------------------------------------------------------------- */
 // home-page WYSYWIG text block
 .text-block {
-  padding: 0 2.5rem;
-//  margin: 6rem 0;
+  padding: 0 2rem;
+  margin: 6rem 0 0 0;
 
   @include mq($break-medium) {
     width: 900px;
@@ -19,10 +19,14 @@
 
   p:first-of-type {
     margin-bottom: 6rem;
-    font-size: $font-large;
+    font-size: $font-medium;
     font-weight: 500;
     line-height: 1.6;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.06rem;
+
+    @include mq($break-medium) {
+      font-size: $font-large;
+    }
   }
 
   ul {
@@ -36,24 +40,29 @@
     position: relative;
     width: 75%;
     margin: 2.5rem 2rem 2.5rem 6rem;
-    font-size: $font-body;
+    font-size: 18px;
     font-weight: $font-bold;
     letter-spacing: 0.06rem;
 
     @include mq($break-medium) {
        width: 35%;
+       font-size: $font-body;
     }
   }
 
   li:before {
     position: absolute;
-    top: -30px;
+    top: -21px;
     left: -100px;
     content: '';
     width: 5rem;
     height: 5rem;
     background-image: url('/wp-content/themes/cornwall-advocacy/icons/Icon_Check.svg');
     background-repeat: no-repeat;
+
+    @include mq($break-medium) {
+       top: -30px;
+    }
   }
 }
 
