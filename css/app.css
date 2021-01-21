@@ -658,6 +658,15 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 /* banner
 ----------------------------------------------------------------------------- */
+.banner-home {
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* banner
+----------------------------------------------------------------------------- */
 .banner {
   padding: 8rem 0.5rem 4rem 0.5rem;
   display: flex;

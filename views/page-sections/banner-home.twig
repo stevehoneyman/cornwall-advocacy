@@ -1,0 +1,10 @@
+{% if post.banner_home_image %}
+  <div class="banner-home" style="background-image: url('{{ Image(post.meta('banner_home_image')).src }}');">
+    {% if post.banner_home_title %}
+      <h1>{{ post.banner_home_title }}</h1>
+    {% endif %}
+      {% if post.banner_home_text %}
+        <span>{{ post.banner_home_text }}</span>
+    {% endif %}
+  </div>
+{% endif %}
