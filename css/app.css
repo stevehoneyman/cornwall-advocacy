@@ -188,7 +188,7 @@ button {
 
 @media (min-width: 880px) {
   .accordian .accordian-item {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -574,13 +574,13 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   margin-right: 1.5rem;
   margin-bottom: 2.5rem;
   display: block;
-  vertical-align: middle;
 }
 
 @media (min-width: 880px) {
   .footer-statement .right-col .link-contact:before,
   .footer-statement .right-col .link-facebook:before {
     display: inline-block;
+    vertical-align: middle;
     margin-bottom: 0;
   }
 }
