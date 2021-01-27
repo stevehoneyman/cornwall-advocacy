@@ -2,8 +2,23 @@
 ----------------------------------------------------------------------------- */
 .wrap {
   width: 100%;
-  padding: 0 10rem;
   margin: 0 auto;
+  padding: 0 2rem;
+
+/*
+
+  @include mq() {
+    padding: 0 4rem;
+  }
+  @include mq() {
+    padding: 0 6rem;
+  }
+
+ */
+
+  @include mq($break-large) {
+    padding: 0 10rem;
+  }
 }
 
 .btn {

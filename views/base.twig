@@ -15,13 +15,11 @@
 		<div id="site-wrapper">
 			{% include 'partials/header.twig' %}
 
-      <!-- check page for bannner -->
       {% if fn('is_front_page') %}
         {% include 'page-sections/banner-home.twig' %}
       {% else %}
         {% include 'page-sections/banner.twig' %}
       {% endif %}
-      <!-- end check -->
 
       <main role="main">
 				{% block content %}
