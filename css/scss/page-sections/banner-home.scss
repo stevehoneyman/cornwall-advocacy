@@ -1,8 +1,95 @@
 /* banner
 ----------------------------------------------------------------------------- */
+/*
 .banner-home {
   display: flex;
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+*/
+
+.banner-home {
+  position: relative;
+  width: $full-width;
+  color: $base;
+  background-color: #FFE99C;
+  margin-bottom: $drop-large;
+
+  @include mq($break-small) {
+    display: flex;
+  }
+
+  .home-title-cont {
+    width: $full-width;
+    font-family: $primary;
+    font-size: $font-body;
+    font-weight: 800;
+    line-height: 1.6;
+    text-align: center;
+    padding: 10rem 2rem 10rem 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include mq($break-medium) {
+      width: 50%;
+      font-size: 2rem;
+      line-height: 5rem;
+      text-align: left;
+      padding: 11.1% 5% 11.1% 5%;
+    }
+
+    @include mq($break-large) {
+      font-size: 2.5rem;
+      line-height: 6rem;
+      padding: 6.5% 11.1% 6.5% 11.1%;
+    }
+
+    .home-title {
+      padding-bottom: $drop-large;
+    }
+  }
+
+  .banner-home-img {
+    display: none;
+
+    @include mq($break-medium) {
+      display: block;
+      width: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .home-text-cont {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: $brand;
+
+    @include mq($break-medium) {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    .home-text {
+      font-size: $font-body;
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+
+    .icon-1 {
+      min-width: 6rem;
+      background-color: $base;
+    }
+
+    .icon-2 {
+      min-width: 6rem;
+      background-color: $white;
+    }
+  }
 }

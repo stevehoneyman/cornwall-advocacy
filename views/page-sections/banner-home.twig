@@ -1,3 +1,4 @@
+{# -----------------------------------------------------------------------------
 {% if post.banner_home_image %}
   <div class="banner-home" style="background-image: url('{{ Image(post.meta('banner_home_image')).src }}');">
     {% if post.banner_home_title %}
@@ -7,4 +8,24 @@
         <span>{{ post.banner_home_text }}</span>
     {% endif %}
   </div>
+{% endif %}
+----------------------------------------------------------------------------- #}
+{% if post.banner_home_image %}
+  <figure class="banner-home">
+    {% if post.banner_home_title %}
+      <div class="home-title-cont" style="background-image: url('/wp-content/themes/cornwall-advocacy/images/Banner_Texture.png');">
+        <h1 class="home-title">{{ post.banner_home_title }}</h1>
+      </div>
+    {% endif %}
+
+    <img class="banner-home-img" src="{{ Image(post.meta('banner_home_image')).src }}" alt="">
+
+    {% if post.banner_home_text %}
+      <div class="home-text-cont">
+        <img class="icon-1" src="/wp-content/themes/cornwall-advocacy/icons/Icon_Chat.svg" alt="">
+        <span class="home-text">{{ post.banner_home_text }}</span>
+        <img class="icon-2" src="/wp-content/themes/cornwall-advocacy/icons/Icon_Down.svg" alt="">
+      </div>
+    {% endif %}
+  </figure>
 {% endif %}

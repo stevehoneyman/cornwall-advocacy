@@ -658,11 +658,107 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 /* banner
 ----------------------------------------------------------------------------- */
+/*
 .banner-home {
   display: flex;
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+*/
+.banner-home {
+  position: relative;
+  width: 100%;
+  color: #27282C;
+  background-color: #FFE99C;
+  margin-bottom: 6rem;
+}
+
+@media (min-width: 414px) {
+  .banner-home {
+    display: flex;
+  }
+}
+
+.banner-home .home-title-cont {
+  width: 100%;
+  font-family: helvetica;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.6;
+  text-align: center;
+  padding: 10rem 2rem 10rem 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 880px) {
+  .banner-home .home-title-cont {
+    width: 50%;
+    font-size: 2rem;
+    line-height: 5rem;
+    text-align: left;
+    padding: 11.1% 5% 11.1% 5%;
+  }
+}
+
+@media (min-width: 1074px) {
+  .banner-home .home-title-cont {
+    font-size: 2.5rem;
+    line-height: 6rem;
+    padding: 6.5% 11.1% 6.5% 11.1%;
+  }
+}
+
+.banner-home .home-title-cont .home-title {
+  padding-bottom: 6rem;
+}
+
+.banner-home .banner-home-img {
+  display: none;
+}
+
+@media (min-width: 880px) {
+  .banner-home .banner-home-img {
+    display: block;
+    width: 50%;
+    object-fit: cover;
+  }
+}
+
+.banner-home .home-text-cont {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #ffdb5a;
+}
+
+@media (min-width: 880px) {
+  .banner-home .home-text-cont {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+.banner-home .home-text-cont .home-text {
+  font-size: 1.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.banner-home .home-text-cont .icon-1 {
+  min-width: 6rem;
+  background-color: #27282C;
+}
+
+.banner-home .home-text-cont .icon-2 {
+  min-width: 6rem;
+  background-color: #fff;
 }
 
 /* banner
