@@ -6,10 +6,15 @@
     <p class="text">{{ item.text }}</p>
     {% for item in item.accordian %}
       <div class="accordian-item">
-        <p class="item-title">{{ item.title }}
-          <img src="/wp-content/themes/cornwall-advocacy/icons/Icon_Plus.svg" class="faq-cross">
-        </p>
-        <p class="item-content">{{ item.content }}</p>
+        <div class="item-title-holder">
+          <h3 class="item-title">{{ item.title }}</h3>
+          <button aria-label="go to answer">
+            <!-- <img src="/wp-content/themes/cornwall-advocacy/icons/Icon_Plus.svg" class="faq-cross"> -->
+          </button>
+          </div>
+        <div class="item-content">
+          {{ item.content }}
+        </div>
       </div>
     {% endfor %}
   </div>

@@ -28,7 +28,6 @@
   .text {
     margin-bottom: 4rem;
     font-size: 28px;
-  //  font-weight: 700;
     line-height: 1.6;
     letter-spacing: 0.06rem;
 
@@ -49,24 +48,32 @@
     }
   }
 
-  .item-title {
-    padding: 1rem .5rem;
-    border: 1px solid rgba(39, 40, 44, .2);
-    border-bottom: none;
+  .item-title-holder {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    @include mq($break-medium) {
-      padding: 1.5rem 3rem;
+    h3 {
+      max-width: 80%;
     }
+
+    button {
+      width: 50px;
+      height: 50px;
+      background: url('/wp-content/themes/cornwall-advocacy/icons/Icon_Plus.svg');
+      background-repeat: no-repeat;
+      transition: 300ms;
+    }
+  }
+
+  .inherit-animation button {
+    transform: rotate(-45deg);
   }
 
   .item-content {
     height: 0;
     padding: 0 3rem;
     border: 1px solid rgba(39, 40, 44, .2);
-//  border-top: none;
     overflow: hidden;
     transition: 300ms;
 

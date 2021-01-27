@@ -10,8 +10,9 @@ jQuery(document).ready(function($){
 		$('.primary-nav').toggleClass('nav-open');
 	});
 
-  $('.item-title').on('click', function() {
-    console.log('question fired..');
+  $('.item-title-holder').on('click', function() {
+    $(this).toggleClass('inherit-animation');
     $(this).next('.item-content').toggleClass('accordian-open');
+
   });
 }); // close doc ready
