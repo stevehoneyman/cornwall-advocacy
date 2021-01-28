@@ -50,13 +50,16 @@
 
   .item-title-holder {
     padding: 1.5rem 3rem;
-    border: 1px solid rgba(39, 40, 44, .2);
+    border-top: 1px solid rgba(39, 40, 44, .2);
+    border-right: 1px solid rgba(39, 40, 44, .2);
+    border-left: 1px solid rgba(39, 40, 44, .2);
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     h3 {
       max-width: 80%;
+      font-size: 1.5rem;
     }
 
     button {
@@ -85,6 +88,22 @@
     &.accordian-open {
       height: 100%;
       padding: 3rem;
+    }
+
+    p {
+      margin: $font-medium 0;
+      font-size: 1.5rem;
+    }
+
+    p img {
+      margin-bottom: $drop-medium;
+    }
+
+    li {
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      list-style-type: disc;
+      list-style-position: inside;
     }
   }
 }
