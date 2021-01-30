@@ -1068,11 +1068,6 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   }
 }
 
-.image-text .lh-col,
-.image-text .rh-col {
-  width: 100%;
-}
-
 .image-text img {
   margin-bottom: 4rem;
 }
