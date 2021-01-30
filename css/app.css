@@ -1619,8 +1619,15 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   margin-bottom: 0;
 }
 
-.contact .icon-holder p {
-  margin-bottom: 0;
+.contact .icon-holder .link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #27282C;
+  display: block;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+  text-decoration: none;
 }
 
 .contact h1.page-title {

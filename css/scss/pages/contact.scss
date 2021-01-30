@@ -56,8 +56,16 @@
       margin-bottom: 0;
     }
 
-    p {
-      margin-bottom: 0;
+    .link {
+      font-size: $font-body;
+      font-weight: 700;
+      color: $base;
+      display: block;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      hyphens: auto;
+    //  margin-bottom: 0;
+      text-decoration: none;
     }
   }
 
