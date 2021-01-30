@@ -1,15 +1,14 @@
+
 {% if item.acf_fc_layout == 'testimonials_block' %}
-  <div class="testimonials">
+  <div class="testimonial-slider">
     {% for item in item.slider %}
-      <div class="content">
-        <blockquote>{{ item.quote }}</blockquote>
-        <p class="author">{{ item.author }}</p>
-        <a href="{{ item.link }}" class="link">{{ item.link_text }}</a>
+      <div class="testimonial">
+        <div class="content">
+          <blockquote>{{ item.quote }}</blockquote>
+          <p class="author">{{ item.author }}</p>
+          <a href="{{ item.link }}" class="link">{{ item.link_text }}</a>
+        </div>
       </div>
     {% endfor %}
   </div>
 {% endif %}
-
-
-
-  
