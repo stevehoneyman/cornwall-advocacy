@@ -8,9 +8,25 @@
       {% for nav_item in primary_nav_pages.items %}
         <li class="nav-item">
           <a class="nav-link" href="{{ nav_item.link }}">{{ nav_item.title }}</a>
+
+
+          {# open sub-nav ------------------------------------------------------
+            {% if nav_item.children %}
+              <ul class="child-nav">
+                {% for child in nav_item.children %}
+                  <li class="child-nav-item">
+                    <a href="{{ child.link }}">{{ child.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          close sub nav ----------------------------------------------------- #}
+
+
         </li>
       {% endfor %}
     </ul>
+    <!-- cta nav -->
     <ul class="nav-cta">
       {% for nav_item in primary_nav_cta.items %}
         <li class="nav-item">

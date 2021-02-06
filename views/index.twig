@@ -1,7 +1,9 @@
 {% extends 'base.twig' %}
 {% block content %}
 
-  <code>this is index.twig</code>
+  <div class="breadcrumbs">
+    {{ fn('yoast_breadcrumb', false) }}
+  </div>
   <h1>{{ post.title }}</h1>
 
  {% endblock %}

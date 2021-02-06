@@ -10,7 +10,7 @@ add_action('wp_enqueue_scripts', 'set_theme_styles');
 // add scripts
 function set_theme_scripts() {
 	wp_enqueue_script( 'main_script', get_template_directory_uri() . '/js/scripts.js', array('jquery') , '' , true);
-  wp_enqueue_script( 'slick_js', get_template_directory_uri() . '/js/slick.min.js', '' , '' , true);  
+  wp_enqueue_script( 'slick_js', get_template_directory_uri() . '/js/slick.min.js', '' , '' , true);
 }
 add_action('wp_enqueue_scripts' , 'set_theme_scripts');
 

@@ -1,6 +1,10 @@
 {% extends 'base.twig' %}
 {% block content %}
 
+  <div class="breadcrumbs">
+    {{ fn('yoast_breadcrumb', false) }}
+  </div>
+
   <h1 class="page-title">{{ post.title }}</h1>
   {% include 'partials/landing-blocks.twig' %}
 

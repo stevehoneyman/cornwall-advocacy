@@ -1,6 +1,10 @@
 {% extends 'base.twig' %}
 {% block content %}
 
+<div class="breadcrumbs">
+  {{ fn('yoast_breadcrumb', false) }}
+</div>
+
 <div class="contact">
   <h1 class="page-title">{{ post.title }}</h1>
 

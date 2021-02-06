@@ -1,2 +1,19 @@
 /* globals
 ----------------------------------------------------------------------------- */
+.breadcrumbs {
+  padding: 0 2rem;
+  font-size: 21px;
+  letter-spacing: 0.02rem;
+  color: $base;
+
+  a {
+    font-size: 21px;
+    letter-spacing: 0.02rem;
+    color: $base;
+    text-decoration: none;
+  }
+
+  @include mq($break-medium) {
+    padding: 0 10rem;
+  }
+}

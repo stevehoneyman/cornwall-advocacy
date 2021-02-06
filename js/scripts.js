@@ -20,5 +20,5 @@ jQuery(document).ready(function($){
   // testimonial slider
   $('.testimonial-slider').slick({
 		//  setting-name: setting-value
- 	}); // end basic
+ 	});
 }); // close doc ready

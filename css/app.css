@@ -104,6 +104,28 @@ button {
   transition: 300ms;
 }
 
+/* globals
+----------------------------------------------------------------------------- */
+.breadcrumbs {
+  padding: 0 2rem;
+  font-size: 21px;
+  letter-spacing: 0.02rem;
+  color: #27282C;
+}
+
+.breadcrumbs a {
+  font-size: 21px;
+  letter-spacing: 0.02rem;
+  color: #27282C;
+  text-decoration: none;
+}
+
+@media (min-width: 880px) {
+  .breadcrumbs {
+    padding: 0 10rem;
+  }
+}
+
 /* layout:
 ----------------------------------------------------------------------------- */
 #site-wrapper {
@@ -117,7 +139,7 @@ button {
 ----------------------------------------------------------------------------- */
 .page-title {
   padding: 0 2rem;
-  margin-top: 6rem;
+  margin-top: 26px;
   margin-bottom: 5rem;
   font-size: 2.5rem;
   font-weight: 700;
@@ -832,6 +854,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 /* banner
 ----------------------------------------------------------------------------- */
 .banner {
+  position: relative;
   padding: 8rem 0.5rem 4rem 0.5rem;
   display: flex;
   justify-content: center;
@@ -889,6 +912,22 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
     line-height: 3.5;
     letter-spacing: 0.06rem;
   }
+}
+
+.banner .child-nav {
+  position: absolute;
+  bottom: 0;
+  padding: 1.25rem 0 1.25rem 3rem;
+  display: flex;
+  background: #ffe68c;
+}
+
+.banner .child-nav-item {
+  margin-right: 3rem;
+  font-size: 21px;
+  letter-spacing: 0.02rem;
+  color: #27282C;
+  text-decoration: none;
 }
 
 /* text
