@@ -1,4 +1,4 @@
-/* footer
+/* footer hb
 ----------------------------------------------------------------------------- */
 .footer-statement {
   padding: 3rem 2.5rem 3rem;
@@ -58,12 +58,15 @@
   .left-col {
     .text {
       margin: 1rem 0 4rem 0;
+      font-family: 'helvetica now medium';
       font-size: $font-body;
-      line-height: 1.5;
-      letter-spacing: 0.06rem;
+      font-weight: $font-light-bold;
+      line-height: 1.6;
+      letter-spacing: 0.09rem;
 
       @include mq($break-medium) {
         font-size: $font-medium;
+        letter-spacing: 0.06rem;
       }
     }
 
@@ -71,13 +74,17 @@
       height: 4rem;
       padding: .5rem 2rem;
       margin-bottom: 4rem;
+      font-family: 'helvetica neue';
       font-size: $font-root;
       font-weight: $font-bold;
+      line-height: 1.2212;
+      letter-spacing: 0.02rem;
       color: $white;
       background: $base;
 
       @include mq($break-medium) {
-        font-size: 1.135rem;
+        font-size: 1.313rem;
+        letter-spacing: 0.026rem;
       }
     }
   }
@@ -90,14 +97,20 @@
     .link {
       display: block;
       margin-bottom: 2.5rem;
+      font-family: 'helvetica now bold';
       font-size: 1.125rem;
       font-weight: $font-bold;
+      line-height: $lh-body;
+      letter-spacing: 0.068rem;
       text-decoration: none;
       color: $base;
 
       @include mq($break-medium) {
         margin-bottom: 3.5rem;
+        font-family: 'helvetica neue';
         font-size: $font-body;
+        line-height: 1.875;
+        letter-spacing: 0.09rem;
       }
     }
 
@@ -137,6 +150,7 @@
   border-bottom: 1rem solid $base;
   display: flex;
   flex-direction: column;
+  font-family: 'helvetica neue';
   font-size: $font-root;
   font-weight: $font-bold;
   line-height: $lh-body;
@@ -147,6 +161,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-family: 'helvetica now medium';
+    font-weight: $font-light-bold;
+    line-height: 1.47;
   }
 
   @include mq($break-large) {
@@ -176,6 +193,10 @@
       font-weight: $font-bold;
       text-decoration: none;
       color: $base;
+
+      @include mq($break-medium) {
+        font-weight: $font-light-bold;
+      }
     }
 
     .nav-link:hover {

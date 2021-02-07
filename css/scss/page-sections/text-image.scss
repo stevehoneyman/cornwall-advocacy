@@ -1,4 +1,4 @@
-/* text-mage [features on landing pages, eg: about, how we help, background]
+/* text-mage hb [features on landing pages, eg: about, how we help, background]
 ----------------------------------------------------------------------------- */
 .text-image {
  padding: 0 2rem;
@@ -34,17 +34,23 @@
 
   p {
     margin-bottom: 4rem;
-    font-size: 28px;
+    font-family: 'helvetica now medium';
+    font-size: 1.75rem;
     font-weight: 500;
     line-height: 1.6;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.105rem;
 
     &:last-of-type {
     //   margin-bottom: 0;
     }
 
-    @include mq($break-medium) {
+    @include mq($break-small) {
       font-size: 2.5rem;
+      letter-spacing: 0.15rem;
+    }
+
+    @include mq($break-medium) {
+      letter-spacing: 0.075rem;
     }
   }
 

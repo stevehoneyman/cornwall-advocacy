@@ -1,4 +1,4 @@
-/* contact
+/* contact hb
 ----------------------------------------------------------------------------- */
 .contact {
   padding: 0 2rem;
@@ -73,50 +73,77 @@
   h1.page-title {
     margin-bottom: 3rem;
     padding-left: 0;
+    font-family: 'helvetica now bold';
     font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: 0.06rem;
+    font-weight: $font-bold;
+    line-height: 1.4;
+    letter-spacing: 0.15rem;
     color: $base;
 
     &:after {
       @include underline-brand;
     }
 
+    @include mq($break-small) {
+      font-size: 3.5rem;
+      letter-spacing: 0.21rem;
+    }
+
     @include mq($break-medium) {
       font-size: 4rem;
-      letter-spacing: 0.03rem;
+      letter-spacing: 0.12rem;
     }
   }
 
   .section-title {
+    margin-top: 96px;
     margin-bottom: 104px;
+    font-family: 'helvetica now bold';
     font-size: $font-medium;
-    font-weight: 700;
-    letter-spacing: 0.06rem;
+    font-weight: $font-bold;
+    line-height: $lh-heading;
+    letter-spacing: 0.12rem;
 
     &:after {
       @include underline-brand;
     }
 
+    @include mq($break-small) {
+      font-size: 2.5rem;
+      line-height: 1.6;
+      letter-spacing: 0.15rem;
+    }
+
     @include mq($break-medium) {
       font-size: $font-large;
-      letter-spacing: 0.06rem;
+      line-height: $lh-heading;
+      letter-spacing: 0.18rem;
     }
   }
 
   p {
     margin-bottom: $drop-medium;
-    font-size: $font-body;
+    font-size: 1.3rem;
     line-height: $lh-body;
+    letter-spacing: 0.026rem;
+
+    @include mq($break-small) {
+      font-size: $font-body;
+      letter-spacing: 0.03rem;
+    }
   }
 
   .detail {
+    font-family: 'helvetica now bold';
     font-size: 14px;
     font-weight: $font-bold;
-    letter-spacing: 0.06rem;
+    line-height: 3.2142;
+    letter-spacing: 0.053rem;
 
     @include mq($break-medium) {
       font-size: $font-body;
+      line-height: 1.875;
+      letter-spacing: 0.09rem;
     }
   }
 
@@ -128,14 +155,16 @@
   .contact-form {
     label {
       margin: 1rem 0;
+      font-family: 'helvetica now bold';
       font-size: 18px !important;
-      font-weight: 700;
-      letter-spacing: 0.06rem;
+      font-weight: $font-bold;
+      line-height: $lh-heading !important;
+      letter-spacing: 0.068rem;
       color: $base;
 
       @include mq($break-medium) {
-        font-size: 28px !important;
-        letter-spacing: 0.03rem;
+        font-size: 24px !important;
+        letter-spacing: 0.09rem;
       }
     }
 
@@ -152,19 +181,28 @@
 
     input[type="submit"] {
       padding: 1.25rem 2rem;
+      font-family: 'helvetica now bold';
       font-size: 1.3125rem;
-      font-weight: bold;
+      font-weight: $font-bold;
+      line-height: 1.47 !important;
+      letter-spacing: 0.02rem;
       color: $white;
       background: $base;
+
+      @include mq($break-medium) {
+        font-size: 1.313rem !important;
+        letter-spacing: 0.026rem;
+      }
     }
 
     ::placeholder {
       font-size: $font-root;
-      letter-spacing: 0.2%;
+      line-height: 1.4 !important;
+      letter-spacing: 0.02rem !important;
       color: rgba(39, 40, 44, .6);
 
       @include mq($break-medium) {
-        font-size: $font-body;
+        font-size: $font-body !important;
       }
     }
   }

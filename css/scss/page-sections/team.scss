@@ -1,4 +1,4 @@
-/* team
+/* team hb
 ----------------------------------------------------------------------------- */
 .team {
  padding: 0 2rem;
@@ -12,30 +12,47 @@
 
   .section-title {
     margin-bottom: 5rem;
+    font-family: 'helvetica neue';
     font-size: $font-medium;
     font-weight: 700;
-    letter-spacing: 0.06rem;
+    line-height: 1.4;
+    letter-spacing: 0.12rem;
     color: $base;
 
     &:after {
       @include underline-brand;
     }
 
+    @include mq($break-small) {
+      font-size: 2.5rem;
+      line-height: 1.6;
+      letter-spacing: 0.15rem;
+    }
+
     @include mq($break-medium) {
+      font-family: 'helvetica now bold';
       font-size: $font-large;
-      letter-spacing: 0.03rem;
+      line-height: $lh-heading;
+      letter-spacing: 0.09rem;
     }
   }
 
   .text {
     width: 80%;
     margin-bottom: $drop-medium;
+    font-family: 'helvetica now medium';
     font-size: 28px;
+    font-weight: 500;
     line-height: 1.6;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.21rem;
+
+    @include mq($break-small) {
+      font-size: 2.5rem;
+      letter-spacing: 0.3rem;
+    }
 
     @include mq($break-medium) {
-      font-size: 2.5rem;
+      letter-spacing: 0.15rem;
     }
   }
 
@@ -74,22 +91,41 @@
 
     h3 {
       margin-bottom: 30px;
-      font-size: $font-medium;
-      font-weight: 800;
+      font-family: 'helvetica now bold';
+      font-size: 1.313rem;
+      font-weight: $font-bold;
+      line-height: 1.4;
       letter-spacing: 0.03rem;
+
+      @include mq($break-medium) {
+        font-size: $font-medium;
+        letter-spacing: 0.06rem;
+      }
     }
 
     .job-title {
       margin-bottom: 3rem;
+      font-family: 'helvetica now medium';
       font-size: $font-body;
       font-weight: 500;
+      line-height: 1.6;
       letter-spacing: 0.03rem;
+
+      @include mq($break-medium) {
+        letter-spacing: 0.045rem;
+      }
     }
 
     .bio {
+      font-family: 'helvetica neue';
       font-size: 1.5rem;
       line-height: 2;
       letter-spacing: 0.01rem;
+
+      @include mq($break-medium) {
+        font-family: 'helvetica now regular';
+        letter-spacing: 0.015rem;
+      }
     }
   }
 }

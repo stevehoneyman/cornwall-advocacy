@@ -14,15 +14,18 @@
   width: $full-width;
   color: $base;
   background-color: #FFE99C;
-  margin-bottom: $drop-large;
 
   @include mq($break-small) {
     display: flex;
   }
 
+  @include mq($break-medium) {
+    margin-bottom: 7.5rem;
+  }
+
   .home-title-cont {
     width: $full-width;
-    font-family: $primary;
+    font-family: 'helvetica now bold';
     font-size: $font-body;
     font-weight: 800;
     line-height: 1.6;

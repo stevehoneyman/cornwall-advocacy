@@ -1,4 +1,4 @@
-/* projects
+/* projects hb
 ----------------------------------------------------------------------------- */
 .projects {
   padding: 0 2rem;
@@ -25,12 +25,27 @@
 
   .section-title {
     margin-bottom: 5rem;
-    font-size: 32px;
-    font-weight: 800;
-    letter-spacing: 0.03rem;
+    font-family: 'helvetica neue';
+    font-size: $font-medium;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.12rem;
 
     &:after {
      @include underline-brand;
+    }
+
+    @include mq($break-small) {
+      font-size: 2.5rem;
+      line-height: 1.6;
+      letter-spacing: 0.15rem;
+    }
+
+    @include mq($break-medium) {
+      font-family: 'helvetica now bold';
+      font-size: $font-large;
+      line-height: 1.4;
+      letter-spacing: 0.09rem;
     }
   }
 
@@ -53,13 +68,17 @@
 
   .text {
     width: 100%;
+    font-family: 'helvetica neue';
     font-size: $font-body;
+    font-weight: 400;
     line-height: $lh-body;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.03rem;
     color: $base;
 
     @include mq($break-medium) {
       width: 75%;
+      font-family: 'helvetica now regular';
+      letter-spacing: 0.015rem;
     }
   }
 
@@ -67,10 +86,18 @@
     height: 4rem;
     padding: 0 2rem;
     display: inline-flex;
-    font-size: 1.3125rem;;
+    font-family: 'helvetica neue';
+    font-size: $font-root;
     font-weight: $font-bold;
+    line-height: 1.47;
+    letter-spacing: 0.02rem;
     text-decoration: none;
     color: $white;
     background: $base;
+
+    @include mq($break-medium) {
+      font-size: 1.313rem;
+      line-height: 1.22;
+    }
   }
 }

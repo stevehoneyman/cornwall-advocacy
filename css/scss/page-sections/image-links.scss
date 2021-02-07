@@ -1,4 +1,4 @@
-/* image-links
+/* image-links hb
 ----------------------------------------------------------------------------- */
 .image-links {
   padding: 0 2rem;
@@ -16,13 +16,23 @@
 
   .section-title {
     margin: 6rem 0;
+    font-family: 'helvetica neue';
     font-size: $font-medium;
-    font-weight: $font-bold;
-    letter-spacing: 0.06rem;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.12rem;
+
+    @include mq($break-small) {
+      font-size: 2.5rem;
+      line-height: 1.6;
+      letter-spacing: 0.15rem;
+    }
 
     @include mq($break-medium) {
+      font-family: 'helvetica now bold';
       font-size: $font-large;
-      letter-spacing: 0.06rem;
+      line-height: 1.4;
+      letter-spacing: 0.09rem;
     }
 
     &:after {
@@ -39,12 +49,15 @@
 
   .text {
     margin: 3rem 0;
+    font-family: 'helvetica now bold';
     font-size: $font-body;
-    font-weight: 800;
+    font-weight: $font-bold;
     letter-spacing: 0.03rem;
 
      @include mq($break-medium) {
       font-size: 1.75rem;
+      line-height: 1.4;
+      letter-spacing: 0.053rem;
      }
   }
 
@@ -54,8 +67,10 @@
     margin-bottom: 7.75rem;
     display: inline-flex;
     align-items: center;
+    font-family: 'helvetica now bold';
     font-size: $font-root;
     font-weight: $font-bold;
+    line-height: 1.47;
     letter-spacing: 0.02rem;
     text-decoration: none;
     color: $white;
@@ -63,7 +78,8 @@
     background: $base;
 
     @include mq($break-medium) {
-      font-size: 1.3125rem;
+      font-size: 1.313rem;
+      line-height: 1.22;
     }
   }
 }

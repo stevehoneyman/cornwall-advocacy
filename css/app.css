@@ -135,15 +135,17 @@ button {
   background: #fff;
 }
 
-/* typography
+/* typography hb
 ----------------------------------------------------------------------------- */
 .page-title {
   padding: 0 2rem;
-  margin-top: 26px;
+  margin-top: 6rem;
   margin-bottom: 5rem;
+  font-family: 'helvetica neue';
   font-size: 2.5rem;
   font-weight: 700;
-  letter-spacing: 0.06rem;
+  line-height: 1.4;
+  letter-spacing: 0.15rem;
   color: #27282C;
 }
 
@@ -156,9 +158,19 @@ button {
   background: #ffdb5a;
 }
 
+@media (min-width: 414px) {
+  .page-title {
+    font-size: 3.5rem;
+    letter-spacing: 0.21rem;
+  }
+}
+
 @media (min-width: 880px) {
   .page-title {
     padding: 0 10rem;
+    font-family: 'helvetica now bold';
+    font-size: 4rem;
+    letter-spacing: 0.12rem;
   }
 }
 
@@ -536,7 +548,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   color: #fff;
 }
 
-/* footer
+/* footer hb
 ----------------------------------------------------------------------------- */
 .footer-statement {
   padding: 3rem 2.5rem 3rem;
@@ -603,14 +615,17 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .footer-statement .left-col .text {
   margin: 1rem 0 4rem 0;
+  font-family: 'helvetica now medium';
   font-size: 1.5rem;
-  line-height: 1.5;
-  letter-spacing: 0.06rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.09rem;
 }
 
 @media (min-width: 880px) {
   .footer-statement .left-col .text {
     font-size: 2rem;
+    letter-spacing: 0.06rem;
   }
 }
 
@@ -618,15 +633,19 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   height: 4rem;
   padding: .5rem 2rem;
   margin-bottom: 4rem;
+  font-family: 'helvetica neue';
   font-size: 1rem;
   font-weight: 700;
+  line-height: 1.2212;
+  letter-spacing: 0.02rem;
   color: #fff;
   background: #27282C;
 }
 
 @media (min-width: 880px) {
   .footer-statement .left-col button {
-    font-size: 1.135rem;
+    font-size: 1.313rem;
+    letter-spacing: 0.026rem;
   }
 }
 
@@ -639,8 +658,11 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 .footer-statement .right-col .link {
   display: block;
   margin-bottom: 2.5rem;
+  font-family: 'helvetica now bold';
   font-size: 1.125rem;
   font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.068rem;
   text-decoration: none;
   color: #27282C;
 }
@@ -648,7 +670,10 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 @media (min-width: 880px) {
   .footer-statement .right-col .link {
     margin-bottom: 3.5rem;
+    font-family: 'helvetica neue';
     font-size: 1.5rem;
+    line-height: 1.875;
+    letter-spacing: 0.09rem;
   }
 }
 
@@ -688,6 +713,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   border-bottom: 1rem solid #27282C;
   display: flex;
   flex-direction: column;
+  font-family: 'helvetica neue';
   font-size: 1rem;
   font-weight: 700;
   line-height: 2;
@@ -700,6 +726,9 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-family: 'helvetica now medium';
+    font-weight: 500;
+    line-height: 1.47;
   }
 }
 
@@ -736,6 +765,12 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   color: #27282C;
 }
 
+@media (min-width: 880px) {
+  .footer-details .footer-nav .nav-link {
+    font-weight: 500;
+  }
+}
+
 .footer-details .footer-nav .nav-link:hover {
   text-decoration: underline;
 }
@@ -761,7 +796,6 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   width: 100%;
   color: #27282C;
   background-color: #FFE99C;
-  margin-bottom: 6rem;
 }
 
 @media (min-width: 414px) {
@@ -770,9 +804,15 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   }
 }
 
+@media (min-width: 880px) {
+  .banner-home {
+    margin-bottom: 7.5rem;
+  }
+}
+
 .banner-home .home-title-cont {
   width: 100%;
-  font-family: helvetica;
+  font-family: 'helvetica now bold';
   font-size: 1.5rem;
   font-weight: 800;
   line-height: 1.6;
@@ -930,7 +970,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   text-decoration: none;
 }
 
-/* text
+/* text hb
 ----------------------------------------------------------------------------- */
 .text-block {
   padding: 0 2rem;
@@ -947,21 +987,39 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .text-block p {
   margin: 1rem 0;
+  font-family: 'helvetica neue';
   font-size: 1.5rem;
-  letter-spacing: 0.01rem;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.03rem;
+}
+
+@media (min-width: 880px) {
+  .text-block p {
+    font-family: 'helvetica now regular';
+    letter-spacing: 0.015rem;
+  }
 }
 
 .text-block p:first-of-type {
   margin-bottom: 6rem;
-  font-size: 2rem;
+  font-family: 'helvetica now medium';
+  font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.6;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.105rem;
+}
+
+@media (min-width: 414px) {
+  .text-block p:first-of-type {
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
+  }
 }
 
 @media (min-width: 880px) {
   .text-block p:first-of-type {
-    font-size: 3rem;
+    letter-spacing: 0.075rem;
   }
 }
 
@@ -976,15 +1034,16 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   position: relative;
   width: 75%;
   margin: 2.5rem 2rem 2.5rem 6rem;
-  font-size: 18px;
+  font-family: 'helvetica neue';
+  font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: 0.06rem;
+  line-height: 1.875;
+  letter-spacing: 0.09rem;
 }
 
 @media (min-width: 880px) {
   .text-block li {
     width: 35%;
-    font-size: 1.5rem;
   }
 }
 
@@ -1019,9 +1078,11 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .text-basic .section-title {
   margin-bottom: 4.5rem;
+  font-family: 'helvetica neue';
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 0.06rem;
+  line-height: 1.4;
+  letter-spacing: 0.12rem;
 }
 
 .text-basic .section-title:after {
@@ -1033,28 +1094,61 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   background: #ffdb5a;
 }
 
+@media (min-width: 414px) {
+  .text-basic .section-title {
+    font-size: 2.5rem;
+    line-height: 1.6;
+    letter-spacing: 0.15rem;
+  }
+}
+
+@media (min-width: 880px) {
+  .text-basic .section-title {
+    font-family: 'helvetica now bold';
+    font-size: 3rem;
+    line-height: 1.4;
+    letter-spacing: 0.09rem;
+  }
+}
+
 .text-basic p {
   margin-bottom: 4rem;
+  font-family: 'helvetica neue';
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.03rem;
+}
+
+@media (min-width: 880px) {
+  .text-basic p {
+    font-family: 'helvetica now regular';
+    letter-spacing: 0.015rem;
+  }
 }
 
 .text-basic p:first-of-type {
+  font-family: 'helvetica now medium';
   font-size: 28px;
   font-weight: 500;
   line-height: 1.6;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.105rem;
+}
+
+@media (min-width: 414px) {
+  .text-basic p:first-of-type {
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
+  }
 }
 
 @media (min-width: 880px) {
   .text-basic p:first-of-type {
-    font-size: 2.5rem;
+    letter-spacing: 0.075rem;
   }
 }
 
-/* image-text [features on standard pages what is advocacy & projects]
+/* image-text hb [features on standard pages what is advocacy & projects]
 ----------------------------------------------------------------------------- */
 .image-text {
   padding: 6rem 2rem 0 2rem;
@@ -1075,9 +1169,11 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .image-text .section-title {
   margin-bottom: 104px;
+  font-family: 'helvetica neue';
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 0.06rem;
+  line-height: 1.4;
+  letter-spacing: 0.09rem;
 }
 
 .image-text .section-title:after {
@@ -1089,10 +1185,20 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   background: #ffdb5a;
 }
 
+@media (min-width: 414px) {
+  .image-text .section-title {
+    font-size: 2.5rem;
+    line-height: 1.6;
+    letter-spacing: 0.15rem;
+  }
+}
+
 @media (min-width: 880px) {
   .image-text .section-title {
+    font-family: 'helvetica now bold';
     font-size: 3rem;
-    letter-spacing: 0.03rem;
+    line-height: 1.4;
+    letter-spacing: 0.09rem;
   }
 }
 
@@ -1105,6 +1211,11 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   .image-text .columns {
     flex-direction: row;
   }
+}
+
+.image-text .lh-col,
+.image-text .rh-col {
+  width: 100%;
 }
 
 .image-text img {
@@ -1129,23 +1240,39 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .image-text p {
   margin-bottom: 3rem;
+  font-family: 'helvetica neue';
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.03rem;
+}
+
+@media (min-width: 880px) {
+  .image-text p {
+    font-family: 'helvetica now regular';
+    letter-spacing: 0.015rem;
+  }
 }
 
 .image-text p:first-of-type {
   margin-bottom: 4rem;
-  font-size: 28px;
+  font-family: 'helvetica now medium';
+  font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.6;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.105rem;
+}
+
+@media (min-width: 414px) {
+  .image-text p:first-of-type {
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
+  }
 }
 
 @media (min-width: 880px) {
   .image-text p:first-of-type {
-    font-size: 2.5rem;
+    letter-spacing: 0.075rem;
   }
 }
 
@@ -1160,19 +1287,28 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.3125rem;
+  font-family: 'helvetica neue';
+  font-size: 1rem;
   font-weight: 700;
+  line-height: 1.47;
   letter-spacing: 0.02rem;
   text-decoration: none;
   color: #fff;
   background: #27282C;
 }
 
+@media (min-width: 880px) {
+  .image-text .link {
+    font-size: 1.313rem;
+    line-height: 1.22;
+  }
+}
+
 .image-text.grey {
   background: #f1f1f1;
 }
 
-/* text-mage [features on landing pages, eg: about, how we help, background]
+/* text-mage hb [features on landing pages, eg: about, how we help, background]
 ----------------------------------------------------------------------------- */
 .text-image {
   padding: 0 2rem;
@@ -1212,15 +1348,23 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .text-image p {
   margin-bottom: 4rem;
-  font-size: 28px;
+  font-family: 'helvetica now medium';
+  font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.6;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.105rem;
+}
+
+@media (min-width: 414px) {
+  .text-image p {
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
+  }
 }
 
 @media (min-width: 880px) {
   .text-image p {
-    font-size: 2.5rem;
+    letter-spacing: 0.075rem;
   }
 }
 
@@ -1230,7 +1374,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   object-fit: cover;
 }
 
-/* image-links
+/* image-links hb
 ----------------------------------------------------------------------------- */
 .image-links {
   padding: 0 2rem;
@@ -1251,15 +1395,27 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .image-links .section-title {
   margin: 6rem 0;
+  font-family: 'helvetica neue';
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 0.06rem;
+  line-height: 1.4;
+  letter-spacing: 0.12rem;
+}
+
+@media (min-width: 414px) {
+  .image-links .section-title {
+    font-size: 2.5rem;
+    line-height: 1.6;
+    letter-spacing: 0.15rem;
+  }
 }
 
 @media (min-width: 880px) {
   .image-links .section-title {
+    font-family: 'helvetica now bold';
     font-size: 3rem;
-    letter-spacing: 0.06rem;
+    line-height: 1.4;
+    letter-spacing: 0.09rem;
   }
 }
 
@@ -1280,14 +1436,17 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .image-links .text {
   margin: 3rem 0;
+  font-family: 'helvetica now bold';
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.03rem;
 }
 
 @media (min-width: 880px) {
   .image-links .text {
     font-size: 1.75rem;
+    line-height: 1.4;
+    letter-spacing: 0.053rem;
   }
 }
 
@@ -1297,8 +1456,10 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   margin-bottom: 7.75rem;
   display: inline-flex;
   align-items: center;
+  font-family: 'helvetica now bold';
   font-size: 1rem;
   font-weight: 700;
+  line-height: 1.47;
   letter-spacing: 0.02rem;
   text-decoration: none;
   color: #fff;
@@ -1307,7 +1468,8 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 @media (min-width: 880px) {
   .image-links .link {
-    font-size: 1.3125rem;
+    font-size: 1.313rem;
+    line-height: 1.22;
   }
 }
 
@@ -1375,7 +1537,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   }
 }
 
-/* testimonials
+/* testimonials hb
 ----------------------------------------------------------------------------- */
 .testimonial {
   width: 100%;
@@ -1401,15 +1563,24 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 .testimonial blockquote {
   position: relative;
   margin-bottom: 1.5rem;
-  font-size: 2rem;
+  font-family: 'helvetica neue';
+  font-size: 1.75rem;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1.6;
+  letter-spacing: 0.21rem;
   color: #fff;
+}
+
+@media (min-width: 414px) {
+  .testimonial blockquote {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+  }
 }
 
 @media (min-width: 880px) {
   .testimonial blockquote {
-    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
   }
 }
 
@@ -1428,7 +1599,11 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .testimonial .author {
   margin-bottom: 3rem;
-  font-size: 21px;
+  font-family: 'helvetica now medium';
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.1;
+  letter-spacing: 0.045rem;
   color: #fff;
 }
 
@@ -1444,8 +1619,11 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.315rem;
+  font-family: 'helvetica neue';
+  font-size: 1rem;
   font-weight: 700;
+  line-height: 1.47;
+  letter-spacing: 0.02rem;
   text-decoration: none;
   color: #27282C;
   background: #ffdb5a;
@@ -1453,11 +1631,13 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 @media (min-width: 880px) {
   .testimonial .link {
-    font-size: 1.5rem;
+    font-size: 1.313rem;
+    line-height: 1.22;
+    letter-spacing: 0.026rem;
   }
 }
 
-/* projects
+/* projects hb
 ----------------------------------------------------------------------------- */
 .projects {
   padding: 0 2rem;
@@ -1489,9 +1669,11 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .projects .section-title {
   margin-bottom: 5rem;
-  font-size: 32px;
-  font-weight: 800;
-  letter-spacing: 0.03rem;
+  font-family: 'helvetica neue';
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.12rem;
 }
 
 .projects .section-title:after {
@@ -1501,6 +1683,23 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   margin-top: 1rem;
   display: block;
   background: #ffdb5a;
+}
+
+@media (min-width: 414px) {
+  .projects .section-title {
+    font-size: 2.5rem;
+    line-height: 1.6;
+    letter-spacing: 0.15rem;
+  }
+}
+
+@media (min-width: 880px) {
+  .projects .section-title {
+    font-family: 'helvetica now bold';
+    font-size: 3rem;
+    line-height: 1.4;
+    letter-spacing: 0.09rem;
+  }
 }
 
 .projects .content {
@@ -1522,15 +1721,19 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .projects .text {
   width: 100%;
+  font-family: 'helvetica neue';
   font-size: 1.5rem;
+  font-weight: 400;
   line-height: 2;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.03rem;
   color: #27282C;
 }
 
 @media (min-width: 880px) {
   .projects .text {
     width: 75%;
+    font-family: 'helvetica now regular';
+    letter-spacing: 0.015rem;
   }
 }
 
@@ -1538,14 +1741,24 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   height: 4rem;
   padding: 0 2rem;
   display: inline-flex;
-  font-size: 1.3125rem;
+  font-family: 'helvetica neue';
+  font-size: 1rem;
   font-weight: 700;
+  line-height: 1.47;
+  letter-spacing: 0.02rem;
   text-decoration: none;
   color: #fff;
   background: #27282C;
 }
 
-/* team
+@media (min-width: 880px) {
+  .projects .link {
+    font-size: 1.313rem;
+    line-height: 1.22;
+  }
+}
+
+/* team hb
 ----------------------------------------------------------------------------- */
 .team {
   padding: 0 2rem;
@@ -1562,9 +1775,11 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .team .section-title {
   margin-bottom: 5rem;
+  font-family: 'helvetica neue';
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 0.06rem;
+  line-height: 1.4;
+  letter-spacing: 0.12rem;
   color: #27282C;
 }
 
@@ -1577,24 +1792,43 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   background: #ffdb5a;
 }
 
+@media (min-width: 414px) {
+  .team .section-title {
+    font-size: 2.5rem;
+    line-height: 1.6;
+    letter-spacing: 0.15rem;
+  }
+}
+
 @media (min-width: 880px) {
   .team .section-title {
+    font-family: 'helvetica now bold';
     font-size: 3rem;
-    letter-spacing: 0.03rem;
+    line-height: 1.4;
+    letter-spacing: 0.09rem;
   }
 }
 
 .team .text {
   width: 80%;
   margin-bottom: 4rem;
+  font-family: 'helvetica now medium';
   font-size: 28px;
+  font-weight: 500;
   line-height: 1.6;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.21rem;
+}
+
+@media (min-width: 414px) {
+  .team .text {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+  }
 }
 
 @media (min-width: 880px) {
   .team .text {
-    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
   }
 }
 
@@ -1640,25 +1874,50 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .team .profile h3 {
   margin-bottom: 30px;
-  font-size: 2rem;
-  font-weight: 800;
+  font-family: 'helvetica now bold';
+  font-size: 1.313rem;
+  font-weight: 700;
+  line-height: 1.4;
   letter-spacing: 0.03rem;
+}
+
+@media (min-width: 880px) {
+  .team .profile h3 {
+    font-size: 2rem;
+    letter-spacing: 0.06rem;
+  }
 }
 
 .team .profile .job-title {
   margin-bottom: 3rem;
+  font-family: 'helvetica now medium';
   font-size: 1.5rem;
   font-weight: 500;
+  line-height: 1.6;
   letter-spacing: 0.03rem;
 }
 
+@media (min-width: 880px) {
+  .team .profile .job-title {
+    letter-spacing: 0.045rem;
+  }
+}
+
 .team .profile .bio {
+  font-family: 'helvetica neue';
   font-size: 1.5rem;
   line-height: 2;
   letter-spacing: 0.01rem;
 }
 
-/* contact
+@media (min-width: 880px) {
+  .team .profile .bio {
+    font-family: 'helvetica now regular';
+    letter-spacing: 0.015rem;
+  }
+}
+
+/* contact hb
 ----------------------------------------------------------------------------- */
 .contact {
   padding: 0 2rem;
@@ -1735,9 +1994,11 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 .contact h1.page-title {
   margin-bottom: 3rem;
   padding-left: 0;
+  font-family: 'helvetica now bold';
   font-size: 2.5rem;
   font-weight: 700;
-  letter-spacing: 0.06rem;
+  line-height: 1.4;
+  letter-spacing: 0.15rem;
   color: #27282C;
 }
 
@@ -1750,18 +2011,28 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   background: #ffdb5a;
 }
 
+@media (min-width: 414px) {
+  .contact h1.page-title {
+    font-size: 3.5rem;
+    letter-spacing: 0.21rem;
+  }
+}
+
 @media (min-width: 880px) {
   .contact h1.page-title {
     font-size: 4rem;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.12rem;
   }
 }
 
 .contact .section-title {
+  margin-top: 96px;
   margin-bottom: 104px;
+  font-family: 'helvetica now bold';
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 0.06rem;
+  line-height: 1.4;
+  letter-spacing: 0.12rem;
 }
 
 .contact .section-title:after {
@@ -1773,28 +2044,49 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   background: #ffdb5a;
 }
 
+@media (min-width: 414px) {
+  .contact .section-title {
+    font-size: 2.5rem;
+    line-height: 1.6;
+    letter-spacing: 0.15rem;
+  }
+}
+
 @media (min-width: 880px) {
   .contact .section-title {
     font-size: 3rem;
-    letter-spacing: 0.06rem;
+    line-height: 1.4;
+    letter-spacing: 0.18rem;
   }
 }
 
 .contact p {
   margin-bottom: 4rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 2;
+  letter-spacing: 0.026rem;
+}
+
+@media (min-width: 414px) {
+  .contact p {
+    font-size: 1.5rem;
+    letter-spacing: 0.03rem;
+  }
 }
 
 .contact .detail {
+  font-family: 'helvetica now bold';
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: 0.06rem;
+  line-height: 3.2142;
+  letter-spacing: 0.053rem;
 }
 
 @media (min-width: 880px) {
   .contact .detail {
     font-size: 1.5rem;
+    line-height: 1.875;
+    letter-spacing: 0.09rem;
   }
 }
 
@@ -1804,16 +2096,18 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .contact .contact-form label {
   margin: 1rem 0;
+  font-family: 'helvetica now bold';
   font-size: 18px !important;
   font-weight: 700;
-  letter-spacing: 0.06rem;
+  line-height: 1.4 !important;
+  letter-spacing: 0.068rem;
   color: #27282C;
 }
 
 @media (min-width: 880px) {
   .contact .contact-form label {
-    font-size: 28px !important;
-    letter-spacing: 0.03rem;
+    font-size: 24px !important;
+    letter-spacing: 0.09rem;
   }
 }
 
@@ -1833,25 +2127,36 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .contact .contact-form input[type="submit"] {
   padding: 1.25rem 2rem;
+  font-family: 'helvetica now bold';
   font-size: 1.3125rem;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.47 !important;
+  letter-spacing: 0.02rem;
   color: #fff;
   background: #27282C;
 }
 
+@media (min-width: 880px) {
+  .contact .contact-form input[type="submit"] {
+    font-size: 1.313rem !important;
+    letter-spacing: 0.026rem;
+  }
+}
+
 .contact .contact-form ::placeholder {
   font-size: 1rem;
-  letter-spacing: 0.2%;
+  line-height: 1.4 !important;
+  letter-spacing: 0.02rem !important;
   color: rgba(39, 40, 44, 0.6);
 }
 
 @media (min-width: 880px) {
   .contact .contact-form ::placeholder {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 }
 
-/* request
+/* request [styles for request an advocate form]
 ----------------------------------------------------------------------------- */
 .request-advocate {
   padding: 0 2rem;

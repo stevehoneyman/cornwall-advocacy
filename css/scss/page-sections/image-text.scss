@@ -1,4 +1,4 @@
-/* image-text [features on standard pages what is advocacy & projects]
+/* image-text hb [features on standard pages what is advocacy & projects]
 ----------------------------------------------------------------------------- */
 .image-text {
   padding: 6rem 2rem 0 2rem;
@@ -17,17 +17,27 @@
 
   .section-title {
     margin-bottom: 104px;
+    font-family: 'helvetica neue';
     font-size: $font-medium;
     font-weight: $font-bold;
-    letter-spacing: 0.06rem;
+    line-height: $lh-heading;
+    letter-spacing: 0.09rem;
 
     &:after {
       @include underline-brand;
     }
 
+    @include mq($break-small) {
+      font-size: 2.5rem;
+      line-height: 1.6;
+      letter-spacing: 0.15rem;
+    }
+
     @include mq($break-medium) {
+      font-family: 'helvetica now bold';
       font-size: $font-large;
-      letter-spacing: 0.03rem;
+      line-height: 1.4;
+      letter-spacing: 0.09rem;
     }
   }
 
@@ -42,7 +52,7 @@
 
   .lh-col,
   .rh-col {
-  //  width: 100%;
+    width: 100%;
   }
 
   img {
@@ -69,21 +79,33 @@
 
   p {
     margin-bottom: 3rem;
+    font-family: 'helvetica neue';
     font-size: $font-body;
     font-weight: 400;
     line-height: $lh-body;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.03rem;
+
+    @include mq($break-medium) {
+      font-family: 'helvetica now regular';
+      letter-spacing: 0.015rem;
+    }
   }
 
   p:first-of-type {
     margin-bottom: $drop-medium;
-    font-size: 28px;
+    font-family: 'helvetica now medium';
+    font-size: 1.75rem;
     font-weight: 500;
     line-height: 1.6;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.105rem;
+
+    @include mq($break-small) {
+      font-size: 2.5rem;
+      letter-spacing: 0.15rem;
+    }
 
     @include mq($break-medium) {
-      font-size: 2.5rem;
+      letter-spacing: 0.075rem;
     }
   }
 
@@ -98,12 +120,19 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3125rem;
+    font-family: 'helvetica neue';
+    font-size: $font-root;
     font-weight: $font-bold;
+    line-height: 1.47;
     letter-spacing: 0.02rem;
     text-decoration: none;
     color: $white;
     background: $base;
+
+    @include mq($break-medium) {
+      font-size: 1.313rem;
+      line-height: 1.22;
+    }
   }
 
   &.grey {

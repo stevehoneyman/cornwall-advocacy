@@ -22,3 +22,25 @@ jQuery(document).ready(function($){
 		//  setting-name: setting-value
  	});
 }); // close doc ready
+
+// scroll to effect in header
+const header = document.querySelector('header');
+const banners = document.querySelectorAll('.banner-home, .banner');
+
+const bannerOptions = {
+  rootMargin: '-100px 0px 0px 0px'
+};
+
+const bannerObserver = new IntersectionObserver(function(entries, bannerObserver) {
+  entries.forEach(entry => {
+    if(!entry.isIntersecting) {
+      header.classList.add('nav-scrolled');
+    } else {
+      header.classList.remove('nav-scrolled');
+    }
+  })
+}, bannerOptions);
+
+banners.forEach( banner => {
+  bannerObserver.observe(banner);
+});

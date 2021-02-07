@@ -1,4 +1,4 @@
-/* testimonials
+/* testimonials hb
 ----------------------------------------------------------------------------- */
 .testimonial {
   width: $full-width;
@@ -21,13 +21,20 @@
   blockquote {
     position: relative;
     margin-bottom: 1.5rem;
-    font-size: $font-medium;
+    font-family: 'helvetica neue';
+    font-size: 1.75rem;
     font-weight: $font-bold;
-    line-height: 1.5;
+    line-height: 1.6;
+    letter-spacing: 0.21rem;
     color: $white;
 
-    @include mq($break-medium) {
+    @include mq($break-small) {
       font-size: 2.5rem;
+      letter-spacing: 0.3rem;
+    }
+
+    @include mq($break-medium) {
+      letter-spacing: 0.15rem;
     }
 
     &:before {
@@ -46,7 +53,11 @@
 
   .author {
     margin-bottom: 3rem;
-    font-size: 21px;
+    font-family: 'helvetica now medium';
+    font-size: $font-body;
+    font-weight: 500;
+    line-height: 2.1;
+    letter-spacing: 0.045rem;
     color: $white;
 
     @include mq($break-medium) {
@@ -60,14 +71,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.315rem;
+    font-family: 'helvetica neue';
+    font-size: $font-root;
     font-weight: $font-bold;
+    line-height: 1.47;
+    letter-spacing: 0.02rem;
     text-decoration: none;
     color: $base;
     background: $brand;
 
     @include mq($break-medium) {
-      font-size: $font-body;
+      font-size: 1.313rem;
+      line-height: 1.22;
+      letter-spacing: 0.026rem;
     }
   }
 }

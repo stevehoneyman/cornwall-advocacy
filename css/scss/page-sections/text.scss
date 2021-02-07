@@ -1,4 +1,4 @@
-/* text
+/* text hb
 ----------------------------------------------------------------------------- */
 // home-page WYSYWIG text block
 .text-block {
@@ -13,19 +13,33 @@
 
   p {
     margin: 1rem 0;
+    font-family: 'helvetica neue';
     font-size: $font-body;
-    letter-spacing: 0.01rem;
+    font-weight: 400;
+    line-height: $lh-body;
+    letter-spacing: 0.03rem;
+
+    @include mq($break-medium) {
+      font-family: 'helvetica now regular';
+      letter-spacing: 0.015rem;
+    }
   }
 
   p:first-of-type {
     margin-bottom: 6rem;
-    font-size: $font-medium;
+    font-family: 'helvetica now medium';
+    font-size: 1.75rem;
     font-weight: 500;
     line-height: 1.6;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.105rem;
+
+    @include mq($break-small) {
+      font-size: 2.5rem;
+      letter-spacing: 0.15rem;
+    }
 
     @include mq($break-medium) {
-      font-size: $font-large;
+      letter-spacing: 0.075rem;
     }
   }
 
@@ -40,13 +54,14 @@
     position: relative;
     width: 75%;
     margin: 2.5rem 2rem 2.5rem 6rem;
-    font-size: 18px;
+    font-family: 'helvetica neue';
+    font-size: $font-body;
     font-weight: $font-bold;
-    letter-spacing: 0.06rem;
+    line-height: 1.875;
+    letter-spacing: 0.09rem;
 
     @include mq($break-medium) {
        width: 35%;
-       font-size: $font-body;
     }
   }
 
@@ -78,31 +93,58 @@
 
   .section-title {
     margin-bottom: 4.5rem;
+    font-family: 'helvetica neue';
     font-size: $font-medium;
     font-weight: 700;
-    letter-spacing: 0.06rem;
+    line-height: 1.4;
+    letter-spacing: 0.12rem;
 
     &:after {
       @include underline-brand;
+    }
+
+    @include mq($break-small) {
+      font-size: 2.5rem;
+      line-height: 1.6;
+      letter-spacing: 0.15rem;
+    }
+
+    @include mq($break-medium) {
+      font-family: 'helvetica now bold';
+      font-size: $font-large;
+      line-height: 1.4;
+      letter-spacing: 0.09rem;
     }
   }
 
   p {
     margin-bottom: 4rem;
+    font-family: 'helvetica neue';
     font-size: $font-body;
     font-weight: 400;
     line-height: $lh-body;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.03rem;
+
+    @include mq($break-medium) {
+      font-family: 'helvetica now regular';
+      letter-spacing: 0.015rem;
+    }
   }
 
   p:first-of-type {
+    font-family: 'helvetica now medium';
     font-size: 28px;
     font-weight: 500;
     line-height: 1.6;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.105rem;
+
+    @include mq($break-small) {
+      font-size: 2.5rem;
+      letter-spacing: 0.15rem;
+    }
 
     @include mq($break-medium) {
-      font-size: 2.5rem;
+      letter-spacing: 0.075rem;
     }
   }
 }
