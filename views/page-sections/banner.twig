@@ -1,4 +1,4 @@
-{% if post.image %}
+{% if post.meta('image') %}
   <div class="banner" style="background-image: url('{{ Image(post.meta('image')).src }}');">
     {% if post.banner_headline %}
       <span class="banner-headline">{{ post.banner_headline }}</span>
@@ -17,5 +17,8 @@
 
   </div><!-- close banner-->
 
-  {# {% else %} #}
+  {% else %}
+  <div style="padding-top: 6rem;" aria-hidden="true">
+
+
 {% endif %}
