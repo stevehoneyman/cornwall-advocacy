@@ -1,0 +1,188 @@
+/* request
+----------------------------------------------------------------------------- */
+.request-advocate {
+  padding: 0 2rem;
+
+  @include mq($break-medium) {
+    padding: 0 10rem 120px 10rem;
+  }
+
+  .request-details,
+  .request-form {
+    display: flex;
+    flex-direction: column;
+
+    @include mq($break-medium) {
+      flex-direction: row;
+    }
+  }
+
+  // columns
+  .lh-col,
+  .rh-col {
+    width: 100%;
+  }
+
+  img {
+    margin-bottom: 4rem;
+  }
+
+  @include mq($break-medium) {
+    .lh-col {
+      width: auto;
+      margin-right: 6rem;
+    }
+
+    img {
+      max-width: 390px;
+      max-height: 390px;
+      object-fit: cover;
+    }
+  }
+
+  @include mq($break-medium) {
+    .rh-col {
+      margin-top: 4rem;
+    }
+  }
+
+  .icon-holder {
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+
+    img.icon {
+      margin-right: 2rem;
+      margin-bottom: 0;
+    }
+
+    .link {
+      font-size: $font-body;
+      font-weight: 700;
+      color: $base;
+      display: block;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      hyphens: auto;
+    //  margin-bottom: 0;
+      text-decoration: none;
+    }
+  }
+
+  // typography
+  h1.page-title {
+    margin-bottom: 3rem;
+    padding-left: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+    color: $base;
+
+    &:after {
+      @include underline-brand;
+    }
+
+    @include mq($break-medium) {
+      font-size: 4rem;
+      letter-spacing: 0.03rem;
+    }
+  }
+
+  .section-title {
+    margin-bottom: 104px;
+    font-size: $font-medium;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+
+    &:after {
+      @include underline-brand;
+    }
+
+    @include mq($break-medium) {
+      font-size: $font-large;
+      letter-spacing: 0.06rem;
+    }
+  }
+
+  p {
+    margin-bottom: $drop-medium;
+    font-size: $font-body;
+    line-height: $lh-body;
+  }
+
+  .detail {
+    font-size: 14px;
+    font-weight: $font-bold;
+    letter-spacing: 0.06rem;
+
+    @include mq($break-medium) {
+      font-size: $font-body;
+    }
+  }
+
+  a {
+    color: $base;
+  }
+
+  // form specifics
+  .request-form {
+
+    // .gform_wrapper {
+    //   width: 100%;
+    //
+    //     @include mq($break-large) {
+    //     width: 80%;
+    //   }
+    // }
+
+    label {
+      margin: 1rem 0;
+      font-size: 18px !important;
+      font-weight: 400;
+      letter-spacing: 0.06rem;
+      color: $base;
+
+      @include mq($break-medium) {
+        font-size: 28px !important;
+        letter-spacing: 0.03rem;
+      }
+    }
+
+    input,
+    textarea {
+      display: flex;
+      padding: 1.25rem 1rem !important;
+      border: 1px solid rgba(39, 40, 44, .2);
+
+      @include mq($break-medium) {
+        padding: 1.25rem 2rem !important;
+      }
+    }
+
+    input[type="radio"] {
+      margin-right: 3rem;
+    }
+
+    .gchoice_2_2_1 {
+      margin-bottom: 3rem;
+    }
+
+    input[type="submit"] {
+      padding: 1.25rem 2rem;
+      font-size: 1.3125rem;
+      font-weight: bold;
+      color: $white;
+      background: $base;
+    }
+
+    ::placeholder {
+      font-size: $font-root;
+      letter-spacing: 0.2%;
+      color: rgba(39, 40, 44, .6);
+
+      @include mq($break-medium) {
+        font-size: $font-body;
+      }
+    }
+  }
+} // close request

@@ -1,0 +1,62 @@
+/* organisations
+----------------------------------------------------------------------------- */
+.organisations {
+  padding: 0 2rem;
+
+  @include mq($break-medium) {
+    padding: 0 10rem;
+    margin-top: 7.5rem;
+  }
+
+  .grid {
+    @include mq($break-medium) {
+      margin-bottom: $drop-medium;
+    }
+  }
+
+  h3,
+  .link {
+     font-weight: $font-bold;
+     color: red;
+  }
+
+  h3 {
+    margin: 3rem 0;
+    font-size: $font-body;
+    font-weight: $font-bold;
+    color: $base;
+
+    @include mq($break-medium) {
+     font-size: 1.75rem;
+    }
+  }
+
+  .description {
+    margin: 3rem 0;
+    font-size: $font-body;
+    letter-spacing: 0.03rem;
+
+     // @include mq($break-medium) {
+     //  font-size: 1.75rem;
+     // }
+  }
+
+  .link {
+    height: 4rem;
+    padding: 0 2rem;
+    margin-bottom: 7.75rem;
+    display: inline-flex;
+    align-items: center;
+    font-size: $font-root;
+    font-weight: $font-bold;
+    letter-spacing: 0.02rem;
+    text-decoration: none;
+    color: $white;
+
+    background: $base;
+
+    @include mq($break-medium) {
+      font-size: 1.3125rem;
+    }
+  }
+}

@@ -4,7 +4,7 @@
       <span class="banner-headline">{{ post.banner_headline }}</span>
     {% endif %}
 
-    {% if fn('is_page', ('about-us') ) %}
+      {% if fn('is_page', ('about-us') ) %}
       <ul class="child-nav">
         <li class="child-nav-item">{{ post.title }}</li>
         {% for child in post.children %}

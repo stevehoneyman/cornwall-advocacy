@@ -1,0 +1,16 @@
+{% if item.acf_fc_layout == 'organisations_block' %}
+  <section class="organisations">
+    <div class="grid">
+
+      {% for item in item.organisation %}
+        <div class="grid-item">
+          <h3>{{ item.organisation_name}}</h3>
+          <img src="{{ Image(item.image).src }}" alt="{{ Image(item.image).alt }}">
+          <p class="description">{{ item.description }}</p>
+          <a href="{{ item.link }}" class="link">{{ item.link_text }}</a>
+        </div>
+      {% endfor %}
+    </div>
+
+  </section>
+{% endif %}
