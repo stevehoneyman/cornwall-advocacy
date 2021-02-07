@@ -81,10 +81,16 @@
       letter-spacing: 0.02rem;
       color: $white;
       background: $base;
+      transition: ease-in 300ms;
 
       @include mq($break-medium) {
         font-size: 1.313rem;
         letter-spacing: 0.026rem;
+      }
+
+      &:hover {
+        color: $base;
+        background: $white;
       }
     }
   }

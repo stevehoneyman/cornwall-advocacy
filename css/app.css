@@ -640,6 +640,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   letter-spacing: 0.02rem;
   color: #fff;
   background: #27282C;
+  transition: ease-in 300ms;
 }
 
 @media (min-width: 880px) {
@@ -647,6 +648,11 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
     font-size: 1.313rem;
     letter-spacing: 0.026rem;
   }
+}
+
+.footer-statement .left-col button:hover {
+  color: #27282C;
+  background: #fff;
 }
 
 @media (min-width: 880px) {
@@ -1283,6 +1289,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 .image-text .link {
   height: 4rem;
   padding: 0 2rem;
+  border: 1px solid #27282C;
   margin-bottom: 7.5rem;
   display: inline-flex;
   justify-content: center;
@@ -1295,6 +1302,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   text-decoration: none;
   color: #fff;
   background: #27282C;
+  transition: ease-in 300ms;
 }
 
 @media (min-width: 880px) {
@@ -1302,6 +1310,11 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
     font-size: 1.313rem;
     line-height: 1.22;
   }
+}
+
+.image-text .link:hover {
+  color: #27282C;
+  background: #fff;
 }
 
 .image-text.grey {
@@ -1453,6 +1466,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 .image-links .link {
   height: 4rem;
   padding: 0 2rem;
+  border: 1px solid #27282C;
   margin-bottom: 7.75rem;
   display: inline-flex;
   align-items: center;
@@ -1464,6 +1478,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   text-decoration: none;
   color: #fff;
   background: #27282C;
+  transition: ease-in 300ms;
 }
 
 @media (min-width: 880px) {
@@ -1471,6 +1486,11 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
     font-size: 1.313rem;
     line-height: 1.22;
   }
+}
+
+.image-links .link:hover {
+  color: #27282C;
+  background: #fff;
 }
 
 /* organisations
@@ -1520,6 +1540,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 .organisations .link {
   height: 4rem;
   padding: 0 2rem;
+  border: 1px solid #27282C;
   margin-bottom: 7.75rem;
   display: inline-flex;
   align-items: center;
@@ -1529,12 +1550,18 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   text-decoration: none;
   color: #fff;
   background: #27282C;
+  transition: ease-in 300ms;
 }
 
 @media (min-width: 880px) {
   .organisations .link {
     font-size: 1.3125rem;
   }
+}
+
+.organisations .link:hover {
+  color: #27282C;
+  background: #fff;
 }
 
 /* testimonials hb
@@ -1627,6 +1654,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   text-decoration: none;
   color: #27282C;
   background: #ffdb5a;
+  transition: ease-in 300ms;
 }
 
 @media (min-width: 880px) {
@@ -1635,6 +1663,10 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
     line-height: 1.22;
     letter-spacing: 0.026rem;
   }
+}
+
+.testimonial .link:hover {
+  background: #fff;
 }
 
 /* projects hb
@@ -1740,6 +1772,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 .projects .link {
   height: 4rem;
   padding: 0 2rem;
+  border: 1px solid #27282C;
   display: inline-flex;
   font-family: 'helvetica neue';
   font-size: 1rem;
@@ -1749,6 +1782,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   text-decoration: none;
   color: #fff;
   background: #27282C;
+  transition: ease-in 300ms;
 }
 
 @media (min-width: 880px) {
@@ -1756,6 +1790,11 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
     font-size: 1.313rem;
     line-height: 1.22;
   }
+}
+
+.projects .link:hover {
+  color: #27282C;
+  background: #fff;
 }
 
 /* team hb
@@ -2127,6 +2166,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .contact .contact-form input[type="submit"] {
   padding: 1.25rem 2rem;
+  border: 1px solid #27282C;
   font-family: 'helvetica now bold';
   font-size: 1.3125rem;
   font-weight: 700;
@@ -2134,6 +2174,7 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
   letter-spacing: 0.02rem;
   color: #fff;
   background: #27282C;
+  transition: ease-in 300ms;
 }
 
 @media (min-width: 880px) {
@@ -2141,6 +2182,11 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
     font-size: 1.313rem !important;
     letter-spacing: 0.026rem;
   }
+}
+
+.contact .contact-form input[type="submit"]:hover {
+  color: #27282C;
+  background: #fff;
 }
 
 .contact .contact-form ::placeholder {
@@ -2339,10 +2385,17 @@ nav .nav-cta .nav-item:last-of-type .nav-link {
 
 .request-advocate .request-form input[type="submit"] {
   padding: 1.25rem 2rem;
+  border: 1px solid #27282C;
   font-size: 1.3125rem;
   font-weight: bold;
   color: #fff;
   background: #27282C;
+  transition: ease-in 300ms;
+}
+
+.request-advocate .request-form input[type="submit"]:hover {
+  color: #27282C;
+  background: #fff;
 }
 
 .request-advocate .request-form ::placeholder {

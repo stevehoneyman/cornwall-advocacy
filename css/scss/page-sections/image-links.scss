@@ -64,6 +64,7 @@
   .link {
     height: 4rem;
     padding: 0 2rem;
+    border: 1px solid $base;
     margin-bottom: 7.75rem;
     display: inline-flex;
     align-items: center;
@@ -74,12 +75,17 @@
     letter-spacing: 0.02rem;
     text-decoration: none;
     color: $white;
-
     background: $base;
+    transition: ease-in 300ms;
 
     @include mq($break-medium) {
       font-size: 1.313rem;
       line-height: 1.22;
+    }
+
+    &:hover {
+      color: $base;
+      background: $white;
     }
   }
 }

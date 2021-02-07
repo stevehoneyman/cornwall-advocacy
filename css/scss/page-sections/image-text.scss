@@ -116,6 +116,7 @@
   .link {
     height: 4rem;
     padding: 0 2rem;
+    border: 1px solid $base;
     margin-bottom: 7.5rem;
     display: inline-flex;
     justify-content: center;
@@ -128,10 +129,16 @@
     text-decoration: none;
     color: $white;
     background: $base;
+    transition: ease-in 300ms;
 
     @include mq($break-medium) {
       font-size: 1.313rem;
       line-height: 1.22;
+    }
+
+    &:hover {
+      color: $base;
+      background: $white;
     }
   }
 

@@ -79,11 +79,16 @@
     text-decoration: none;
     color: $base;
     background: $brand;
+    transition: ease-in 300ms;
 
     @include mq($break-medium) {
       font-size: 1.313rem;
       line-height: 1.22;
       letter-spacing: 0.026rem;
+    }
+
+    &:hover {
+      background: $white;
     }
   }
 }

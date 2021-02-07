@@ -181,6 +181,7 @@
 
     input[type="submit"] {
       padding: 1.25rem 2rem;
+      border: 1px solid $base;
       font-family: 'helvetica now bold';
       font-size: 1.3125rem;
       font-weight: $font-bold;
@@ -188,10 +189,16 @@
       letter-spacing: 0.02rem;
       color: $white;
       background: $base;
+      transition: ease-in 300ms;
 
       @include mq($break-medium) {
         font-size: 1.313rem !important;
         letter-spacing: 0.026rem;
+      }
+
+      &:hover {
+        color: $base;
+        background: $white;
       }
     }
 
