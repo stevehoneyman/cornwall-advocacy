@@ -1,7 +1,6 @@
 {% if item.acf_fc_layout == 'organisations_block' %}
   <section class="organisations">
     <div class="grid">
-
       {% for item in item.organisation %}
         <div class="grid-item">
           <h3>{{ item.organisation_name}}</h3>
@@ -11,6 +10,5 @@
         </div>
       {% endfor %}
     </div>
-
   </section>
 {% endif %}

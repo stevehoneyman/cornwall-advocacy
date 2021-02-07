@@ -1,4 +1,4 @@
-/* request
+/* request [styles for request an advocate form]
 ----------------------------------------------------------------------------- */
 .request-advocate {
   padding: 0 2rem;
@@ -126,15 +126,6 @@
 
   // form specifics
   .request-form {
-
-    // .gform_wrapper {
-    //   width: 100%;
-    //
-    //     @include mq($break-large) {
-    //     width: 80%;
-    //   }
-    // }
-
     label {
       margin: 1rem 0;
       font-size: 18px !important;
@@ -163,7 +154,7 @@
       margin-right: 3rem;
     }
 
-    .gchoice_2_2_1 {
+    .gchoice_2_2_1 { // replace with named class!
       margin-bottom: 3rem;
     }
 

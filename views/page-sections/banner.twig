@@ -4,6 +4,7 @@
       <span class="banner-headline">{{ post.banner_headline }}</span>
     {% endif %}
 
+      <!-- conditional to add check for and sub-nav-->
       {% if fn('is_page', ('about-us') ) %}
       <ul class="child-nav">
         <li class="child-nav-item">{{ post.title }}</li>
@@ -13,7 +14,8 @@
         {% endfor %}
       </ul>
     {% endif %}
-  </div>
+
+  </div><!-- close banner-->
 
   {# {% else %} #}
 {% endif %}
