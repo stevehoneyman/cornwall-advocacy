@@ -12,6 +12,7 @@
 .banner-home {
   position: relative;
   width: $full-width;
+  margin-top: 140px;
   color: $base;
   background-color: #FFE99C;
 
@@ -30,9 +31,13 @@
     font-weight: 800;
     line-height: 1.6;
     text-align: center;
-    padding: 10rem 2rem 10rem 2rem;
+    padding: 5rem 2rem 5rem 2rem;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include mq($break-small) {
+      padding: 10rem 2rem 10rem 2rem;
+    }
 
     @include mq($break-medium) {
       width: 50%;
@@ -45,11 +50,14 @@
     @include mq($break-large) {
       font-size: 2.5rem;
       line-height: 6rem;
+      letter-spacing: 0.15rem;
       padding: 6.5% 11.1% 6.5% 11.1%;
     }
 
     .home-title {
-      padding-bottom: $drop-large;
+      @include mq($break-small) {
+        padding-bottom: $drop-large;
+      }
     }
   }
 
@@ -64,15 +72,18 @@
   }
 
   .home-text-cont {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     background-color: $brand;
+
+    @include mq($break-small) {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
 
     @include mq($break-medium) {
       margin-left: 10%;
@@ -80,19 +91,31 @@
     }
 
     .home-text {
+      font-family: 'helvetica now medium';
       font-size: $font-body;
+      font-weight: 500;
+      line-height: 2.1;
+      letter-spacing: 0.045rem;
       padding-left: 0.75rem;
       padding-right: 0.75rem;
     }
 
     .icon-1 {
-      min-width: 6rem;
+      min-width: 4rem;
       background-color: $base;
+
+      @include mq($break-small) {
+        min-width: 6rem;
+      }
     }
 
     .icon-2 {
-      min-width: 6rem;
+      min-width: 4rem;
       background-color: $white;
+
+      @include mq($break-small) {
+        min-width: 6rem;
+      }
     }
   }
 }

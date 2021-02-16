@@ -3,17 +3,16 @@
 header {
   position: fixed;
   top: 0;
-  width: inherit;
-  max-width: inherit;
+  width: $full-width;
   border-bottom: .5rem solid $brand;
   display: flex;
   flex-direction: column;
   background: $white;
-  transition: .5s;
   z-index: 2;
 
   @include mq($break-medium) {
     height: 140px;
+    transition: height 0.5s;
     padding: 0 5%;
     flex-direction: row;
     justify-content: space-between;
@@ -25,24 +24,28 @@ header {
 
   /* logo  */
   .logo {
-    display: block;
     width: 130px;
     margin: 1.75rem 0 1.75rem 2rem;
+    transition: margin 0.5s;
     text-decoration: none;
-    transition: .5s;
+    transition-delay: 0.2s;
 
     @include mq($break-medium) {
       width: 150px;
       margin: 38px 4rem 0 0;
+      transition: margin 0.5s;
       align-self: flex-start;
+      transition-delay: 0.2s;
     }
 
     @include mq($break-large) {
       width: 170px;
+      transition-delay: 0.2s;
     }
 
     @include mq($break-vbig) {
       width: 150px;
+      transition-delay: 0.2s;
     }
   }
 
@@ -82,12 +85,13 @@ header {
     @include mq($break-medium) {
       display: none;
     }
-  } // close header
+  }
 
   nav {
     height: 0;
     overflow: hidden;
     background: $brand-fade;
+    transition: 300ms;
 
     &.nav-open {
       height: calc(650px + 2.5rem);
@@ -132,6 +136,7 @@ header {
 
       .nav-link {
         font-size: 1.65rem;
+        transition: font-size 0.5s;
         font-weight: $font-bold;
         line-height: 2;
         letter-spacing: 0.02rem;
@@ -140,10 +145,12 @@ header {
 
         @include mq($break-small) {
           font-size: $font-medium;
+          transition: font-size 0.5s;
         }
 
         @include mq($break-medium) {
           font-size: $font-root;
+          transition: font-size 0.5s;
           line-height: 0;
         }
       }
@@ -155,11 +162,11 @@ header {
 
       @include mq($break-medium) {
         margin: 1.5rem 0;
+        transition: margin 0.5s;
         display: flex;
         flex-direction: column;
         flex-direction: row;
         order: 1;
-        transition: .3s;
       }
 
       @include mq($break-big) {
@@ -168,11 +175,12 @@ header {
 
       .nav-link {
         font-size: $font-root;
+        transition: font-size 0.5s;
         font-weight: $font-bold;
         letter-spacing: 0.02rem;
+        transition: letter-spacing 0.5s;
         color: $base;
         text-decoration: none;
-        transition: .3s;
       }
 
       .nav-item {
@@ -209,38 +217,94 @@ header {
 
 /* header scrolled
 ----------------------------------------------------------------------------- */
-header.nav-scrolled {
-  // if you inspect the header you'll see the nav-scrolled class getting added on scroll
-  // header.nav-srolled is using specifity to dircetly target it's descendents.. :)
-  height: 72px;
+.nav-scrolled {
 
-  @media only screen and (min-width: 880px) {
-    height: 92px;
+  @include mq($break-medium) {
+    height: 93.33px;
   }
 
-  @media only screen and (min-width: 1290px) {
-    height: 72px;
-  }
-
-
+  /* logo  */
   .logo {
-    // negative top margin needed to offset the border bottom
-    margin-top: -4px;
-    margin-bottom: 0px;
-    transform: scale(.7540588, .6666666) translateX(5px);
+    width: 86.66px;
+    margin: 1.16rem 0 1.16rem 1.33rem;
+
+    @include mq($break-medium) {
+      width: 100px;
+      margin: 25.33px 2.66rem 0 0;
+    }
+
+    @include mq($break-large) {
+      width: 113.33px;
+    }
+
+    @include mq($break-vbig) {
+      width: 100px;
+    }
   }
 
+  .line-one,
+  .line-two {
+    font-size: 1rem;
+    letter-spacing: 0.033rem;
+  }
+
+  // menu button
   .menu {
-    // -32 + 8 needed to virtical centre align the button
-    margin-top: -24px;
+    width: 3.16rem;
+    height: 2rem;
+    padding: .16rem 0.66rem;
   }
 
-  .nav-cta {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+  nav {
+    .nav-pages {
+      padding: 1.66rem;
 
-  .nav-cta .nav-item {
-    transform: scale(.833333333);
+      @include mq($break-medium) {
+        margin-bottom: 1rem;
+      }
+
+     @include mq($break-big) {
+        margin: 0 1.33rem 0 0;
+      }
+
+      .nav-link {
+        font-size: 1.485rem;
+        line-height: 1.9;
+        letter-spacing: 0.019rem;
+
+        @include mq($break-small) {
+          font-size: 1.9rem;
+        }
+
+        @include mq($break-medium) {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .nav-cta {
+      margin: 1.66rem 1.33rem;
+
+      @include mq($break-medium) {
+        margin: 1rem 0;
+      }
+
+      .nav-link {
+        font-size: 0.9rem;
+        letter-spacing: 0.013rem;
+      }
+
+      .nav-item {
+        height: 2rem;
+      }
+
+      .nav-item:first-of-type {
+        margin-bottom: 0.66rem;
+
+        @include mq($break-medium) {
+          margin-right: 0.66rem;
+        }
+      }
+    }
   }
-}
+} // close header

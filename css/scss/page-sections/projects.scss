@@ -43,9 +43,9 @@
 
     @include mq($break-medium) {
       font-family: 'helvetica now bold';
-      font-size: $font-large;
+      font-size: 2rem;
       line-height: 1.4;
-      letter-spacing: 0.09rem;
+      letter-spacing: 0.06rem;
     }
   }
 
@@ -64,6 +64,7 @@
   .image {
     max-width: 9rem;
     margin: 0 6rem 1rem 0;
+    align-self: center;
   }
 
   .text {

@@ -1,4 +1,4 @@
-/* contact hb
+/* contact
 ----------------------------------------------------------------------------- */
 .contact {
   padding: 0 2rem;
@@ -56,16 +56,8 @@
       margin-bottom: 0;
     }
 
-    .link {
-      font-size: $font-body;
-      font-weight: 700;
-      color: $base;
-      display: block;
-      overflow-wrap: break-word;
-      word-break: break-word;
-      hyphens: auto;
-    //  margin-bottom: 0;
-      text-decoration: none;
+    p {
+      margin-bottom: 0;
     }
   }
 
@@ -131,16 +123,24 @@
       font-size: $font-body;
       letter-spacing: 0.03rem;
     }
-  }
-
-  .detail {
-    font-family: 'helvetica now bold';
-    font-size: 14px;
-    font-weight: $font-bold;
-    line-height: 3.2142;
-    letter-spacing: 0.053rem;
 
     @include mq($break-medium) {
+      font-family: 'helvetica neue';
+      font-size: $font-body;
+      font-weight: $font-bold;
+      letter-spacing: 0.015rem;
+    }
+  }
+
+  .link {
+    font-family: 'helvetica now bold';
+    font-size: 18px;
+    font-weight: $font-bold;
+    line-height: 2.3333;
+    letter-spacing: 0.068rem;
+
+    @include mq($break-medium) {
+      font-family: 'helvetica neue';
       font-size: $font-body;
       line-height: 1.875;
       letter-spacing: 0.09rem;
@@ -181,7 +181,6 @@
 
     input[type="submit"] {
       padding: 1.25rem 2rem;
-      border: 1px solid $base;
       font-family: 'helvetica now bold';
       font-size: 1.3125rem;
       font-weight: $font-bold;
@@ -189,16 +188,10 @@
       letter-spacing: 0.02rem;
       color: $white;
       background: $base;
-      transition: ease-in 300ms;
 
       @include mq($break-medium) {
         font-size: 1.313rem !important;
         letter-spacing: 0.026rem;
-      }
-
-      &:hover {
-        color: $base;
-        background: $white;
       }
     }
 

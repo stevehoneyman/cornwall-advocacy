@@ -1,3 +1,7 @@
+/* Slider */
+.testimonial-slider.slick-initialized.slick-slider {
+  background: #27282C;
+}
 
 /* Arrows */
 .slick-prev,
@@ -11,9 +15,7 @@
     width: 50px;
     height: 50px;
     padding: 0;
-    
-    background: #000;
-    opacity: 0.5;
+    background: #27282C;
 
     cursor: pointer;
     outline: none;
@@ -30,27 +32,51 @@
 
 .slick-prev:after,
 .slick-next:after {
+    background: url('/wp-content/themes/cornwall-advocacy/icons/slider-arrow.png') no-repeat;
     position: absolute;
-    top: 9px;
-    
+
     content: '';
     width: 25px;
-    height: 25px;
-    border-top: 3px solid #fff;
-    border-right: 3px solid #fff;
+    height: 35px;
 }
 
 .slick-prev:after {
-    transform: rotate(-135deg);
-    left: 12px;
+    top: 7.5px;
+    left: 10px;
 }
 
 .slick-next:after {
-    transform: rotate(45deg);
-    left: 5px;
+    transform: rotate(180deg);
+    top: 7.5px;
+    right: 10px;
 }
 
+@media only screen and (min-width: 880px) {
+  .slick-prev:after {
+      left: 20px;
+  }
 
+  .slick-next:after {
+      right: 20px;
+  }
+}
 
+@media only screen and (min-width: 1074px) {
+  .slick-prev:after {
+      left: 80px;
+  }
 
+  .slick-next:after {
+      right: 80px;
+  }
+}
 
+@media only screen and (min-width: 1281px) {
+  .slick-prev:after {
+      left: 175px;
+  }
+
+  .slick-next:after {
+      right: 175px;
+  }
+}
