@@ -641,7 +641,7 @@ header.nav-scrolled .nav-cta .nav-item {
   flex-direction: column;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 960px) {
   .footer-statement .content {
     flex-direction: row;
   }
@@ -702,9 +702,15 @@ header.nav-scrolled .nav-cta .nav-item {
   background: #fff;
 }
 
-@media (min-width: 460px) {
+@media (min-width: 960px) {
   .footer-statement .right-col {
     padding-left: 11%;
+  }
+}
+
+@media (min-width: 1120px) {
+  .footer-statement .right-col {
+    padding-left: 8.75rem;
   }
 }
 

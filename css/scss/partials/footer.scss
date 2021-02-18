@@ -40,7 +40,7 @@
     display: flex;
     flex-direction: column;
 
-    @include mq($break-medium) {
+    @include mq(960px) {
       flex-direction: row;
     }
   }
@@ -96,12 +96,12 @@
   }
 
   .right-col {
-    @include mq(460px) {
-      padding-left: 11%;
+    @include mq(960px) {
+     padding-left: 11%;
     }
 
     @include mq($break-large) {
-    //  padding-left: 8.75rem;
+      padding-left: 8.75rem;
     }
 
     .link {
