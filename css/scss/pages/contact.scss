@@ -4,6 +4,10 @@
   padding: 0 2rem;
 
   @include mq($break-medium) {
+  //  padding: 0 10rem 120px 10rem;
+  }
+
+  @include mq($break-large) {
     padding: 0 10rem 120px 10rem;
   }
 
@@ -144,6 +148,9 @@
       font-size: $font-body;
       line-height: 1.875;
       letter-spacing: 0.09rem;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      hyphens: auto;
     }
   }
 

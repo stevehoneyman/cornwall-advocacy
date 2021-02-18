@@ -4,6 +4,10 @@
   padding: 0 2rem;
 
   @include mq($break-medium) {
+  //  padding: 0 10rem 120px 10rem;
+  }
+
+  @include mq($break-large) {
     padding: 0 10rem 120px 10rem;
   }
 

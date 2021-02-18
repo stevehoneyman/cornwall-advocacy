@@ -8,6 +8,10 @@
   flex-direction: column;
 
   @include mq($break-medium) {
+  //  padding: 6rem 10rem 0 10rem;
+  }
+
+  @include mq($break-large) {
     padding: 6rem 10rem 0 10rem;
   }
 

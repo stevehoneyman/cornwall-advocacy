@@ -22,9 +22,13 @@
   }
 
   @include mq($break-medium) {
-    padding: 0 10rem;
+  //  padding: 0 10rem;
     font-family: 'helvetica now bold';
     font-size: 4rem;
     letter-spacing: 0.12rem;
   }
+
+   @include mq($break-large) {
+    padding: 0 10rem;
+   }
 }

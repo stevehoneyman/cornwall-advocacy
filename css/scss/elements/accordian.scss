@@ -6,8 +6,12 @@
 
   @include mq($break-medium) {
     width: 83.25%;
+//  padding: 0 10rem 120px 10rem;
+//  margin-top: 6rem;
+  }
+
+  @include mq($break-large) {
     padding: 0 10rem 120px 10rem;
-  //  margin-top: 6rem;
   }
 
   .section-title {

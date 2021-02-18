@@ -4,8 +4,12 @@
   padding: 0 2rem;
 
   @include mq($break-medium) {
-    padding: 0 10rem;
+  //  padding: 0 10rem;
     margin-top: 7.5rem;
+  }
+
+  @include mq($break-large) {
+    padding: 0 10rem;
   }
 
   .grid {
