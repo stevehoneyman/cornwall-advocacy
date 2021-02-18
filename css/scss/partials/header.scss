@@ -27,13 +27,13 @@ header {
   .logo {
     display: block;
     width: 130px;
-    margin: 1.75rem 0 1.75rem 2rem;
+    margin: 1.9rem 0 1.75rem 2rem; // was margin 1.75rem 0 1.75rem 2rem;
     text-decoration: none;
     transition: .5s;
 
     @include mq($break-medium) {
       width: 150px;
-      margin: 38px 4rem 0 0;
+      margin: 38px 0 0 0; // was margin: 38px 4rem 0 0;
       align-self: flex-start;
     }
 
@@ -90,7 +90,7 @@ header {
     background: $brand-fade;
 
     &.nav-open {
-      height: calc(650px + 2.5rem);
+      height: calc(675px + 2.5rem);
     }
 
     @include mq($break-medium) {
