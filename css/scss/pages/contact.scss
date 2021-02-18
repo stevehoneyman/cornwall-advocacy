@@ -142,15 +142,15 @@
     font-weight: $font-bold;
     line-height: 2.3333;
     letter-spacing: 0.068rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
 
     @include mq($break-medium) {
       font-family: 'helvetica neue';
       font-size: $font-body;
       line-height: 1.875;
       letter-spacing: 0.09rem;
-      overflow-wrap: break-word;
-      word-break: break-word;
-      hyphens: auto;
     }
   }
 
