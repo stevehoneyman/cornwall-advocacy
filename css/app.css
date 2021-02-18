@@ -1132,7 +1132,7 @@ header.nav-scrolled .nav-cta .nav-item {
   letter-spacing: 0.09rem;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 1120px) {
   .text-block li {
     width: 35%;
   }

@@ -60,7 +60,7 @@
     line-height: 1.875;
     letter-spacing: 0.09rem;
 
-    @include mq($break-medium) {
+    @include mq($break-large) {
        width: 35%;
     }
   }
