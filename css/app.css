@@ -135,7 +135,7 @@ button {
   background: #fff;
 }
 
-/* typography hb
+/* typography
 ----------------------------------------------------------------------------- */
 .page-title {
   padding: 0 2rem;
@@ -595,7 +595,7 @@ header.nav-scrolled .nav-cta .nav-item {
   transform: scale(0.83333);
 }
 
-/* footer hb
+/* footer
 ----------------------------------------------------------------------------- */
 .footer-statement {
   padding: 3rem 2.5rem 3rem;
@@ -1245,7 +1245,7 @@ header.nav-scrolled .nav-cta .nav-item {
   }
 }
 
-/* image-text hb [features on standard pages what is advocacy & projects]
+/* image-text [features on standard pages what is advocacy & projects]
 ----------------------------------------------------------------------------- */
 .image-text {
   padding: 6rem 2rem 0 2rem;
@@ -1412,7 +1412,7 @@ header.nav-scrolled .nav-cta .nav-item {
   background: #f1f1f1;
 }
 
-/* text-mage hb [features on landing pages, eg: about, how we help, background]
+/* text-image [features on landing pages, eg: about, how we help, background]
 ----------------------------------------------------------------------------- */
 .text-image {
   padding: 0 2rem;
@@ -1478,7 +1478,7 @@ header.nav-scrolled .nav-cta .nav-item {
   object-fit: cover;
 }
 
-/* image-links hb
+/* image-links
 ----------------------------------------------------------------------------- */
 .image-links {
   padding: 0 2rem;
@@ -1655,7 +1655,7 @@ header.nav-scrolled .nav-cta .nav-item {
   background: #fff;
 }
 
-/* testimonials hb
+/* testimonials
 ----------------------------------------------------------------------------- */
 .testimonial {
   width: 100%;
@@ -1761,7 +1761,7 @@ header.nav-scrolled .nav-cta .nav-item {
   background: #fff;
 }
 
-/* projects hb
+/* projects
 ----------------------------------------------------------------------------- */
 .projects {
   padding: 0 2rem;
@@ -1896,7 +1896,7 @@ header.nav-scrolled .nav-cta .nav-item {
   background: #fff;
 }
 
-/* team hb
+/* team
 ----------------------------------------------------------------------------- */
 .team {
   padding: 0 2rem;
