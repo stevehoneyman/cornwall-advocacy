@@ -91,7 +91,7 @@ button {
  */
 }
 
-@media (min-width: 1074px) {
+@media (min-width: 1120px) {
   .wrap {
     padding: 0 10rem;
   }
@@ -347,7 +347,7 @@ header {
   }
 }
 
-@media (min-width: 1074px) {
+@media (min-width: 1120px) {
   header {
     padding: 0 7.5rem;
   }
@@ -369,7 +369,7 @@ header .logo {
   }
 }
 
-@media (min-width: 1074px) {
+@media (min-width: 1120px) {
   header .logo {
     width: 170px;
   }
@@ -603,7 +603,7 @@ header.nav-scrolled .nav-cta .nav-item {
   background: #ffdb5a;
 }
 
-@media (min-width: 1074px) {
+@media (min-width: 1120px) {
   .footer-statement {
     padding: 5rem 7.5rem 3rem;
   }
@@ -785,7 +785,7 @@ header.nav-scrolled .nav-cta .nav-item {
   }
 }
 
-@media (min-width: 1074px) {
+@media (min-width: 1120px) {
   .footer-details {
     padding: 1.625rem 7.5rem;
   }
@@ -892,7 +892,7 @@ header.nav-scrolled .nav-cta .nav-item {
   }
 }
 
-@media (min-width: 1074px) {
+@media (min-width: 1120px) {
   .banner-home .home-title-cont {
     font-size: 2.5rem;
     line-height: 6rem;
@@ -1049,14 +1049,14 @@ header.nav-scrolled .nav-cta .nav-item {
   text-decoration: none;
 }
 
-/* text hb
+/* text
 ----------------------------------------------------------------------------- */
 .text-block {
   padding: 0 2rem;
   margin: 6rem 0 0 0;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 1120px) {
   .text-block {
     width: 900px;
     padding: 0;

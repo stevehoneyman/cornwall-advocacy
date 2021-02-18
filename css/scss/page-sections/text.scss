@@ -1,11 +1,11 @@
-/* text hb
+/* text
 ----------------------------------------------------------------------------- */
 // home-page WYSYWIG text block
 .text-block {
   padding: 0 2rem;
   margin: 6rem 0 0 0;
 
-  @include mq($break-medium) {
+  @include mq($break-large) {
     width: 900px;
     padding: 0;
     margin: 0 10rem 7.5rem;
