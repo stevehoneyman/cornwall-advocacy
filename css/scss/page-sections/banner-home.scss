@@ -92,19 +92,24 @@
 
     .home-text {
       font-family: 'helvetica now medium';
-      font-size: $font-body;
+      font-size: $font-root;
       font-weight: 500;
-      line-height: 2.1;
+      line-height: 1.2;
       letter-spacing: 0.045rem;
       padding-left: 0.75rem;
       padding-right: 0.75rem;
+
+      @include mq($break-medium) {
+        font-size: $font-body;
+        line-height: 2.1;
+      }
     }
 
     .icon-1 {
       min-width: 4rem;
       background-color: $base;
 
-      @include mq($break-small) {
+      @include mq($break-medium) {
         min-width: 6rem;
       }
     }
@@ -113,7 +118,7 @@
       min-width: 4rem;
       background-color: $white;
 
-      @include mq($break-small) {
+      @include mq($break-medium) {
         min-width: 6rem;
       }
     }

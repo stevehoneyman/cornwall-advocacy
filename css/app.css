@@ -951,12 +951,19 @@ header.nav-scrolled .nav-cta .nav-item {
 
 .banner-home .home-text-cont .home-text {
   font-family: 'helvetica now medium';
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 2.1;
+  line-height: 1.2;
   letter-spacing: 0.045rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+@media (min-width: 880px) {
+  .banner-home .home-text-cont .home-text {
+    font-size: 1.5rem;
+    line-height: 2.1;
+  }
 }
 
 .banner-home .home-text-cont .icon-1 {
@@ -964,7 +971,7 @@ header.nav-scrolled .nav-cta .nav-item {
   background-color: #27282C;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 880px) {
   .banner-home .home-text-cont .icon-1 {
     min-width: 6rem;
   }
@@ -975,7 +982,7 @@ header.nav-scrolled .nav-cta .nav-item {
   background-color: #fff;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 880px) {
   .banner-home .home-text-cont .icon-2 {
     min-width: 6rem;
   }
