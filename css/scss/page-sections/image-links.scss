@@ -3,7 +3,7 @@
 .image-links {
   padding: 0 2rem;
 
-  @include mq($break-medium) {
+  @include mq($break-large) {
     padding: 0 10rem;
     margin-top: 7.5rem;
   }
