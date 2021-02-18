@@ -54,17 +54,21 @@
   }
 
   .child-nav {
+    display: none;
     position: absolute;
     bottom: 0;
     padding: 1.25rem 0 1.25rem 3rem;;
-    display: flex;
     background: $brand-fade;
-  }
 
-  .child-nav-item {
-    margin-right: 3rem;
-    font-size: 21px;
-    letter-spacing: 0.02rem;
-    color: $base;
-    text-decoration: none;
+    @include mq($break-medium) {
+      display: flex;
+    }
+
+    .child-nav-item {
+      margin-right: 3rem;
+      font-size: 21px;
+      letter-spacing: 0.02rem;
+      color: $base;
+      text-decoration: none;
+    }
   }

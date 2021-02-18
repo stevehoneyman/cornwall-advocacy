@@ -1046,14 +1046,20 @@ header.nav-scrolled .nav-cta .nav-item {
 }
 
 .child-nav {
+  display: none;
   position: absolute;
   bottom: 0;
   padding: 1.25rem 0 1.25rem 3rem;
-  display: flex;
   background: #ffe68c;
 }
 
-.child-nav-item {
+@media (min-width: 880px) {
+  .child-nav {
+    display: flex;
+  }
+}
+
+.child-nav .child-nav-item {
   margin-right: 3rem;
   font-size: 21px;
   letter-spacing: 0.02rem;
