@@ -63,8 +63,12 @@
 
   .image {
     max-width: 9rem;
-    margin: 0 6rem 1rem 0;
+    margin: 0 0 1rem 0;
     align-self: center;
+
+     @include mq($break-medium) {
+      margin: 0 6rem 1rem 0;
+     }
   }
 
   .text {

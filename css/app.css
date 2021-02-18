@@ -1835,8 +1835,14 @@ header.nav-scrolled .nav-cta .nav-item {
 
 .projects .image {
   max-width: 9rem;
-  margin: 0 6rem 1rem 0;
+  margin: 0 0 1rem 0;
   align-self: center;
+}
+
+@media (min-width: 880px) {
+  .projects .image {
+    margin: 0 6rem 1rem 0;
+  }
 }
 
 .projects .text {
