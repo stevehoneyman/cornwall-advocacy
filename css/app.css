@@ -605,7 +605,7 @@ header.nav-scrolled .nav-cta .nav-item {
 
 @media (min-width: 1120px) {
   .footer-statement {
-    padding: 5rem 10rem 3rem;
+    padding: 5rem 7.5rem 3rem;
   }
 }
 
@@ -853,7 +853,6 @@ header.nav-scrolled .nav-cta .nav-item {
 .banner-home {
   position: relative;
   width: 100%;
-  margin-top: 140px;
   color: #27282C;
   background-color: #FFE99C;
 }
