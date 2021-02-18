@@ -19,7 +19,7 @@
 
     cursor: pointer;
     outline: none;
-    z-index: 100;
+    z-index: 1;
 }
 
 .slick-prev {
