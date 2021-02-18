@@ -33,14 +33,15 @@
 
   @include mq($break-medium) {
     .lh-col {
-      width: auto;
+      width: 50%;
       margin-right: 6rem;
-    }
 
-    img {
-      max-width: 390px;
-      max-height: 390px;
-      object-fit: cover;
+      img {
+        width: 100%;
+        max-width: 390px;
+        max-height: 390px;
+        object-fit: cover;
+      }
     }
   }
 

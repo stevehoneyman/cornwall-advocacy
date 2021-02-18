@@ -80,11 +80,13 @@
       object-fit: cover;
 
       @include mq($break-medium) {
+        width: 35%;
         margin-right: 6rem;
       }
     }
 
     .details {
+      width: 65%;
       padding: 1.5rem;
       border: 1px solid $medium-grey;
 

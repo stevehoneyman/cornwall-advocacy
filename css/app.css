@@ -2022,11 +2022,13 @@ header.nav-scrolled .nav-cta .nav-item {
 
 @media (min-width: 880px) {
   .team .profile img {
+    width: 35%;
     margin-right: 6rem;
   }
 }
 
 .team .profile .details {
+  width: 65%;
   padding: 1.5rem;
   border: 1px solid #c4c4c4;
 }
@@ -2118,10 +2120,11 @@ header.nav-scrolled .nav-cta .nav-item {
 
 @media (min-width: 880px) {
   .contact .lh-col {
-    width: auto;
+    width: 50%;
     margin-right: 6rem;
   }
-  .contact img {
+  .contact .lh-col img {
+    width: 100%;
     max-width: 390px;
     max-height: 390px;
     object-fit: cover;
@@ -2363,10 +2366,11 @@ header.nav-scrolled .nav-cta .nav-item {
 
 @media (min-width: 880px) {
   .request-advocate .lh-col {
-    width: auto;
+    width: 50%;
     margin-right: 6rem;
   }
-  .request-advocate img {
+  .request-advocate .lh-col img {
+    width: 100%;
     max-width: 390px;
     max-height: 390px;
     object-fit: cover;
