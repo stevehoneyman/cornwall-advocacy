@@ -24,6 +24,10 @@
       <main role="main">
         {% block content %}
 				{% endblock %}
+
+        {% if fn('is_page', (45)) %}
+          {% include 'page-sections/supporters.twig' %}
+        {% endif %}
 			</main>
 
 			{% include 'partials/footer.twig' %}

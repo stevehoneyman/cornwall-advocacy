@@ -1,0 +1,48 @@
+/* supporters
+----------------------------------------------------------------------------- */
+.supporters {
+  padding: 0 2rem;
+  margin: 6rem 0;
+
+  @include mq($break-large) {
+    padding: 0 10rem;
+  }
+
+  .title {
+    margin-bottom: 3rem;
+  }
+
+  p {
+    margin-bottom: 3rem;
+
+    @include mq($break-large) {
+      max-width: 80%;
+    }
+  }
+
+  .image {
+    width: 100%;
+    margin-bottom: 1rem;
+
+    @include mq($break-small) {
+      width: calc(50% - 48px);
+      margin-left: 96px;
+
+      &:nth-of-type(2n+1) {
+        margin-left: 0;
+      }
+    }
+
+    @include mq($break-large) {
+      width: calc(25% - 72px);
+
+      &:nth-of-type(2n+1) {
+        margin-left: 96px;
+      }
+
+      &:nth-of-type(4n+1) {
+        margin-left: 0;
+      }
+    }
+  }
+}

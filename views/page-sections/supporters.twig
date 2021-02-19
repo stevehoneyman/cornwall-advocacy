@@ -1,0 +1,10 @@
+<section class="supporters">
+  <h2 class="title">{{ post.supporters_title }}</h2>
+  <p>{{ post.supporters_text }}</p>
+
+  <div class="grid">
+    {% for item in post.meta('supported_by') %}
+	    <img src="{{ Image(item.image).src }}" class="image" />
+    {% endfor %}
+  </div>
+</section>
