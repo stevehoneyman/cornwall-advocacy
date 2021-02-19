@@ -28,11 +28,12 @@
     </ul>
     <!-- cta nav -->
     <ul class="nav-cta">
-      {% for nav_item in primary_nav_cta.items %}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ nav_item.link }}">{{ nav_item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+     {% for nav_item in primary_nav_cta.items %}
+       <li class="nav-item">
+         <a class="nav-link" href="{{ nav_item.link }}">{{ nav_item.title }}</a>
+       </li>
+     {% endfor %}
+   </ul>
+
   </nav>
 </header>

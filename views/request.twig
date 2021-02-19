@@ -5,8 +5,45 @@
   {{ fn('yoast_breadcrumb', false) }}
 </div>
 
-<div class="request-advocate">
+<div class="request-contact">
   <h1 class="page-title">{{ post.title }}</h1>
+
+  <!-- contact details-->
+  <div class="contact-details">
+
+    <!-- image holder-->
+    <div class="lh-col">
+       <img src="{{ post.meta('request_details').image }}">
+    </div>
+
+    <!-- social-->
+    <div class="rh-col">
+      {{ post.meta('request_details').text }}
+
+      <div class="icon-holder">
+        <img src="/wp-content/themes/cornwall-advocacy/icons/Icon_Phone.svg" class="icon">
+        <a href="tel:{{ options.phone }}" class="link">{{ options.phone }}</a>
+      </div>
+
+      <div class="icon-holder">
+        <img src="/wp-content/themes/cornwall-advocacy/icons/Icon_Email.svg" class="icon">
+        <a href="mailto:{{ options.email }}" class="link">{{ options.email }}</a>
+      </div>
+
+      <div class="icon-holder">
+        <p>You can also look at our Facebook page for information:</p>
+      </div>
+
+      <div class="icon-holder">
+        <img src="/wp-content/themes/cornwall-advocacy/icons/Icon_Facebook_Alt.svg" class="icon">
+        <a href="{{ options.facbook }}" class="link">{{ options.facebook }}</a>
+      </div>
+    </div>
+  </div>
+</div><!-- close contact -->
+
+<div class="request-advocate">
+  <h2 class="section-title">Request Form</h2>
 
   <div class="request-form">
     <div class="lh-col">

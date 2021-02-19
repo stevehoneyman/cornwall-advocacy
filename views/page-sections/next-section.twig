@@ -1,0 +1,7 @@
+{% if item.acf_fc_layout == 'next_section' %}
+  <div class="next-section">
+    <h3 class="section-title">Read the next section:</h3>
+    <!-- links to read next article and our background go here, somethinhg similar to below-->
+    <a href="{{ item.link }}" class="link">{{ item.link_text }}</a>
+  </div>
+{% endif %}

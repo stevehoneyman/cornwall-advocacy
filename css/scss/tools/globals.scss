@@ -1,23 +1,64 @@
 /* globals
 ----------------------------------------------------------------------------- */
+// content block lists
+.image-text,
+.text-image,
+.text-basic {
+  ul {
+    margin-bottom: 3rem;
+    transform: translateX(28px);
+
+    li {
+      margin-bottom: 3rem;
+      font-family: 'helvetica neue';
+      font-size: $font-body;
+      font-weight: 400;
+      line-height: $lh-body;
+      letter-spacing: 0.03rem;
+      list-style-type: disc;
+      list-style-position: outside;
+
+      @include mq($break-medium) {
+        font-family: 'helvetica now regular';
+        letter-spacing: 0.015rem;
+      }
+    }
+  }
+
+  ul:last-of-type {
+    margin-bottom: $drop-large;
+  }
+}
+
+
+// breadcrumbs
 .breadcrumbs {
   padding: 0 2rem;
   font-size: 21px;
-  letter-spacing: 0.02rem;
+  line-height: 1.47;
+  letter-spacing: 0.026rem;
   color: $base;
 
+  a:first-of-type {
+    padding-left: 0rem;
+    padding-right: 1.125rem;
+  }
+
   a {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
     font-size: 21px;
-    letter-spacing: 0.02rem;
+    line-height: 1.47;
+    letter-spacing: 0.026rem;
     color: $base;
     text-decoration: none;
   }
 
-  @include mq($break-medium) {
-  //  padding: 0 10rem;
+  span {
+    padding-left: 10px;
   }
 
-  @include mq($break-large) {
+  @include mq($break-medium) {
     padding: 0 10rem;
   }
 }

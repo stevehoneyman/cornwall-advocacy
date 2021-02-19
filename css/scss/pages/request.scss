@@ -1,3 +1,131 @@
+/* request an advocate - top section (contact)
+----------------------------------------------------------------------------- */
+.request-contact {
+  padding: 0 2rem;
+
+  @include mq($break-medium) {
+    padding: 0 10rem 120px 10rem;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+
+    @include mq($break-medium) {
+      flex-direction: row;
+    }
+  }
+
+  // columns
+  .lh-col,
+  .rh-col {
+    width: 100%;
+  }
+
+  img {
+    margin-bottom: 4rem;
+  }
+
+  @include mq($break-medium) {
+    .lh-col {
+      width: auto;
+      margin-right: 6rem;
+    }
+
+    img {
+      max-width: 390px;
+      max-height: 390px;
+      object-fit: cover;
+    }
+  }
+
+  @include mq($break-medium) {
+    .rh-col {
+      margin-top: 4rem;
+    }
+  }
+
+  .icon-holder {
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+
+    img.icon {
+      margin-right: 2rem;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  // typography
+  h1.page-title {
+    margin-bottom: 3rem;
+    padding-left: 0;
+    font-family: 'helvetica now bold';
+    font-size: 2.5rem;
+    font-weight: $font-bold;
+    line-height: 1.4;
+    letter-spacing: 0.15rem;
+    color: $base;
+
+    &:after {
+      @include underline-brand;
+    }
+
+    @include mq($break-small) {
+      font-size: 3.5rem;
+      letter-spacing: 0.21rem;
+    }
+
+    @include mq($break-medium) {
+      font-size: 4rem;
+      letter-spacing: 0.12rem;
+    }
+  }
+
+  p {
+    margin-bottom: $drop-medium;
+    font-size: 1.3rem;
+    line-height: $lh-body;
+    letter-spacing: 0.026rem;
+
+    @include mq($break-small) {
+      font-size: $font-body;
+      letter-spacing: 0.03rem;
+    }
+
+    @include mq($break-medium) {
+      font-family: 'helvetica neue';
+      font-size: $font-body;
+      font-weight: $font-bold;
+      letter-spacing: 0.015rem;
+    }
+  }
+
+  .link {
+    font-family: 'helvetica now bold';
+    font-size: 18px;
+    font-weight: $font-bold;
+    line-height: 2.3333;
+    letter-spacing: 0.068rem;
+
+    @include mq($break-medium) {
+      font-family: 'helvetica neue';
+      font-size: $font-body;
+      line-height: 1.875;
+      letter-spacing: 0.09rem;
+    }
+  }
+
+  a {
+    color: $base;
+  }
+} // close 
+
+
 /* request [styles for request an advocate form]
 ----------------------------------------------------------------------------- */
 .request-advocate {
