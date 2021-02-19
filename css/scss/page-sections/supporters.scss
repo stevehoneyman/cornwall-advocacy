@@ -9,11 +9,44 @@
   }
 
   .title {
-    margin-bottom: 3rem;
+    margin-bottom: 104px;
+    font-family: 'helvetica neue';
+    font-size: $font-medium;
+    font-weight: $font-bold;
+    line-height: $lh-heading;
+    letter-spacing: 0.09rem;
+
+    &:after {
+      @include underline-brand;
+    }
+
+    @include mq($break-small) {
+      font-size: 2.5rem;
+      line-height: 1.6;
+      letter-spacing: 0.15rem;
+    }
+
+    @include mq($break-medium) {
+      font-family: 'helvetica now bold';
+      font-size: $font-large;
+      line-height: 1.4;
+      letter-spacing: 0.09rem;
+    }
   }
 
+
   p {
-    margin-bottom: 3rem;
+    margin: 3rem 0;
+    font-family: 'helvetica neue';
+    font-size: $font-body;
+    font-weight: 400;
+    line-height: $lh-body;
+    letter-spacing: 0.03rem;
+
+    @include mq($break-medium) {
+      font-family: 'helvetica now regular';
+      letter-spacing: 0.015rem;
+    }
 
     @include mq($break-large) {
       max-width: 80%;

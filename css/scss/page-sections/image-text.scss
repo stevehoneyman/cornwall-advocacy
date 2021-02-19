@@ -19,6 +19,10 @@
     padding-top: 0rem;
   }
 
+  &:last-of-type {
+    border-bottom: none;
+  }
+
   .section-title {
     margin-bottom: 104px;
     font-family: 'helvetica neue';
