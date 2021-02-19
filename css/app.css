@@ -571,41 +571,43 @@ header nav .nav-cta .nav-item:last-of-type .nav-link {
 
 /* header scrolled
 ----------------------------------------------------------------------------- */
+/*
 header.nav-scrolled {
+  // if you inspect the header you'll see the nav-scrolled class getting added on scroll
+  // header.nav-srolled is using specifity to dircetly target it's descendents.. :)
   height: 72px;
-}
 
-@media only screen and (min-width: 880px) {
-  header.nav-scrolled {
+  @media only screen and (min-width: 880px) {
     height: 92px;
   }
-}
 
-@media only screen and (min-width: 1290px) {
-  header.nav-scrolled {
+  @media only screen and (min-width: 1290px) {
     height: 72px;
   }
-}
 
-header.nav-scrolled .logo {
-  margin-top: -4px;
-  margin-bottom: 0px;
-  transform: scale(0.75406, 0.66667) translateX(5px);
-}
 
-header.nav-scrolled .menu {
-  margin-top: -24px;
-}
+  .logo {
+    // negative top margin needed to offset the border bottom
+    margin-top: -4px;
+    margin-bottom: 0px;
+    transform: scale(.7540588, .6666666) translateX(5px);
+  }
 
-header.nav-scrolled .nav-cta {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
+  .menu {
+    // -32 + 8 needed to virtical centre align the button
+    margin-top: -24px;
+  }
 
-header.nav-scrolled .nav-cta .nav-item {
-  transform: scale(0.83333);
-}
+  .nav-cta {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 
+  .nav-cta .nav-item {
+    transform: scale(.833333333);
+  }
+}
+*/
 /* footer
 ----------------------------------------------------------------------------- */
 .footer-statement {
