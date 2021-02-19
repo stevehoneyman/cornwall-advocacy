@@ -1,24 +1,20 @@
 {% if post.meta('image') %}
   <div class="banner" style="background-image: url('{{ Image(post.meta('image')).src }}');">
-    {% if post.banner_headline %}
-      <span class="banner-headline">{{ post.banner_headline }}</span>
-    {% endif %}
 
-      <!-- conditional to add check for and sub-nav-->
-      {% if fn('is_page', ('about-us') ) %}
+    <!-- conditional to add check for and sub-nav-->
+    {% if fn('is_page', ('about-us') ) %}
       <ul class="child-nav">
         <li class="child-nav-item">{{ post.title }}</li>
-        {% for child in post.children %}
-          {# {{ item.current ? 'is-active' }} #}
-          <li><a href="{{ child.link }}" class="child-nav-item">{{ child.title }}</a></li>
-        {% endfor %}
+          {% for child in post.children %}
+            {# {{ item.current ? 'is-active' }} #}
+            <li><a href="{{ child.link }}" class="child-nav-item">{{ child.title }}</a></li>
+          {% endfor %}
       </ul>
     {% endif %}
-
+    <!-- end child test-->
   </div><!-- close banner-->
 
   {% else %}
+  <!-- do something to style top of page when no banner -->
   <div style="padding-top: 6rem;" aria-hidden="true">
-
-
 {% endif %}
