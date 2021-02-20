@@ -7,23 +7,19 @@
     <ul class="nav-pages">
       {% for nav_item in primary_nav_pages.items %}
         <li class="nav-item">
+          <!-- mobile child nave starts -->
           <a class="nav-link" href="{{ nav_item.link }}">{{ nav_item.title }}</a>
-
-
-          {# open sub-nav ------------------------------------------------------
             {% if nav_item.children %}
-              <ul class="child-nav">
+              <ul class="mobile-child-nav">
                 {% for child in nav_item.children %}
-                  <li class="child-nav-item">
+                  <li class="mobile-child-nav-item">
                     <a href="{{ child.link }}">{{ child.title }}</a>
                   </li>
                 {% endfor %}
               </ul>
             {% endif %}
-          close sub nav ----------------------------------------------------- #}
-
-
-        </li>
+            <!-- mobile child nave ends -->
+         </li>
       {% endfor %}
     </ul>
     <!-- cta nav -->

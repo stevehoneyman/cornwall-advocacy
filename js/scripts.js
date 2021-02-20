@@ -11,6 +11,14 @@ jQuery(document).ready(function($){
 		$('.primary-nav').toggleClass('nav-open');
 	});
 
+  // child menu mobile
+  $( '.mobile-child-nav' ).parent().append( '<button class="menu-toggle" aria-label="go to sub-menu"></button>' );
+
+  $( '.menu-toggle' ).on( 'click', function () {
+	$(this).prev().toggleClass( 'show' );
+  console.log('trigger show...')
+  });
+
   // accordian
   $('.item-title-holder').on('click', function() {
     $(this).toggleClass('inherit-animation');

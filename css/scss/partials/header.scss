@@ -85,6 +85,7 @@ header {
   } // close header
 
   nav {
+    position: relative;
     height: 0;
     overflow: hidden;
     background: $brand-fade;
@@ -107,6 +108,42 @@ header {
     @include mq($break-big) {
       flex-direction: row;
       align-items: center;
+    }
+
+    .nav-item {
+      position: relative;
+
+      .menu-toggle {
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        display: block;
+
+        &:before {
+          content: '';
+          width: 24px;
+          height: 4px;
+          display: block;
+          transform: translateY(3px);
+          background: $base;
+        }
+
+        &:after {
+          content: '';
+          width: 24px;
+          height: 4px;
+          display: block;
+          transform: rotate(90deg);
+          background: $base;
+        }
+
+        @include mq($break-medium) {
+          display: none;
+        }
+      }
     }
 
     .nav-pages {
@@ -149,6 +186,41 @@ header {
           line-height: 0;
         }
       }
+
+    /* mobile child nav
+    ------------------------------------------------------------------------- */
+
+      .mobile-child-nav {
+        height: 0;
+        overflow: hidden;
+        background: $brand-fade;
+        transition: .2s;
+
+        .mobile-child-nav-item {
+          font-family: 'helvetica neue';
+          font-size: 1.5rem;
+          font-weight: 700;
+          line-height: 2;
+
+          a {
+            margin-left: 1rem;
+            color: $base;
+            text-decoration: none;
+          }
+        }
+
+        &.show {
+          height: calc(146px);
+          padding: 1.5rem 0;
+        }
+
+        @include mq($break-medium) {
+          display: none;
+        }
+      }
+
+     /* --------------------------------------------------------------------- */
+
     }
 
     .nav-cta {
@@ -179,6 +251,7 @@ header {
       }
 
       .nav-item {
+        max-width: 350px;
         height: 3rem;
         padding: 0 .75rem;
         display: flex;
