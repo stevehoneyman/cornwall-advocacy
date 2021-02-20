@@ -562,7 +562,7 @@ header nav .nav-pages .nav-link {
   color: #27282C;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   header nav .nav-pages .nav-link {
     font-size: 2rem;
   }
@@ -942,7 +942,7 @@ header.nav-scrolled {
   background-color: #FFE99C;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .banner-home {
     display: flex;
   }
@@ -966,7 +966,7 @@ header.nav-scrolled {
   background-size: cover;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .banner-home .home-title-cont {
     padding: 10rem 2rem 10rem 2rem;
   }
@@ -991,7 +991,7 @@ header.nav-scrolled {
   }
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .banner-home .home-title-cont .home-title {
     padding-bottom: 6rem;
   }
@@ -1017,7 +1017,7 @@ header.nav-scrolled {
   background-color: #ffdb5a;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .banner-home .home-text-cont {
     position: absolute;
     left: 0;
@@ -1115,7 +1115,7 @@ header.nav-scrolled {
     */
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .banner {
     padding-top: 18rem;
     padding-bottom: 4rem;
@@ -1194,7 +1194,7 @@ header.nav-scrolled {
   letter-spacing: 0.105rem;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .text-block p:first-of-type {
     font-size: 2.5rem;
     letter-spacing: 0.15rem;
@@ -1284,7 +1284,7 @@ header.nav-scrolled {
   background: #ffdb5a;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .text-basic .section-title {
     font-size: 2.5rem;
     line-height: 1.6;
@@ -1325,7 +1325,7 @@ header.nav-scrolled {
   letter-spacing: 0.105rem;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .text-basic p:first-of-type {
     font-size: 2.5rem;
     letter-spacing: 0.15rem;
@@ -1379,7 +1379,7 @@ header.nav-scrolled {
   background: #ffdb5a;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .image-text .section-title {
     font-size: 21px;
     line-height: 1.6;
@@ -1457,7 +1457,7 @@ header.nav-scrolled {
   letter-spacing: 0.105rem;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .image-text p:first-of-type {
     font-size: 2.5rem;
     letter-spacing: 0.15rem;
@@ -1561,7 +1561,7 @@ header.nav-scrolled {
   letter-spacing: 0.105rem;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .text-image p {
     font-size: 2.5rem;
     letter-spacing: 0.15rem;
@@ -1608,7 +1608,7 @@ header.nav-scrolled {
   letter-spacing: 0.12rem;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .image-links .section-title {
     font-size: 2.5rem;
     line-height: 1.6;
@@ -1731,7 +1731,10 @@ header.nav-scrolled {
 
 .organisations .description {
   margin: 3rem 0;
+  font-family: 'helvetica now regular';
   font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2;
   letter-spacing: 0.03rem;
 }
 
@@ -1916,7 +1919,7 @@ header.nav-scrolled {
   background: #ffdb5a;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .projects .section-title {
     font-size: 2.5rem;
     line-height: 1.6;
@@ -2037,7 +2040,7 @@ header.nav-scrolled {
   background: #ffdb5a;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .team .section-title {
     font-size: 2.5rem;
     line-height: 1.6;
@@ -2064,7 +2067,7 @@ header.nav-scrolled {
   letter-spacing: 0.21rem;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .team .text {
     font-size: 2.5rem;
     letter-spacing: 0.3rem;
@@ -2195,7 +2198,7 @@ header.nav-scrolled {
   background: #ffdb5a;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .supporters .title {
     font-size: 2.5rem;
     line-height: 1.6;
@@ -2239,7 +2242,7 @@ header.nav-scrolled {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .supporters .image {
     width: calc(50% - 48px);
     margin-left: 96px;
@@ -2288,7 +2291,7 @@ header.nav-scrolled {
   letter-spacing: 0.12rem;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .next-section .section-title {
     font-size: 2.5rem;
     line-height: 1.6;
@@ -2463,7 +2466,7 @@ header.nav-scrolled {
   background: #ffdb5a;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .contact .section-title {
     font-size: 2.5rem;
     line-height: 1.6;
@@ -2486,7 +2489,7 @@ header.nav-scrolled {
   letter-spacing: 0.026rem;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .contact p {
     font-size: 1.5rem;
     letter-spacing: 0.03rem;
@@ -2678,7 +2681,7 @@ header.nav-scrolled {
   background: #ffdb5a;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .request-contact h1.page-title {
     font-size: 3.5rem;
     letter-spacing: 0.21rem;
@@ -2699,7 +2702,7 @@ header.nav-scrolled {
   letter-spacing: 0.026rem;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 480px) {
   .request-contact p {
     font-size: 1.5rem;
     letter-spacing: 0.03rem;
