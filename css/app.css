@@ -1228,6 +1228,11 @@ header.nav-scrolled {
   text-decoration: none;
 }
 
+.child-nav .is-active a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 /* text
 ----------------------------------------------------------------------------- */
 .text-block {
@@ -3021,4 +3026,30 @@ header.nav-scrolled {
   .request-advocate .request-form ::placeholder {
     font-size: 1.5rem;
   }
+}
+
+/* 404
+----------------------------------------------------------------------------- */
+.not-found {
+  padding: 0 2rem;
+}
+
+.not-found h1 {
+  font-size: 2.5rem;
+}
+
+.not-found h1:after {
+  content: '';
+  width: 3rem;
+  height: 10px;
+  margin-top: 1rem;
+  display: block;
+  background: #ffdb5a;
+}
+
+.not-found p {
+  margin: 3rem 0 6rem 0;
+  font-family: 'helvetica now regular';
+  font-size: 1.5rem;
+  line-height: 2;
 }
