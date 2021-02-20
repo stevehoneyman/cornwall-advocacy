@@ -3028,6 +3028,11 @@ header.nav-scrolled {
   }
 }
 
+.request-advocate .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield input[type=radio] {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
 /* 404
 ----------------------------------------------------------------------------- */
 .not-found {

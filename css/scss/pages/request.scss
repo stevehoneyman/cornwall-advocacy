@@ -123,7 +123,7 @@
   a {
     color: $base;
   }
-} // close 
+} // close
 
 
 /* request [styles for request an advocate form]
@@ -315,5 +315,17 @@
         font-size: $font-body;
       }
     }
+  }
+
+  // style radio button
+  .gchoice_2_2_0,
+  .gchoice_2_2_1 {
+    // display: block !important;
+    // position: relative;
+  }
+
+  .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield input[type=radio] {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
   }
 } // close request
