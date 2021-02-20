@@ -36,7 +36,7 @@
     }
 
     @include mq($break-small) {
-      font-size: 2.5rem;
+      font-size: 21px;
       line-height: 1.6;
       letter-spacing: 0.15rem;
     }
@@ -102,7 +102,7 @@
   p:first-of-type {
     margin-bottom: $drop-medium;
     font-family: 'helvetica now medium';
-    font-size: 1.75rem;
+    font-size: 28px;
     font-weight: 500;
     line-height: 1.6;
     letter-spacing: 0.105rem;

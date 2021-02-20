@@ -28,7 +28,7 @@
   p:first-of-type {
     margin-bottom: 6rem;
     font-family: 'helvetica now medium';
-    font-size: 1.75rem;
+    font-size: 28px;
     font-weight: 500;
     line-height: 1.6;
     letter-spacing: 0.105rem;
@@ -55,13 +55,14 @@
     width: 75%;
     margin: 2.5rem 2rem 2.5rem 6rem;
     font-family: 'helvetica neue';
-    font-size: $font-body;
+    font-size: 21px;
     font-weight: $font-bold;
     line-height: 1.875;
     letter-spacing: 0.09rem;
 
     @include mq($break-large) {
-       width: 35%;
+      width: 35%;
+      font-size: $font-body;
     }
   }
 

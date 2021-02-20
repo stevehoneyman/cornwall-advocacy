@@ -30,8 +30,10 @@
   }
 
   .text {
+    font-family: 'helvetica now medium';
     margin-bottom: 4rem;
     font-size: 28px;
+    font-weight: 500;
     line-height: 1.6;
     letter-spacing: 0.06rem;
 
@@ -63,7 +65,10 @@
 
     h3 {
       max-width: 80%;
+      font-family: 'helvetica now medium';
       font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.6;
     }
 
     button {
@@ -96,7 +101,10 @@
 
     p {
       margin: $font-medium 0;
+      font-family: 'helvetica now regular';
       font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 2;
     }
 
     p img {
@@ -109,6 +117,7 @@
 
     li {
       margin-bottom: 2rem;
+      font-family: 'helvetica now regular';
       font-size: 1.5rem;
       list-style-type: disc;
       list-style-position: outside;

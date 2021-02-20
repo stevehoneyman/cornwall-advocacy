@@ -34,15 +34,12 @@
 // breadcrumbs
 .breadcrumbs {
   padding: 0 2rem;
+  font-family: 'helvetica now regular';
   font-size: 21px;
   line-height: 1.47;
   letter-spacing: 0.026rem;
   color: $base;
-
-  a:first-of-type {
-    padding-left: 0rem;
-    padding-right: 1.125rem;
-  }
+  transform: translateX(-1rem);
 
   a {
     padding-left: 1.125rem;
@@ -56,6 +53,10 @@
 
   span {
     padding-left: 10px;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
   }
 
   @include mq($break-medium) {

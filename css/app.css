@@ -1,13 +1,13 @@
 /* fonts:
 ----------------------------------------------------------------------------- */
 @font-face {
-  font-family: 'helvetica now medium';
-  src: url("../fonts/HelveticaNowText-Medium/font.woff2") format("woff2"), url("../fonts/HelveticaNowText-Medium/font.woff") format("woff");
+  font-family: 'helvetica now regular';
+  src: url("../fonts/HelveticaNowText-Regular/font.woff2") format("woff2"), url("../fonts/HelveticaNowText-Regular/font.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'helvetica now regular';
-  src: url("../fonts/HelveticaNowText-Regular/font.woff2") format("woff2"), url("../fonts/HelveticaNowText-Regular/font.woff") format("woff");
+  font-family: 'helvetica now medium';
+  src: url("../fonts/HelveticaNowText-Medium/font.woff2") format("woff2"), url("../fonts/HelveticaNowText-Medium/font.woff") format("woff");
 }
 
 @font-face {
@@ -43,7 +43,7 @@ summary {
 }
 
 body {
-  font-family: 'helvetica now regular', 'helvetica-neue', helvetica, arial, sans-serif;
+  font-family: helvetica, arial, sans-serif;
   color: #27282C;
   background: #fafafa;
   -webkit-font-smoothing: antialiased;
@@ -143,15 +143,12 @@ button {
 
 .breadcrumbs {
   padding: 0 2rem;
+  font-family: 'helvetica now regular';
   font-size: 21px;
   line-height: 1.47;
   letter-spacing: 0.026rem;
   color: #27282C;
-}
-
-.breadcrumbs a:first-of-type {
-  padding-left: 0rem;
-  padding-right: 1.125rem;
+  transform: translateX(-1rem);
 }
 
 .breadcrumbs a {
@@ -166,6 +163,10 @@ button {
 
 .breadcrumbs span {
   padding-left: 10px;
+}
+
+.breadcrumbs span:first-of-type {
+  padding-left: 0;
 }
 
 @media (min-width: 880px) {
@@ -185,9 +186,16 @@ button {
 
 /* typography
 ----------------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'helvetica now bold';
+}
+
 .page-title {
   padding: 0 2rem;
-  margin-top: 6rem;
+  margin-top: 4.25rem;
   margin-bottom: 5rem;
   font-family: 'helvetica neue';
   font-size: 2.5rem;
@@ -206,7 +214,7 @@ button {
   background: #ffdb5a;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 560px) {
   .page-title {
     font-size: 3.5rem;
     letter-spacing: 0.21rem;
@@ -291,8 +299,10 @@ button {
 }
 
 .accordian .text {
+  font-family: 'helvetica now medium';
   margin-bottom: 4rem;
   font-size: 28px;
+  font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.06rem;
 }
@@ -329,7 +339,10 @@ button {
 
 .accordian .item-title-holder h3 {
   max-width: 80%;
+  font-family: 'helvetica now medium';
   font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 .accordian .item-title-holder button {
@@ -362,7 +375,10 @@ button {
 
 .accordian .item-content p {
   margin: 2rem 0;
+  font-family: 'helvetica now regular';
   font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2;
 }
 
 .accordian .item-content p img {
@@ -375,6 +391,7 @@ button {
 
 .accordian .item-content li {
   margin-bottom: 2rem;
+  font-family: 'helvetica now regular';
   font-size: 1.5rem;
   list-style-type: disc;
   list-style-position: outside;
@@ -442,7 +459,7 @@ header .logo {
 header .line-one,
 header .line-two {
   display: block;
-  font-family: 'helvetica now regular', 'helvetica-neue', helvetica, arial, sans-serif;
+  font-family: helvetica, arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
@@ -536,6 +553,7 @@ header nav .nav-pages {
 }
 
 header nav .nav-pages .nav-link {
+  font-family: 'helvetica neue';
   font-size: 1.65rem;
   font-weight: 700;
   line-height: 2;
@@ -544,7 +562,7 @@ header nav .nav-pages .nav-link {
   color: #27282C;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   header nav .nav-pages .nav-link {
     font-size: 2rem;
   }
@@ -580,6 +598,7 @@ header nav .nav-cta {
 }
 
 header nav .nav-cta .nav-link {
+  font-family: 'helvetica neue';
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.02rem;
@@ -737,28 +756,33 @@ header.nav-scrolled {
   }
 }
 
-.footer-statement .left-col button {
+.footer-statement .left-col .link {
   height: 4rem;
-  padding: .5rem 2rem;
-  margin-bottom: 4rem;
+  padding: 0 2rem;
+  border: 1px solid #27282C;
+  margin-bottom: 7.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'helvetica neue';
   font-size: 1rem;
   font-weight: 700;
-  line-height: 1.2212;
+  line-height: 1.47;
   letter-spacing: 0.02rem;
+  text-decoration: none;
   color: #fff;
   background: #27282C;
   transition: ease-in 300ms;
 }
 
 @media (min-width: 880px) {
-  .footer-statement .left-col button {
+  .footer-statement .left-col .link {
     font-size: 1.313rem;
-    letter-spacing: 0.026rem;
+    line-height: 1.22;
   }
 }
 
-.footer-statement .left-col button:hover {
+.footer-statement .left-col .link:hover {
   color: #27282C;
   background: #fff;
 }
@@ -918,7 +942,7 @@ header.nav-scrolled {
   background-color: #FFE99C;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .banner-home {
     display: flex;
   }
@@ -935,14 +959,14 @@ header.nav-scrolled {
   font-family: 'helvetica now bold';
   font-size: 1.5rem;
   font-weight: 800;
-  line-height: 1.6;
+  line-height: 1.2;
   text-align: center;
   padding: 5rem 2rem 5rem 2rem;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .banner-home .home-title-cont {
     padding: 10rem 2rem 10rem 2rem;
   }
@@ -961,13 +985,13 @@ header.nav-scrolled {
 @media (min-width: 1120px) {
   .banner-home .home-title-cont {
     font-size: 2.5rem;
-    line-height: 6rem;
+    line-height: 1.2;
     letter-spacing: 0.15rem;
     padding: 6.5% 11.1% 6.5% 11.1%;
   }
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .banner-home .home-title-cont .home-title {
     padding-bottom: 6rem;
   }
@@ -993,7 +1017,7 @@ header.nav-scrolled {
   background-color: #ffdb5a;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .banner-home .home-text-cont {
     position: absolute;
     left: 0;
@@ -1091,7 +1115,7 @@ header.nav-scrolled {
     */
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .banner {
     padding-top: 18rem;
     padding-bottom: 4rem;
@@ -1123,6 +1147,7 @@ header.nav-scrolled {
 
 .child-nav .child-nav-item {
   margin-right: 3rem;
+  font-family: 'helvetica neue';
   font-size: 21px;
   letter-spacing: 0.02rem;
   color: #27282C;
@@ -1163,13 +1188,13 @@ header.nav-scrolled {
 .text-block p:first-of-type {
   margin-bottom: 6rem;
   font-family: 'helvetica now medium';
-  font-size: 1.75rem;
+  font-size: 28px;
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.105rem;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .text-block p:first-of-type {
     font-size: 2.5rem;
     letter-spacing: 0.15rem;
@@ -1194,7 +1219,7 @@ header.nav-scrolled {
   width: 75%;
   margin: 2.5rem 2rem 2.5rem 6rem;
   font-family: 'helvetica neue';
-  font-size: 1.5rem;
+  font-size: 21px;
   font-weight: 700;
   line-height: 1.875;
   letter-spacing: 0.09rem;
@@ -1203,6 +1228,7 @@ header.nav-scrolled {
 @media (min-width: 1120px) {
   .text-block li {
     width: 35%;
+    font-size: 1.5rem;
   }
 }
 
@@ -1258,7 +1284,7 @@ header.nav-scrolled {
   background: #ffdb5a;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .text-basic .section-title {
     font-size: 2.5rem;
     line-height: 1.6;
@@ -1299,7 +1325,7 @@ header.nav-scrolled {
   letter-spacing: 0.105rem;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .text-basic p:first-of-type {
     font-size: 2.5rem;
     letter-spacing: 0.15rem;
@@ -1353,9 +1379,9 @@ header.nav-scrolled {
   background: #ffdb5a;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .image-text .section-title {
-    font-size: 2.5rem;
+    font-size: 21px;
     line-height: 1.6;
     letter-spacing: 0.15rem;
   }
@@ -1425,13 +1451,13 @@ header.nav-scrolled {
 .image-text p:first-of-type {
   margin-bottom: 4rem;
   font-family: 'helvetica now medium';
-  font-size: 1.75rem;
+  font-size: 28px;
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.105rem;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .image-text p:first-of-type {
     font-size: 2.5rem;
     letter-spacing: 0.15rem;
@@ -1535,7 +1561,7 @@ header.nav-scrolled {
   letter-spacing: 0.105rem;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .text-image p {
     font-size: 2.5rem;
     letter-spacing: 0.15rem;
@@ -1582,7 +1608,7 @@ header.nav-scrolled {
   letter-spacing: 0.12rem;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .image-links .section-title {
     font-size: 2.5rem;
     line-height: 1.6;
@@ -1771,7 +1797,7 @@ header.nav-scrolled {
   color: #fff;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 560px) {
   .testimonial blockquote {
     font-size: 2.5rem;
     letter-spacing: 0.3rem;
@@ -1890,7 +1916,7 @@ header.nav-scrolled {
   background: #ffdb5a;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .projects .section-title {
     font-size: 2.5rem;
     line-height: 1.6;
@@ -2011,7 +2037,7 @@ header.nav-scrolled {
   background: #ffdb5a;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .team .section-title {
     font-size: 2.5rem;
     line-height: 1.6;
@@ -2038,7 +2064,7 @@ header.nav-scrolled {
   letter-spacing: 0.21rem;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .team .text {
     font-size: 2.5rem;
     letter-spacing: 0.3rem;
@@ -2169,7 +2195,7 @@ header.nav-scrolled {
   background: #ffdb5a;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .supporters .title {
     font-size: 2.5rem;
     line-height: 1.6;
@@ -2213,7 +2239,7 @@ header.nav-scrolled {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .supporters .image {
     width: calc(50% - 48px);
     margin-left: 96px;
@@ -2262,7 +2288,7 @@ header.nav-scrolled {
   letter-spacing: 0.12rem;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .next-section .section-title {
     font-size: 2.5rem;
     line-height: 1.6;
@@ -2380,6 +2406,10 @@ header.nav-scrolled {
   margin-bottom: 0;
 }
 
+.contact .icon-holder a {
+  text-decoration: none;
+}
+
 .contact h1.page-title {
   margin-bottom: 3rem;
   padding-left: 0;
@@ -2400,7 +2430,7 @@ header.nav-scrolled {
   background: #ffdb5a;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 560px) {
   .contact h1.page-title {
     font-size: 3.5rem;
     letter-spacing: 0.21rem;
@@ -2433,7 +2463,7 @@ header.nav-scrolled {
   background: #ffdb5a;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .contact .section-title {
     font-size: 2.5rem;
     line-height: 1.6;
@@ -2451,12 +2481,12 @@ header.nav-scrolled {
 
 .contact p {
   margin-bottom: 4rem;
-  font-size: 1.3rem;
+  font-size: 21px;
   line-height: 2;
   letter-spacing: 0.026rem;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .contact p {
     font-size: 1.5rem;
     letter-spacing: 0.03rem;
@@ -2486,7 +2516,7 @@ header.nav-scrolled {
 @media (min-width: 880px) {
   .contact .link {
     font-family: 'helvetica neue';
-    font-size: 1.35rem;
+    font-size: 21px;
     line-height: 1.875;
     letter-spacing: 0.09rem;
   }
@@ -2508,7 +2538,7 @@ header.nav-scrolled {
 
 @media (min-width: 880px) {
   .contact .contact-form label {
-    font-size: 24px !important;
+    font-size: 28px !important;
     letter-spacing: 0.09rem;
   }
 }
@@ -2529,7 +2559,7 @@ header.nav-scrolled {
 
 .contact .contact-form input[type="submit"] {
   padding: 1.25rem 2rem;
-  font-family: 'helvetica now bold';
+  font-family: 'helvetica neue';
   font-size: 1.3125rem;
   font-weight: 700;
   line-height: 1.47 !important;
@@ -2546,6 +2576,7 @@ header.nav-scrolled {
 }
 
 .contact .contact-form ::placeholder {
+  font-family: 'helvetica now regular' !important;
   font-size: 1rem;
   line-height: 1.4 !important;
   letter-spacing: 0.02rem !important;
@@ -2556,6 +2587,10 @@ header.nav-scrolled {
   .contact .contact-form ::placeholder {
     font-size: 1.5rem !important;
   }
+}
+
+.contact div.ginput_container {
+  margin-top: 0 !important;
 }
 
 /* request an advocate - top section (contact)
@@ -2643,7 +2678,7 @@ header.nav-scrolled {
   background: #ffdb5a;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .request-contact h1.page-title {
     font-size: 3.5rem;
     letter-spacing: 0.21rem;
@@ -2664,7 +2699,7 @@ header.nav-scrolled {
   letter-spacing: 0.026rem;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 440px) {
   .request-contact p {
     font-size: 1.5rem;
     letter-spacing: 0.03rem;

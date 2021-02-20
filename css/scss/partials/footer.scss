@@ -70,22 +70,27 @@
       }
     }
 
-    button {
+    .link {
       height: 4rem;
-      padding: .5rem 2rem;
-      margin-bottom: 4rem;
+      padding: 0 2rem;
+      border: 1px solid $base;
+      margin-bottom: 7.5rem;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
       font-family: 'helvetica neue';
       font-size: $font-root;
       font-weight: $font-bold;
-      line-height: 1.2212;
+      line-height: 1.47;
       letter-spacing: 0.02rem;
+      text-decoration: none;
       color: $white;
       background: $base;
       transition: ease-in 300ms;
 
       @include mq($break-medium) {
         font-size: 1.313rem;
-        letter-spacing: 0.026rem;
+        line-height: 1.22;
       }
 
       &:hover {

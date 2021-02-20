@@ -29,7 +29,7 @@
     letter-spacing: 0.21rem;
     color: $white;
 
-    @include mq($break-small) {
+    @include mq(560px) {
       font-size: 2.5rem;
       letter-spacing: 0.3rem;
     }
