@@ -169,7 +169,7 @@ button {
   padding-left: 0;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 1120px) {
   .breadcrumbs {
     padding: 0 10rem;
   }
@@ -2239,7 +2239,7 @@ header.nav-scrolled {
 
 .supporters .image {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 @media (min-width: 480px) {

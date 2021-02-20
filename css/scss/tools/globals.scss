@@ -59,7 +59,7 @@
     }
   }
 
-  @include mq($break-medium) {
+  @include mq($break-large) {
     padding: 0 10rem;
   }
 }
