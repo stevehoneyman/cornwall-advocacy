@@ -1,0 +1,20 @@
+/* 404
+----------------------------------------------------------------------------- */
+.not-found {
+  padding: 0 2rem;
+
+  h1 {
+    font-size: 2.5rem;
+
+    &:after {
+      @include underline-brand
+    }
+  }
+
+  p {
+    margin: 3rem 0 6rem 0;
+    font-family: 'helvetica now regular';
+    font-size: $font-body;
+    line-height: 2;
+  }
+}
