@@ -5,7 +5,7 @@
     {% if fn('is_page', (['16', '321', '323']) ) %}
       <ul class="child-nav">
         {% for item in child_one.items %}
-          <li class="nav-item">
+          <li class="nav-item {{ item.current ? 'is-active' }}">
             <a class="child-nav-item" href="{{ item.link }}">{{ item.title }}</a>
           </li>
         {% endfor %}
@@ -15,7 +15,7 @@
     {% if fn('is_page', (['18','272']) ) %}
       <ul class="child-nav">
         {% for item in child_two.items %}
-          <li class="nav-item">
+          <li class="nav-item {{ item.current ? 'is-active' }}">
             <a class="child-nav-item" href="{{ item.link }}">{{ item.title }}</a>
           </li>
         {% endfor %}

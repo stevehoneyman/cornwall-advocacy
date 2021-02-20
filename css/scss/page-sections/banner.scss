@@ -73,4 +73,11 @@
       color: $base;
       text-decoration: none;
     }
+
+    .is-active {
+      a {
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
   }
