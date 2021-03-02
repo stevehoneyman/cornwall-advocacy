@@ -8,7 +8,7 @@
 .grid-item {
   width: 100%;
 
-  @include mq($break-medium) {
+  @include mq(620px) {
     width: calc(50% - 48px);
     margin-left: 6rem;
   }

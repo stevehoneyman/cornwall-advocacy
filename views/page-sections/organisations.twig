@@ -4,7 +4,9 @@
       {% for item in item.organisation %}
         <div class="grid-item">
           <h3>{{ item.organisation_name}}</h3>
-          <img src="{{ Image(item.image).src }}" alt="{{ Image(item.image).alt }}">
+          <div class="image-holder">
+            <img src="{{ Image(item.image).src }}" alt="{{ Image(item.image).alt }}" class="image">
+          </div>
           <p class="description">{{ item.description }}</p>
           <a href="{{ item.link }}" class="link">{{ item.link_text }}</a>
         </div>

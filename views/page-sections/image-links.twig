@@ -4,7 +4,9 @@
       <div class="grid">
       {% for item in item.grid_element %}
         <div class="grid-item">
-          <img src="{{ Image(item.image).src }}" alt="{{ Image(item.image).alt }}">
+          <div class="image-holder">
+            <img src="{{ Image(item.image).src }}" alt="{{ Image(item.image).alt }}" class="image">
+          </div>
           <h4 class="text">{{ item.text }}</h4>
         </div>
       {% endfor %}

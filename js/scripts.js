@@ -16,7 +16,7 @@ jQuery(document).ready(function($){
 
   $( '.menu-toggle' ).on( 'click', function () {
 	$(this).prev().toggleClass( 'show' );
-  console.log('trigger show...')
+  //console.log('trigger show...')
   });
 
   // accordian
